@@ -782,13 +782,23 @@ body .border-orange {
 .rr-btn:hover {
   color: #2557e0;
 }
+.rr-btn.transparent {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.rr-btn.dark {
+  color: #2e4c52;
+}
 
 .rr-input {
+  padding: 5px 15px;
   border: 1px solid #d4d6de;
   background-color: white;
   border-radius: 2px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #36373c;
   outline: 0 !important;
-  padding: 5px 15px;
 }
 
 .rr-label {
@@ -831,16 +841,30 @@ body .border-orange {
   justify-content: stretch;
   flex-direction: row;
 }
+@media (max-width: 575.98px) {
+  #modal-test-survey-popup .modal-content .modal-body form .horizontal {
+    flex-direction: column;
+  }
+}
 #modal-test-survey-popup .modal-content .modal-body form .horizontal #email-address {
   flex: 1;
   margin-right: 8px;
-  color: #36373c;
-  font-size: 18px;
-  font-weight: 300;
+}
+@media (max-width: 575.98px) {
+  #modal-test-survey-popup .modal-content .modal-body form .horizontal #email-address {
+    margin-right: 0;
+  }
 }
 #modal-test-survey-popup .modal-content .modal-body form .horizontal .btn-test {
   padding-left: 35px;
   padding-right: 35px;
+}
+@media (max-width: 575.98px) {
+  #modal-test-survey-popup .modal-content .modal-body form .horizontal .btn-test {
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 #modal-test-survey-popup .modal-content .modal-body form .note {
   margin-top: 10px;
@@ -848,4 +872,71 @@ body .border-orange {
   color: #36373c;
   font-size: 13px;
   font-weight: 300;
+}
+
+/*
+* INTEGRER MED DINERO
+*/
+#integrer-med-dinero {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#integrer-med-dinero .logo {
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#integrer-med-dinero .title {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3f4b62;
+  text-align: center;
+}
+#integrer-med-dinero .subtitle {
+  margin-top: 10px;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #192a59;
+  text-align: center;
+}
+#integrer-med-dinero .input-fields {
+  padding: 40px 30px 20px;
+  background-color: white;
+  border-radius: 2px;
+  border: 1.5px solid #2557e0;
+}
+#integrer-med-dinero .input-fields input {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#integrer-med-dinero .input-fields .note {
+  margin-top: 8px;
+  display: block;
+  color: #192a59;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+#integrer-med-dinero .input-fields .controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+#integrer-med-dinero .input-fields .controls button {
+  min-width: 120px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#integrer-med-dinero .btn-send-test-survey {
+  min-width: 225px;
+  margin-left: auto;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
 }

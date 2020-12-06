@@ -902,14 +902,26 @@ body {
   &:hover {
     color: $primary_blue;
   }
+
+  &.transparent {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+
+  &.dark {
+    color: #2e4c52;
+  }
 }
 
 .rr-input {
+  padding: 5px 15px;
   border: 1px solid #d4d6de;
   background-color: white;
   border-radius: 2px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #36373c;
   outline: 0 !important;
-  padding: 5px 15px;
 }
 
 .rr-label {
@@ -954,17 +966,28 @@ body {
         .horizontal {
           @include flex;
 
+          @include media-breakpoint-down(xs) {
+            flex-direction: column;
+          }
+
           #email-address {
             flex: 1;
             margin-right: 8px;
-            color: #36373c;
-            font-size: 18px;
-            font-weight: 300;
+
+            @include media-breakpoint-down(xs) {
+              margin-right: 0;
+            }
           }
 
           .btn-test {
             padding-left: 35px;
             padding-right: 35px;
+
+            @include media-breakpoint-down(xs) {
+              margin-top: 8px;
+              padding-top: 8px;
+              padding-bottom: 8px;
+            }
           }
         }
 
@@ -977,5 +1000,77 @@ body {
         }
       }
     }
+  }
+}
+
+/*
+* INTEGRER MED DINERO
+*/
+#integrer-med-dinero {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .logo {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .title {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3f4b62;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #192a59;
+    text-align: center;
+  }
+
+  .input-fields {
+    padding: 40px 30px 20px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1.5px solid $primary_blue;
+
+    input {
+      width: 100%;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    .note {
+      margin-top: 8px;
+      display: block;
+      color: #192a59;
+      font-size: 14px;
+      font-weight: 300;
+      text-decoration: underline;
+    }
+
+    .controls {
+      @include flex(flex-end, center);
+      button {
+        min-width: 120px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .btn-send-test-survey {
+    min-width: 225px;
+    margin-left: auto;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
