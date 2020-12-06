@@ -1,0 +1,19 @@
+{
+  "name": "Risros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pscss": "prettier --write './resources/**/*.scss'",
+    "phtml": "prettier --write '*.html'",
+    "scss": "sass --watch --no-source-map resources/scss:resources/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "sass": "^1.30.0"
+  }
+}
