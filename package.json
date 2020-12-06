@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pscss": "prettier --write './resources/**/*.scss'",
     "phtml": "prettier --write '*.html'",
-    "scss": "sass --watch --no-source-map resources/scss:resources/css"
+    "scss": "sass --watch --no-source-map .:."
   },
   "keywords": [],
   "author": "",
