@@ -902,8 +902,13 @@ body {
   font-weight: 300;
   border-radius: 2px;
 
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease,
+    -webkit-box-shadow 0.15s ease;
+
   &:hover {
     color: $primary_blue;
+    background-color: #ECF0F1;
   }
 
   &.transparent {

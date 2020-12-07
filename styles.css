@@ -1220,9 +1220,11 @@ body .border-orange {
   color: #2557e0;
   font-weight: 300;
   border-radius: 2px;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
 }
 .rr-btn:hover {
   color: #2557e0;
+  background-color: #ECF0F1;
 }
 .rr-btn.transparent {
   background-color: transparent !important;
