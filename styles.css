@@ -1511,3 +1511,8 @@ body .border-orange {
     margin-bottom: 10px;
   }
 }
+
+button:focus, button:active {
+  outline: none !important;
+  box-shadow: none;
+}
