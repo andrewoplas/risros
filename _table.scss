@@ -72,6 +72,21 @@ $pagination_active_bg: #d3ebff;
         align-items: center;
         margin: 0.5rem 0;
         flex-wrap: wrap;
+
+        @include breakpoint-down(350px) {
+          .dropdown {
+            flex-basis: 100%;
+            margin: 0 !important;
+
+            .btn-export {
+              width: 100%;
+            }
+          }
+          .btn-new-record {
+            margin-top: 10px;
+            flex-basis: 100%;
+          }
+        }
       }
 
       .card-title {
