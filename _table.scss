@@ -81,6 +81,10 @@ $pagination_active_bg: #d3ebff;
         margin-left: 0;
         color: #181c32;
 
+        @include media-breakpoint-down(sm) {
+          margin-top: 1rem;
+        }
+
         .card-label {
           font-weight: 400;
           font-size: 16px;

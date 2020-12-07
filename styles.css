@@ -215,6 +215,11 @@
   margin-left: 0;
   color: #181c32;
 }
+@media (max-width: 767.98px) {
+  #table .card-custom .card-header .card-title {
+    margin-top: 1rem;
+  }
+}
 #table .card-custom .card-header .card-title .card-label {
   font-weight: 400;
   font-size: 16px;
