@@ -1,6 +1,8 @@
 @import './abstract/breakpoint';
 @import './abstract/mixins';
 
+@import 'switch';
+
 $body_background: #f5f7fc;
 $dark_blue: #1f36b9;
 $primary_blue: #2557e0;
@@ -1021,9 +1023,17 @@ body {
   .title {
     margin-top: 20px;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 500;
     color: #3f4b62;
     text-align: center;
+
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 25px;
+    }
   }
 
   .subtitle {
@@ -1072,5 +1082,144 @@ body {
     display: block;
     font-size: 14px;
     font-weight: 400;
+
+    @include media-breakpoint-down(xs) {
+      margin-right: auto;
+    }
+  }
+}
+
+/*
+* CHANNELS
+*/
+#channels {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .title {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #3f4b62;
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 23px;
+    }
+  }
+
+  .channels-list {
+    .item {
+      @include flex(stretch, center);
+      padding: 10px 20px;
+      border: 1px solid #b3b4b6;
+      border-radius: 4px;
+      transition: 300ms;
+
+      &.active {
+        background-color: white;
+        border-color: $primary_blue;
+        transition: 300ms;
+      }
+
+      img {
+        flex-shrink: 0;
+        width: 60px;
+        border-radius: 50%;
+      }
+
+      .content {
+        flex: 1;
+        margin-left: 30px;
+        margin-right: 10px;
+
+        .name {
+          margin-bottom: 0;
+          font-size: 20px;
+          font-weight: 500;
+          color: #192a59;
+        }
+
+        .description {
+          margin-top: 5px;
+          margin-bottom: 0;
+          font-size: 14px;
+          font-weight: 300;
+          color: #192a59;
+        }
+      }
+
+      .onoffswitch {
+        flex-shrink: 0;
+      }
+
+      @include media-breakpoint-down(xs) {
+        img {
+          display: none;
+        }
+
+        .content {
+          margin-left: 0;
+
+          .name {
+            font-size: 16px;
+          }
+
+          .description {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .controls {
+    @include flex(flex-end, flex-end);
+
+    button {
+      font-size: 14px;
+      font-weight: 400;
+      position: relative;
+    }
+
+    .btn-save-and-continue {
+      padding-left: 60px;
+      padding-right: 60px;
+      background-color: $primary_blue;
+      color: white;
+      @include flex(center, center);
+
+      .icon {
+        position: absolute;
+        right: 20px;
+        color: white;
+        margin-top: 2px;
+      }
+    }
+
+    .btn-edit-survey {
+      padding-left: 40px;
+      padding-right: 40px;
+      @include flex(center, center);
+
+      .icon {
+        position: absolute;
+        left: 10px;
+        margin-top: 2px;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      @include flex(center, center, column);
+
+      .btn-edit-survey {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
