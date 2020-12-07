@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .onoffswitch {
   position: relative;
   width: 65px;
@@ -81,6 +82,344 @@
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
+}
+
+.Checkbox[disabled], .Checkbox.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.Checkbox label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  max-width: 200px;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.Checkbox label::-moz-selection {
+  color: none;
+  background: none;
+}
+.Checkbox label::selection {
+  color: none;
+  background: none;
+}
+.Checkbox label::-moz-selection {
+  color: none;
+  background: none;
+}
+.Checkbox label input {
+  display: none;
+}
+.Checkbox label span {
+  letter-spacing: 0;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+  background-color: #ebedf3;
+  border-radius: 4px;
+}
+.Checkbox label [type=checkbox]:checked + span {
+  background-color: #6993ff !important;
+}
+.Checkbox label [type=checkbox]:checked + span:before {
+  content: "";
+  margin-top: 1px;
+  height: 100%;
+  font-family: "Font Awesome 5 Pro";
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.Checkbox label [type=checkbox].minus:checked + span:before {
+  content: "";
+  margin-top: 1px;
+  height: 100%;
+  font-family: "Font Awesome 5 Pro";
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/*
+* TABLE
+*/
+#table p,
+#table h1,
+#table h2,
+#table h3,
+#table h4,
+#table h5,
+#table h6,
+#table span,
+#table button,
+#table li,
+#table a {
+  font-family: "Poppins" !important;
+}
+#table .info-card {
+  padding: 1.5rem 2rem;
+  border-radius: 0.42rem;
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+}
+#table .info-card .message {
+  margin: 0;
+  font-size: 12px;
+  color: #3f4254;
+}
+#table .info-card .icon {
+  margin-right: 15px;
+  color: #2557e0;
+  font-size: 20px;
+}
+#table .card-custom {
+  box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+  border: 0;
+}
+#table .card-custom .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  min-height: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+#table .card-custom .card-header .card-toolbar {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+}
+#table .card-custom .card-header .card-title {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  margin-left: 0;
+  color: #181c32;
+}
+#table .card-custom .card-header .card-title .card-label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #181c32;
+}
+#table .card-custom .card-header .card-title .font-size-sm {
+  font-size: 12px;
+  color: #b5b5c3 !important;
+}
+#table .dropdown .btn-export {
+  color: #6993ff;
+  background-color: #e1e9ff;
+  border-color: transparent;
+  font-weight: 500 !important;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+  outline: 0 !important;
+}
+#table .dropdown .btn-export:hover {
+  background-color: #6993ff;
+  color: white;
+}
+#table .dropdown .btn-export:hover .icon {
+  color: white;
+}
+#table .dropdown .btn-export .icon {
+  font-size: 15px;
+  color: #6993ff;
+  margin-right: 8px;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+#table .dropdown .dropdown-toggle.btn:after {
+  content: "";
+  margin-left: 0.5rem;
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+  text-align: center;
+  display: inline;
+  border: 0;
+  font-size: 0.7rem;
+  vertical-align: middle;
+  position: relative;
+}
+#table .dropdown .dropdown-menu {
+  width: 175px;
+  background-color: #fff;
+  border: 0 solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.42rem;
+  box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.15);
+}
+#table .dropdown .dropdown-menu .navi {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style: none;
+}
+#table .dropdown .dropdown-menu .navi .navi-header {
+  padding: 9px 18px 6px;
+  font-size: 11px;
+  color: #6993ff !important;
+  font-weight: 500;
+}
+#table .dropdown .dropdown-menu .navi .navi-link {
+  color: #3f4254;
+  font-size: 12px;
+  padding: 9px 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+}
+#table .dropdown .dropdown-menu .navi .navi-link .navi-icon {
+  margin-right: 8px;
+  color: #b5b5c3;
+  font-size: 14px;
+}
+#table .btn-new-record {
+  font-weight: 500 !important;
+  background-color: #6993ff;
+  color: white;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+#table .btn-new-record:hover {
+  background-color: #4a7dff;
+  border-color: #4a7dff;
+}
+#table .btn-new-record .icon {
+  font-size: 15px;
+  color: white;
+  margin-right: 8px;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+#table #datatable {
+  border-bottom: 0;
+}
+#table #datatable thead th {
+  color: #b5b5c3;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-family: "Poppins";
+  border-bottom: 1px solid #ebedf3;
+  padding: 9px 12px;
+}
+#table #datatable thead th.sorting .sort-icon {
+  display: none;
+}
+#table #datatable thead th.sorting_desc .arrow-down {
+  display: none;
+}
+#table #datatable thead th.sorting_desc .arrow-up {
+  display: inline-block;
+}
+#table #datatable thead th.sorting_asc .arrow-down {
+  display: inline-block;
+}
+#table #datatable thead th.sorting_asc .arrow-up {
+  display: none;
+}
+#table #datatable thead th .sort-icon {
+  font-size: 10px;
+  color: #6993ff;
+  margin-left: 10px;
+}
+#table #datatable thead th {
+  position: relative;
+  background-image: none !important;
+}
+#table #datatable thead th.sorting:before, #table #datatable thead th.sorting_asc:before, #table #datatable thead th.sorting_desc:before, #table #datatable thead th.sorting_asc_disabled:before, #table #datatable thead th.sorting_desc_disabled:before {
+  right: 0 !important;
+  content: "" !important;
+}
+#table #datatable thead th.sorting:after, #table #datatable thead th.sorting_asc:after, #table #datatable thead th.sorting_desc:after, #table #datatable thead th.sorting_asc_disabled:after, #table #datatable thead th.sorting_desc_disabled:after {
+  right: 0 !important;
+  content: "" !important;
+}
+#table #datatable thead th.sorting:after {
+  content: "";
+}
+#table #datatable tbody td {
+  color: #3f4254;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 15px 12px;
+  font-family: "Poppins";
+  border-top-color: #ebedf3;
+}
+#table #datatable tbody td:first-child {
+  padding: 17px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#table #datatable_wrapper .dataTables_paginate {
+  display: flex;
+  padding-top: 10px;
+  float: unset;
+}
+#table #datatable_wrapper .dataTables_paginate > span {
+  display: flex;
+}
+#table #datatable_wrapper .paginate_button {
+  font-family: "Poppins";
+  font-size: 11px;
+  color: #7e8299 !important;
+  margin-left: 5px;
+  border-radius: 4px;
+  height: 27px !important;
+  min-width: 27px !important;
+  padding: 6px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 0 !important;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+#table #datatable_wrapper .paginate_button:hover {
+  background: #6993ff !important;
+  color: white !important;
+}
+#table #datatable_wrapper .paginate_button:hover i {
+  color: white !important;
+}
+#table #datatable_wrapper .paginate_button i {
+  font-size: 11px;
+  color: #7e8299 !important;
+}
+#table #datatable_wrapper .paginate_button.current {
+  background: #6993ff !important;
+  color: white !important;
+}
+#table #datatable_wrapper .paginate_button.disabled {
+  opacity: 0.6;
+  background-color: #ecf1f6;
+  pointer-events: none;
 }
 
 /*
