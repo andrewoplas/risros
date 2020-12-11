@@ -1,40 +1,10 @@
-@import './abstract/breakpoint';
-@import './abstract/mixins';
+// Abstract
+@import './scss/abstract/breakpoint';
+@import './scss/abstract/mixins';
+@import './scss/abstract/variables';
 
-@import 'switch';
-@import 'table';
-
-$body_background: #f5f7fc;
-$dark_blue: #1f36b9;
-$primary_blue: #2557e0;
-$primary_green: #07e496;
-$primary_orange: #f7b626;
-$primary_red: #f73e26;
-$primary_gray: #b5b8c5;
-$primary_dark_gray: #757e83;
-$white: #ffffff;
-$text_black: #35373b;
-$pagination_active_bg: #d3ebff;
-
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin card {
-  height: 100%;
-  padding: 20px;
-  background-color: $white;
-  border-radius: 4px;
-  border: 0;
-
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 20px;
-  }
-}
+// Components
+@import './scss/components/switch';
 
 /*
 * UTILITY CLASSES
@@ -908,7 +878,7 @@ body {
 
   &:hover {
     color: $primary_blue;
-    background-color: #ECF0F1;
+    background-color: #ecf0f1;
   }
 
   &.transparent {
@@ -1237,3 +1207,7 @@ button {
     box-shadow: none;
   }
 }
+
+// Pages
+@import './scss/pages/table';
+@import './scss/pages/survey';

@@ -1,19 +1,6 @@
-@import './abstract/breakpoint';
-@import './abstract/mixins';
-
-@import './checkbox';
-
-$body_background: #f5f7fc;
-$dark_blue: #1f36b9;
-$primary_blue: #2557e0;
-$primary_green: #07e496;
-$primary_orange: #f7b626;
-$primary_red: #f73e26;
-$primary_gray: #b5b8c5;
-$primary_dark_gray: #757e83;
-$white: #ffffff;
-$text_black: #35373b;
-$pagination_active_bg: #d3ebff;
+@import '../abstract/breakpoint';
+@import '../abstract/mixins';
+@import '../abstract/variables';
 
 /*
 * TABLE

@@ -1,0 +1,206 @@
+@import '../abstract/breakpoint';
+@import '../abstract/mixins';
+@import '../abstract/variables';
+
+/*
+* SURVEY
+*/
+#survey-section {
+  .btn-add-new-survey {
+    display: block;
+    margin-left: auto;
+
+    .icon {
+      color: $primary_blue;
+      font-size: 13px;
+      margin-right: 5px;
+    }
+  }
+
+  .surveys {
+    .item {
+      padding: 25px 30px;
+      position: relative;
+      border-radius: 4px;
+      border: 1px solid #ababab;
+      background-color: white;
+      @include flex(stretch, center);
+
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+      }
+
+      @include media-breakpoint-down(xs) {
+        padding: 15px;
+      }
+
+      &.with-note {
+        padding-top: 60px;
+
+        @include media-breakpoint-down(xs) {
+          padding-top: 70px;
+        }
+      }
+
+      .note {
+        padding: 4px 10px;
+        background-color: #fdefca;
+        border-radius: 10px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        right: 30px;
+        @include font(12px, $fw-regular);
+        color: #696d72;
+
+        .alt {
+          color: #f73e26;
+          font-weight: bold;
+        }
+
+        @include media-breakpoint-down(xs) {
+          left: 15px;
+          right: 15px;
+          font-size: 10px;
+        }
+      }
+
+      .count {
+        width: 57px;
+        height: 57px;
+        border-radius: 4px;
+        margin-right: 20px;
+        @include flex(center, center);
+
+        span {
+          color: white;
+          @include font(17px, $fw-bold);
+        }
+
+        &.red {
+          background-color: #f73e26;
+        }
+
+        &.green {
+          background-color: #07e496;
+        }
+
+        @include media-breakpoint-down(xs) {
+          width: 40px;
+          height: 40px;
+
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .content {
+        margin-right: 10px;
+        flex: 1;
+
+        .title {
+          display: block;
+          @include font(17px, $fw-medium);
+          color: #25292d;
+
+          @include media-breakpoint-down(xs) {
+            font-size: 15px;
+          }
+        }
+
+        .description {
+          margin-top: 5px;
+          display: block;
+          color: #6a7179;
+          @include font(14px, $fw-regular);
+
+          @include media-breakpoint-down(xs) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .quantity-labels {
+        flex: 1;
+        @include flex(space-between, center);
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          margin-top: 25px;
+          flex-basis: 100%;
+        }
+
+        @include media-breakpoint-down(xs) {
+          margin-top: 10px;
+          flex-wrap: wrap;
+        }
+
+        .quantity {
+          display: block;
+          @include font(15px, $fw-bold);
+          color: #25292d;
+        }
+
+        .label {
+          margin-top: 5px;
+          display: block;
+          color: #6a7179;
+          @include font(12px, $fw-regular);
+        }
+      }
+
+      .dropdown {
+        @include media-breakpoint-down(xs) {
+          flex-basis: 100%;
+          margin-top: 10px;
+          width: 100%;
+
+          .btn-actions {
+            width: 100%;
+          }
+
+          .dropdown-menu {
+            width: 100%;
+
+            .dropdown-item {
+              text-align: center;
+            }
+          }
+        }
+
+        .btn-actions {
+          padding: 15px 25px;
+          border: 1px solid #372459;
+          border-radius: 4px;
+          color: #25292d;
+          @include font(16px, $fw-medium);
+
+          &:hover {
+            background-color: #ecf0f1;
+          }
+        }
+
+        .dropdown-menu {
+          min-width: auto;
+          margin-top: 10px;
+          padding: 5px 0;
+          border: 0;
+          border-radius: 6px;
+
+          box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
+
+          .dropdown-item {
+            padding: 10px 30px;
+            color: #63686f;
+            @include font(14px, $fw-medium);
+
+            &:hover {
+              background-color: #ecf0f1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
