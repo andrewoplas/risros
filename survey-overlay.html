@@ -278,40 +278,48 @@
     <!-- Main Content -->
 
     <div class="container main-content">
-      <div class="mt-5" id="integrer-med-dinero">
-        <img src="./images/dinero-logo.png" class="logo" alt="logo" />
-        <h2 class="title">Integrer med Dinero</h2>
-        <span class="subtitle">
-          Med integrationen sendes sporgeskemaet automatisk tre dage efter
-          kunden modtager faktura fra dig.
-        </span>
+      <button
+        class="btn rr-btn d-block mx-auto mt-5"
+        data-toggle="modal"
+        data-target="#survey-overlay"
+      >
+        Open Test Survey Popup
+      </button>
 
-        <div class="input-fields mt-4">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <label class="rr-label" for="virk">Virksomhed-ID</label>
-              <input class="rr-input" id="virk" required />
-              <span class="note">Hjaelp til at finde din virksomheds-ID?</span>
+      <div class="modal fade" tabindex="-1" role="dialog" id="survey-overlay">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <i class="fal fa-times"></i>
+              </button>
+
+              <div class="main-content">
+                <h3 class="title-m title">Send Test Survey</h3>
+
+                <form>
+                  <label class="rr-label" for="email-address"
+                    >Enter an email address</label
+                  >
+                  <div class="horizontal">
+                    <input class="rr-input" id="email-address" required />
+                    <button class="btn rr-btn btn-test">Send</button>
+                  </div>
+
+                  <span class="note"
+                    >Enter one or more email addresses separated by comma
+                    (,).</span
+                  >
+                </form>
+              </div>
             </div>
-
-            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-              <label class="rr-label" for="api">Dinero API nogle</label>
-              <input class="rr-input" id="api" required />
-              <span class="note">Hjaelp til at finde din API nogle?</span>
-            </div>
-          </div>
-
-          <div class="controls mt-4">
-            <button class="btn rr-btn transparent dark btn-cancel">
-              Cancel
-            </button>
-            <button class="btn rr-btn btn-save">Save</button>
           </div>
         </div>
-
-        <button class="btn rr-btn btn-send-test-survey mt-4">
-          Send Test Survey
-        </button>
       </div>
     </div>
 

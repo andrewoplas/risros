@@ -1,0 +1,80 @@
+@import '../abstract/variables';
+
+#survey-overlay {
+  .modal-content {
+    background-color: #e9ebfe;
+    border: 1px solid #08226a;
+    border-radius: 2px;
+
+    .modal-body {
+      position: relative;
+      padding: 40px 35px 60px;
+
+      .btn-close {
+        border: 0;
+        background-color: transparent;
+        position: absolute;
+        top: 15px;
+        right: 12px;
+
+        i {
+          font-size: 20px;
+          color: $color-blue;
+        }
+      }
+
+      .title {
+        color: $color-dark-blue;
+      }
+
+      form {
+        margin-top: 30px;
+
+        .rr-label {
+          font-size: 18px !important;
+          font-weight: 400 !important;
+          color: $color-dark-blue;
+        }
+
+        .horizontal {
+          @include flex;
+
+          @include media-breakpoint-down(xs) {
+            flex-direction: column;
+          }
+
+          #email-address {
+            flex: 1;
+            margin-right: 8px;
+            border: 1px solid #08226a;
+            border-radius: 2px;
+            font-size: 25px;
+
+            @include media-breakpoint-down(xs) {
+              margin-right: 0;
+            }
+          }
+
+          .btn-test {
+            padding-left: 35px;
+            padding-right: 35px;
+
+            @include media-breakpoint-down(xs) {
+              margin-top: 8px;
+              padding-top: 8px;
+              padding-bottom: 8px;
+            }
+          }
+        }
+
+        .note {
+          margin-top: 10px;
+          display: block;
+          color: #a2a9be;
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

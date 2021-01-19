@@ -1,7 +1,5 @@
 // Abstract
-@import './scss/abstract/breakpoint';
-@import './scss/abstract/mixins';
-@import './scss/abstract/variables';
+@import './scss/abstract/main';
 
 // Components
 @import './scss/components/switch';
@@ -12,12 +10,12 @@
 
 * {
   font-family: 'Roboto', sans-serif;
-  color: $text_black;
+  color: $color-black-text;
 }
 
 body {
   overflow-x: hidden;
-  background-color: $body_background;
+  background-color: $color-body-background;
 
   h1,
   h2,
@@ -39,55 +37,55 @@ body {
   }
 
   .text-blue {
-    color: $primary_blue;
+    color: $color-blue;
   }
 
   .text-green {
-    color: $primary_green;
+    color: $color-green;
   }
 
   .text-red {
-    color: $primary_red;
+    color: $color-red;
   }
 
   .text-orange {
-    color: $primary_orange;
+    color: $color-orange;
   }
 
   .text-gray {
-    color: $primary_gray;
+    color: $color-gray;
   }
 
   .bg-blue {
-    background-color: $primary_blue;
+    background-color: $color-blue;
   }
 
   .bg-green {
-    background-color: $primary_green;
+    background-color: $color-green;
   }
 
   .bg-red {
-    background-color: $primary_red;
+    background-color: $color-red;
   }
 
   .bg-orange {
-    background-color: $primary_orange;
+    background-color: $color-orange;
   }
 
   .border-blue {
-    border-color: $primary_blue !important;
+    border-color: $color-blue !important;
   }
 
   .border-green {
-    border-color: $primary_green !important;
+    border-color: $color-green !important;
   }
 
   .border-red {
-    border-color: $primary_red !important;
+    border-color: $color-red !important;
   }
 
   .border-orange {
-    border-color: $primary_orange !important;
+    border-color: $color-orange !important;
   }
 }
 
@@ -96,7 +94,7 @@ body {
 */
 .navigation {
   height: 75px;
-  background-color: $primary_blue;
+  background-color: $color-blue;
 
   div {
     height: inherit;
@@ -111,7 +109,7 @@ body {
     align-items: center;
     margin-top: 2px;
     margin-left: 20px;
-    color: $white;
+    color: $color-white;
     font-size: 26px;
     border-radius: 50%;
     cursor: pointer;
@@ -129,7 +127,7 @@ body {
     font-size: 26px;
     font-family: futura-pt, sans-serif;
     font-weight: 500;
-    color: $white;
+    color: $color-white;
     text-transform: uppercase;
   }
 
@@ -146,10 +144,10 @@ body {
         @include flex-center;
         height: 40px;
         width: 40px;
-        background-color: $dark_blue;
-        border: 1px solid $dark_blue;
+        background-color: $color-dark-blue;
+        border: 1px solid $color-dark-blue;
         border-radius: 50%;
-        color: $white;
+        color: $color-white;
         font-size: 17px;
         font-weight: bold;
         line-height: 20px;
@@ -157,7 +155,7 @@ body {
 
       .user-name {
         margin-left: 12px;
-        color: $white;
+        color: $color-white;
         font-size: 14px;
         line-height: 48px;
         display: inline-block;
@@ -255,7 +253,7 @@ body {
         @include flex-center;
         height: 40px;
         padding: 10px 20px;
-        border: 1px solid $primary_blue;
+        border: 1px solid $color-blue;
         border-radius: 5px;
         z-index: 999;
         cursor: pointer;
@@ -310,7 +308,7 @@ body {
             .respondents-count {
               margin-top: -3px;
               display: block;
-              color: $primary_dark_gray;
+              color: $color-dark-gray;
               font-size: 12px;
               line-height: 20px;
             }
@@ -378,38 +376,38 @@ body {
       justify-content: space-between;
 
       .title {
-        color: $white;
+        color: $color-white;
       }
 
       .weekly-dropdown {
         @include flex-center;
         height: 40px;
         padding: 10px 17px;
-        border: 1px solid $white;
+        border: 1px solid $color-white;
         border-radius: 5px;
         cursor: pointer;
         z-index: 9999;
 
         .icon {
           font-size: 16px;
-          color: $white;
+          color: $color-white;
           margin-left: 14.5px;
         }
 
         .selected-item {
           font-size: 16px;
           line-height: 20px;
-          color: $white;
+          color: $color-white;
         }
       }
 
       .dropdown-item {
         padding-top: 8px;
         padding-bottom: 8px;
-        color: $primary_dark_gray;
+        color: $color-dark-gray;
 
         &:active {
-          color: $white;
+          color: $color-white;
         }
       }
     }
@@ -505,7 +503,7 @@ body {
       }
 
       .text-container {
-        border-left: 4px solid $primary_green;
+        border-left: 4px solid $color-green;
         padding: 27px 0 8px 27px;
         flex: 1;
 
@@ -528,7 +526,7 @@ body {
           max-width: 814px;
           margin-top: 32px;
           display: block;
-          color: $primary_dark_gray;
+          color: $color-dark-gray;
           font-size: 18px;
           line-height: 20px;
         }
@@ -536,7 +534,7 @@ body {
         .date {
           max-width: 814px;
           display: block;
-          color: $primary_dark_gray;
+          color: $color-dark-gray;
           font-size: 15px;
           line-height: 20px;
         }
@@ -636,16 +634,16 @@ body {
         &.active {
           a {
             font-weight: 500;
-            color: $primary_blue;
-            background-color: $pagination_active_bg;
+            color: $color-blue;
+            background-color: $color-pagination-active-background;
           }
         }
 
         a {
           padding: 4px 13px;
-          color: $primary_dark_gray;
+          color: $color-dark-gray;
           font-size: 18px;
-          border-color: $primary_blue !important;
+          border-color: $color-blue !important;
         }
       }
     }
@@ -653,7 +651,7 @@ body {
     .responses {
       display: block;
       font-size: 18px;
-      color: $primary_dark_gray;
+      color: $color-dark-gray;
       font-weight: 500;
       line-height: 20px;
     }
@@ -851,10 +849,10 @@ body {
   .ranges {
     li {
       font-size: 14px;
-      color: $primary_dark_gray;
+      color: $color-dark-gray;
 
       &.active {
-        background-color: $primary_blue !important;
+        background-color: $color-blue !important;
         color: #fff;
       }
     }
@@ -867,17 +865,18 @@ body {
 
 .rr-btn {
   padding: 10px 20px;
-  border: 1px solid $primary_blue;
-  color: $primary_blue;
-  font-weight: 300;
-  border-radius: 2px;
+  border: 1px solid $color-blue;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $color-blue;
 
   transition: color 0.15s ease, background-color 0.15s ease,
     border-color 0.15s ease, box-shadow 0.15s ease,
     -webkit-box-shadow 0.15s ease;
 
   &:hover {
-    color: $primary_blue;
+    color: $color-blue;
     background-color: #ecf0f1;
   }
 
@@ -891,9 +890,28 @@ body {
   }
 }
 
+.rr-btn-1 {
+  padding: 15px 40px;
+  text-align: center;
+  border: 1px solid $color-blue;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold !important;
+  color: $color-blue;
+
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease,
+    -webkit-box-shadow 0.15s ease;
+
+  &:hover {
+    color: $color-blue;
+    background-color: #ecf0f1;
+  }
+}
+
 .rr-input {
   padding: 5px 15px;
-  border: 1px solid #d4d6de;
+  border: 1px solid #b5b8c5;
   background-color: white;
   border-radius: 2px;
   font-size: 18px;
@@ -906,163 +924,6 @@ body {
   color: #3f4b62;
   font-size: 15px;
   font-weight: 500;
-}
-
-/*
-* TEST SURVEY POPUP
-*/
-#modal-test-survey-popup {
-  .modal-content {
-    background-color: #f7f8fc;
-    border-radius: 2px;
-    border: 0;
-
-    .modal-body {
-      position: relative;
-      padding: 40px 30px;
-
-      .btn-close {
-        border: 0;
-        background-color: transparent;
-        position: absolute;
-        top: 15px;
-        right: 12px;
-
-        i {
-          font-size: 20px;
-          color: $primary_blue;
-        }
-      }
-
-      .title {
-        color: #192a59;
-        font-size: 19px;
-        font-weight: 500;
-      }
-
-      form {
-        .horizontal {
-          @include flex;
-
-          @include media-breakpoint-down(xs) {
-            flex-direction: column;
-          }
-
-          #email-address {
-            flex: 1;
-            margin-right: 8px;
-
-            @include media-breakpoint-down(xs) {
-              margin-right: 0;
-            }
-          }
-
-          .btn-test {
-            padding-left: 35px;
-            padding-right: 35px;
-
-            @include media-breakpoint-down(xs) {
-              margin-top: 8px;
-              padding-top: 8px;
-              padding-bottom: 8px;
-            }
-          }
-        }
-
-        .note {
-          margin-top: 10px;
-          display: block;
-          color: #36373c;
-          font-size: 13px;
-          font-weight: 300;
-        }
-      }
-    }
-  }
-}
-
-/*
-* INTEGRER MED DINERO
-*/
-#integrer-med-dinero {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-
-  .logo {
-    width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  .title {
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    color: #3f4b62;
-    text-align: center;
-
-    @include media-breakpoint-down(md) {
-      font-size: 28px;
-    }
-
-    @include media-breakpoint-down(xs) {
-      font-size: 25px;
-    }
-  }
-
-  .subtitle {
-    margin-top: 10px;
-    display: block;
-    font-size: 14px;
-    font-weight: 300;
-    color: #192a59;
-    text-align: center;
-  }
-
-  .input-fields {
-    padding: 40px 30px 20px;
-    background-color: white;
-    border-radius: 2px;
-    border: 1.5px solid $primary_blue;
-
-    input {
-      width: 100%;
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    .note {
-      margin-top: 8px;
-      display: block;
-      color: #192a59;
-      font-size: 14px;
-      font-weight: 300;
-      text-decoration: underline;
-    }
-
-    .controls {
-      @include flex(flex-end, center);
-      button {
-        min-width: 120px;
-        font-size: 14px;
-        font-weight: 400;
-      }
-    }
-  }
-
-  .btn-send-test-survey {
-    min-width: 225px;
-    margin-left: auto;
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-
-    @include media-breakpoint-down(xs) {
-      margin-right: auto;
-    }
-  }
 }
 
 /*
@@ -1099,7 +960,7 @@ body {
 
       &.active {
         background-color: white;
-        border-color: $primary_blue;
+        border-color: $color-blue;
         transition: 300ms;
       }
 
@@ -1166,7 +1027,7 @@ body {
     .btn-save-and-continue {
       padding-left: 60px;
       padding-right: 60px;
-      background-color: $primary_blue;
+      background-color: $color-blue;
       color: white;
       @include flex(center, center);
 
@@ -1209,5 +1070,7 @@ button {
 }
 
 // Pages
+@import './scss/pages/connect';
 @import './scss/pages/table';
 @import './scss/pages/survey';
+@import './scss/pages/survey-overlay';

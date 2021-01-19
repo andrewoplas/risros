@@ -1,0 +1,64 @@
+#section-connect {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .logo {
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .title {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    margin-top: 35px;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+
+    .input-fields {
+      padding: 45px 25px 40px;
+    }
+
+    input {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .note {
+      margin-top: 10px;
+      display: block;
+      text-decoration: underline;
+    }
+
+    .controls {
+      @include flex(flex-end, center);
+      padding: 15px 10px;
+      background-color: #f4f5fd;
+    }
+  }
+
+  .btn-send-test-survey {
+    min-width: 225px;
+    margin-left: auto;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+
+    @include media-breakpoint-down(xs) {
+      margin-right: auto;
+    }
+  }
+}

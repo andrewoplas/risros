@@ -1,34 +1,36 @@
+// Colors
+$color-body-background: #f5f7fc;
+$color-dark-blue: #192a59;
+$color-blue: #2557e0;
+$color-green: #00bea5;
+$color-orange: #f7b626;
+$color-red: #f73e26;
+$color-gray: #b5b8c5;
+$color-dark-gray: #757e83;
+$color-white: #ffffff;
+$color-black-text: #3f4b62;
+
+$color-pagination-active-background: #d3ebff;
+
+// Font/text values
 $font-primary: Roboto, sans-serif;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-32: 32px;
+$fs-50: 50px;
+$cs-0: 0px;
+$ls-13: 13px;
+$ls-16: 16px;
+$ls-26: 26px;
+$ls-30: 30px;
+$ls-110: 110px;
 
-$color-primary: #41a2f9;
-$color-primary-lighter: #d3eaff;
-$color-yellow: #ffca00;
-$color-yellow-light: #ffda1a;
-$color-green: #00cd46;
-$color-dark: #2f2f2f;
-$color-dark-gray: #7f7f7f;
-$color-dark-gray2: #b4b4b4;
-$color-gray: #eaeaea;
-$color-gray2: #cecece;
-$color-gray3: #e6e6e6;
-
-$color-placeholder: #d0d3d4;
-
+// Font weights
 $fw-thin: 100;
 $fw-light: 300;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 $fw-black: 900;
-
-$body_background: #f5f7fc;
-$dark_blue: #1f36b9;
-$primary_blue: #2557e0;
-$primary_green: #07e496;
-$primary_orange: #f7b626;
-$primary_red: #f73e26;
-$primary_gray: #b5b8c5;
-$primary_dark_gray: #757e83;
-$white: #ffffff;
-$text_black: #35373b;
-$pagination_active_bg: #d3ebff;

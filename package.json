@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pscss": "prettier --write './resources/**/*.scss'",
+    "pscss": "prettier --write './scss/**/*.scss'",
     "phtml": "prettier --write '*.html'",
     "scss": "sass --watch --no-source-map .:."
   },

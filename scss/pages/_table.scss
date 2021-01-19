@@ -1,6 +1,6 @@
-@import '../abstract/breakpoint';
-@import '../abstract/mixins';
-@import '../abstract/variables';
+@import "../abstract/breakpoint";
+@import "../abstract/mixins";
+@import "../abstract/variables";
 
 /*
 * TABLE
@@ -17,7 +17,7 @@
   button,
   li,
   a {
-    font-family: 'Poppins' !important;
+    font-family: "Poppins" !important;
   }
 
   .info-card {
@@ -35,7 +35,7 @@
 
     .icon {
       margin-right: 15px;
-      color: $primary_blue;
+      color: $color-blue;
       font-size: 20px;
     }
   }
@@ -132,9 +132,9 @@
     }
 
     .dropdown-toggle.btn:after {
-      content: '\f107';
+      content: "\f107";
       margin-left: 0.5rem;
-      font-family: 'Font Awesome 5 Pro';
+      font-family: "Font Awesome 5 Pro";
       font-style: normal;
       font-weight: 300;
       font-variant: normal;
@@ -222,7 +222,7 @@
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 0.1rem;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         border-bottom: 1px solid #ebedf3;
         padding: 9px 12px;
 
@@ -269,7 +269,7 @@
         &.sorting_asc_disabled:before,
         &.sorting_desc_disabled:before {
           right: 0 !important;
-          content: '' !important;
+          content: "" !important;
         }
 
         &.sorting:after,
@@ -278,11 +278,11 @@
         &.sorting_asc_disabled:after,
         &.sorting_desc_disabled:after {
           right: 0 !important;
-          content: '' !important;
+          content: "" !important;
         }
 
         &.sorting:after {
-          content: '';
+          content: "";
         }
       }
     }
@@ -293,7 +293,7 @@
         font-size: 12px;
         font-weight: 300;
         padding: 15px 12px;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         border-top-color: #ebedf3;
 
         &:first-child {
@@ -316,7 +316,7 @@
     }
 
     .paginate_button {
-      font-family: 'Poppins';
+      font-family: "Poppins";
       font-size: 11px;
       color: #7e8299 !important;
       margin-left: 5px;
