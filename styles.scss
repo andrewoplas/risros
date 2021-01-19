@@ -876,15 +876,32 @@ body {
     -webkit-box-shadow 0.15s ease;
 
   &:hover {
-    color: $color-blue;
     background-color: #ecf0f1;
+
+    &.dark {
+      color: #2e4c52 !important;
+    }
+
+    &.blue {
+      color: $color-blue !important;
+    }
   }
 
-  &.disabled {
+  &.disabled:not(.outline) {
     pointer-events: none;
     background-color: #a2a9be !important;
     border-color: #a2a9be !important;
     color: white;
+  }
+
+  &.outline {
+    background-color: transparent;
+
+    &.disabled {
+      pointer-events: none;
+      color: #a2a9be !important;
+      border: 1px solid #a2a9be !important;
+    }
   }
 
   &.transparent {
@@ -906,6 +923,14 @@ body {
 
   &.min-width-170 {
     min-width: 170px;
+  }
+
+  &.min-width-150 {
+    min-width: 150px;
+  }
+
+  &.min-width-100 {
+    min-width: 100px;
   }
 }
 
@@ -955,7 +980,7 @@ button {
 
 // Pages
 @import './scss/pages/page-integrations';
-@import './scss/pages/connect';
+@import './scss/pages/page-connect';
 @import './scss/pages/table';
 @import './scss/pages/survey';
 @import './scss/pages/overlay-survey';

@@ -958,14 +958,27 @@ body .border-orange {
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
 }
 .rr-btn:hover {
-  color: #2557e0;
   background-color: #ecf0f1;
 }
-.rr-btn.disabled {
+.rr-btn:hover.dark {
+  color: #2e4c52 !important;
+}
+.rr-btn:hover.blue {
+  color: #2557e0 !important;
+}
+.rr-btn.disabled:not(.outline) {
   pointer-events: none;
   background-color: #a2a9be !important;
   border-color: #a2a9be !important;
   color: white;
+}
+.rr-btn.outline {
+  background-color: transparent;
+}
+.rr-btn.outline.disabled {
+  pointer-events: none;
+  color: #a2a9be !important;
+  border: 1px solid #a2a9be !important;
 }
 .rr-btn.transparent {
   background-color: transparent !important;
@@ -982,6 +995,12 @@ body .border-orange {
 }
 .rr-btn.min-width-170 {
   min-width: 170px;
+}
+.rr-btn.min-width-150 {
+  min-width: 150px;
+}
+.rr-btn.min-width-100 {
+  min-width: 100px;
 }
 
 .rr-btn-1 {
@@ -1140,46 +1159,46 @@ button:focus, button:active {
   }
 }
 
-#section-connect {
+#page-connect {
   max-width: 660px;
   margin-left: auto;
   margin-right: auto;
 }
-#section-connect .logo {
+#page-connect .logo {
   width: 75px;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-#section-connect .title {
+#page-connect .title {
   margin-top: 15px;
   text-align: center;
 }
-#section-connect .subtitle {
+#page-connect .subtitle {
   margin-top: 10px;
   display: block;
   text-align: center;
 }
-#section-connect .form-wrapper {
+#page-connect .form-wrapper {
   margin-top: 35px;
   background-color: white;
   border: 1px solid #eaeaea;
   border-radius: 5px;
 }
-#section-connect .form-wrapper .input-fields {
+#page-connect .form-wrapper .input-fields {
   padding: 45px 25px 40px;
 }
-#section-connect .form-wrapper input {
+#page-connect .form-wrapper input {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#section-connect .form-wrapper .note {
+#page-connect .form-wrapper .note {
   margin-top: 10px;
   display: block;
   text-decoration: underline;
 }
-#section-connect .form-wrapper .controls {
+#page-connect .form-wrapper .controls {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1187,7 +1206,7 @@ button:focus, button:active {
   padding: 15px 10px;
   background-color: #f4f5fd;
 }
-#section-connect .btn-send-test-survey {
+#page-connect .btn-send-test-survey {
   min-width: 225px;
   margin-left: auto;
   display: block;
@@ -1195,7 +1214,7 @@ button:focus, button:active {
   font-weight: 400;
 }
 @media (max-width: 575.98px) {
-  #section-connect .btn-send-test-survey {
+  #page-connect .btn-send-test-survey {
     margin-right: auto;
   }
 }
