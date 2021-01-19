@@ -279,10 +279,12 @@
 
           <ul class="nav justify-content-between">
             <li class="nav-item">
-              <a class="m nav-link active" href="survey-throttling.html">Survey Throttling</a>
+              <a class="m nav-link" href="survey-throttling.html">Survey Throttling</a>
             </li>
             <li class="nav-item">
-              <a class="m nav-link" href="survey-open-ended-question.html">Open-ended question</a>
+              <a class="m nav-link active" href="survey-open-ended-question.html"
+                >Open-ended question</a
+              >
             </li>
             <li class="nav-item">
               <a class="m nav-link" href="#">Follow up Email</a>
@@ -294,30 +296,36 @@
         </div>
       </div>
 
-      <div class="container mt-5" id="page-survey-throttling">
+      <div class="container mt-5" id="page-survey-open-ended-question">
         <div class="main-box">
           <div class="top-content">
-            <p class="l font-weight-bold">Adjust the throttle periode</p>
+            <p class="l font-weight-bold">Customize the Open-ended Question</p>
             <p class="m">
-              This setting determines how often a single contact can be surveyed in a given period
-              of time for all campaigns
+              NPS surveys have a standard open-ended question: “What is the primary reason for your
+              score?” You can edit the open-ended question based on the score given by the
+              respondent to personalize the feedback.
             </p>
 
-            <div class="input-fields">
+            <div class="input-fields mt-4 px-0 px-sm-5">
               <div class="item">
-                <input class="rr-input" id="times-in" />
-                <span class="s font-weight-bold ml-3">times in</span>
+                <span class="s font-weight-bold">Detractors</span>
+                <input class="rr-input mt-2" value="Hvad kan vi gøre bedre på adidas.dk?" />
               </div>
-              <div class="item ml-0 ml-sm-4 mt-3 mt-0">
-                <input class="rr-input" id="days" />
-                <span class="s font-weight-bold ml-3">days</span>
+              <div class="item mt-4">
+                <span class="s font-weight-bold">Passives</span>
+                <input
+                  class="rr-input mt-2"
+                  value="Hvilke to ting ville gøre dig mere begejstret over addias.dk?"
+                />
+              </div>
+              <div class="item mt-4">
+                <span class="s font-weight-bold">Promoters</span>
+                <input
+                  class="rr-input mt-2"
+                  value="Hvad ville du fortælle din ven/familie om adidas.dk?"
+                />
               </div>
             </div>
-
-            <p class="s mt-3 mb-0">
-              Eg: If you enter 1 times in 30 days, surveys across the platform will be sent to
-              contacts only 1 time in 30days.
-            </p>
           </div>
 
           <div class="controls">

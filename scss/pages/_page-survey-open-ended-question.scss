@@ -1,0 +1,34 @@
+#page-survey-open-ended-question {
+  max-width: $main-content-max-width;
+
+  .main-box {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+
+    .top-content {
+      padding: 30px 30px 80px;
+
+      .input-fields {
+        .item {
+          input {
+            width: 100%;
+            padding-top: 12px;
+            padding-bottom: 11px;
+            @include font(18px, normal);
+
+            @include media-breakpoint-down(xs) {
+              @include font(14px, normal);
+            }
+          }
+        }
+      }
+    }
+
+    .controls {
+      @include flex(flex-end, center);
+      padding: 10px 10px;
+      background-color: #f4f5fd;
+    }
+  }
+}

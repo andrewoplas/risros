@@ -1598,6 +1598,43 @@ button:focus, button:active {
   background-color: #f4f5fd;
 }
 
+#page-survey-open-ended-question {
+  max-width: 900px;
+}
+#page-survey-open-ended-question .main-box {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+#page-survey-open-ended-question .main-box .top-content {
+  padding: 30px 30px 80px;
+}
+#page-survey-open-ended-question .main-box .top-content .input-fields .item input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(100% + 5px);
+}
+@media (max-width: 575.98px) {
+  #page-survey-open-ended-question .main-box .top-content .input-fields .item input {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(100% + 5px);
+  }
+}
+#page-survey-open-ended-question .main-box .controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 10px 10px;
+  background-color: #f4f5fd;
+}
+
 /*
 * TABLE
 */
