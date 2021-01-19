@@ -1,11 +1,8 @@
-@import "../abstract/breakpoint";
-@import "../abstract/mixins";
-@import "../abstract/variables";
+@import '../abstract/breakpoint';
+@import '../abstract/mixins';
+@import '../abstract/variables';
 
-/*
-* SURVEY
-*/
-#section-surveys {
+#page-surveys {
   .btn-add-new-survey {
     display: block;
     margin-left: auto;
@@ -22,7 +19,7 @@
       padding: 25px 30px;
       position: relative;
       border-radius: 4px;
-      border: 1px solid #ababab;
+      border: 1px solid #e9ebfe;
       background-color: white;
       @include flex(stretch, center);
 
@@ -68,7 +65,7 @@
       .count {
         width: 57px;
         height: 57px;
-        border-radius: 4px;
+        border-radius: 6px;
         margin-right: 20px;
         @include flex(center, center);
 
@@ -82,7 +79,11 @@
         }
 
         &.green {
-          background-color: #07e496;
+          background-color: #00bea5;
+        }
+
+        &.yellow {
+          background-color: #f7b626;
         }
 
         @include media-breakpoint-down(xs) {
@@ -101,8 +102,8 @@
 
         .title {
           display: block;
-          @include font(17px, $fw-medium);
-          color: #25292d;
+          @include font(17px, $fw-bold);
+          color: #33475b;
 
           @include media-breakpoint-down(xs) {
             font-size: 15px;
@@ -112,7 +113,7 @@
         .description {
           margin-top: 5px;
           display: block;
-          color: #6a7179;
+          color: #717171;
           @include font(14px, $fw-regular);
 
           @include media-breakpoint-down(xs) {
@@ -169,12 +170,24 @@
           }
         }
 
+        &.show {
+          .btn-actions {
+            &::after {
+              transform: rotate(180deg);
+            }
+          }
+        }
+
         .btn-actions {
-          padding: 15px 25px;
+          padding: 12px 25px;
           border: 1px solid #372459;
           border-radius: 4px;
           color: #25292d;
-          @include font(16px, $fw-medium);
+          @include font(15px, $fw-medium);
+
+          &::after {
+            transition: 300ms transform;
+          }
 
           &:hover {
             background-color: #ecf0f1;
