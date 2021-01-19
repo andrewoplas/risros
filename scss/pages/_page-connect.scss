@@ -45,20 +45,8 @@
 
     .controls {
       @include flex(flex-end, center);
-      padding: 15px 10px;
+      padding: 10px 10px;
       background-color: #f4f5fd;
-    }
-  }
-
-  .btn-send-test-survey {
-    min-width: 225px;
-    margin-left: auto;
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-
-    @include media-breakpoint-down(xs) {
-      margin-right: auto;
     }
   }
 }

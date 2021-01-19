@@ -1,508 +1,695 @@
 <!DOCTYPE html>
-<html lang="en">    
-<head>
-	<meta charset="utf-8" >
-	<title>Risros</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Risros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Google Fonts -->
-    <link href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    
-	<!-- Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" rel="stylesheet">
-    
-	<!-- AOS (Animation on Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      rel="stylesheet"
+    />
+
+    <!-- AOS (Animation on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <!-- Daterangepicker (Datepicker library) -->
-    <link type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+      rel="stylesheet"
+    />
 
-	<!-- Main CSS -->
+    <!-- Main CSS -->
     <link href="styles.css" rel="stylesheet" />
-    
-</head> 
-<body>
-
+  </head>
+  <body>
     <!-- Navigation -->
 
     <nav class="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 d-flex align-items-center">
-                    <i id="toggle-sidebar" class="far fa-bars icon-fa-bars"></i>
-                    <h1 class="title">RISROS</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-flex align-items-center">
+            <i id="toggle-sidebar" class="far fa-bars icon-fa-bars"></i>
+            <h1 class="title">RISROS</h1>
+          </div>
+          <div class="col-6 col-6 d-flex justify-content-end">
+            <div class="dropdown">
+              <button
+                class="btn"
+                type="button"
+                id="user-dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="user-initials">DA</span>
+                <span class="user-name">Devid</span>
+                <i class="fas fa-angle-down icon-toggle-arrow"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                <div class="heading text-center">
+                  <h5 class="text-dark mb-0">Devid Antoni</h5>
+                  <small class="text-muted">Administrator</small>
                 </div>
-                <div class="col-6 col-6 d-flex justify-content-end">
-                    <div class="dropdown">
-                        <button class="btn" type="button" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="user-initials">DA</span>
-                            <span class="user-name">Devid</span>
-                            <i class="fas fa-angle-down icon-toggle-arrow"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                            <div class="heading text-center">
-                                <h5 class="text-dark mb-0">Devid Antoni</h5>
-                                <small class="text-muted">Administrator</small>
-                            </div>
-                            <div class="dropdown-divider m-0"></div> 
-                            <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-account-outline"></i> Profile </a> 
-                            <a class="dropdown-item" href="#"> <i class="dropdown-icon  mdi mdi-settings"></i> Settings </a> 
-                            <a class="dropdown-item" href="#"> <span class="float-right"></span> <i class="dropdown-icon mdi  mdi-message-outline"></i> Inbox </a> 
-                            <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-comment-check-outline"></i> Message </a> 
-                            <div class="dropdown-divider mt-0"></div> 
-                            <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-compass-outline"></i> Need help? </a> 
-                            <a class="dropdown-item" href="#    "> <i class="dropdown-icon mdi  mdi-logout-variant"></i> Sign out </a> 
-                        </div>
-                    </div>
-                </div>
+                <div class="dropdown-divider m-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-account-outline"></i> Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-settings"></i> Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="float-right"></span>
+                  <i class="dropdown-icon mdi mdi-message-outline"></i> Inbox
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-comment-check-outline"></i>
+                  Message
+                </a>
+                <div class="dropdown-divider mt-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-compass-outline"></i> Need
+                  help?
+                </a>
+                <a class="dropdown-item" href="#    ">
+                  <i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Sidebar -->
 
     <div class="lime-sidebar">
-        <div class="lime-sidebar-inner slimscroll">
-            <ul class="accordion-menu">
-                <li class="sidebar-title">
-                    Apps
-                </li>
-                <li>
-                    <a href="#" class="active"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-account-outline"></i>Profile</a>
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-inbox"></i>Mailbox</a>
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-check-all"></i>Todo</a>
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-cloud-outline"></i>File Manager</a>
-                </li>
-                <li class="sidebar-title">
-                    UI Elements
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-format-text-variant"></i>Styles<i class="mdi mdi-chevron-left has-sub-menu"></i></a>
-                    <ul class="sub-menu" style="display: none;">
-                        <li>
-                            <a href="#">Typography</a>
-                        </li>
-                        <li>
-                            <a href="#">Code</a>
-                        </li>
-                        <li>
-                            <a href="#">Tables</a>
-                        </li>
-                        <li>
-                            <a href="#">Icons</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href=""><i class="mdi mdi-apps"></i>Components<i class="mdi mdi-chevron-left has-sub-menu"></i></a>
-                    <ul class="sub-menu" style="display: none;">
-                        <li>
-                            <a href="ui-alerts.html">Alerts</a>
-                        </li>
-                        <li>
-                            <a href="ui-badge.html">Badge</a>
-                        </li>
-                        <li>
-                            <a href="ui-breadcrumb.html">Breadcrumb</a>
-                        </li>
-                        <li>
-                            <a href="ui-buttons.html">Buttons</a>
-                        </li>
-                        <li>
-                            <a href="ui-button-group.html">Button Group</a>
-                        </li>
-                        <li>
-                            <a href="ui-card.html">Card</a>
-                        </li>
-                        <li>
-                            <a href="ui-collapse.html">Collapse</a>
-                        </li>
-                        <li>
-                            <a href="ui-dropdowns.html">Dropdowns</a>
-                        </li>
-                        <li>
-                            <a href="ui-list-group.html">List Group</a>
-                        </li>
-                        <li>
-                            <a href="ui-media-object.html">Media Object</a>
-                        </li>
-                        <li>
-                            <a href="ui-modal.html">Modal</a>
-                        </li>
-                        <li>
-                            <a href="ui-navs.html">Navs</a>
-                        </li>
-                        <li>
-                            <a href="ui-pagination.html">Pagination</a>
-                        </li>
-                        <li>
-                            <a href="ui-popovers.html">Popovers</a>
-                        </li>
-                        <li>
-                            <a href="ui-progress.html">Progress</a>
-                        </li>
-                        <li>
-                            <a href="ui-spinners.html">Spinners</a>
-                        </li>
-                        <li>
-                            <a href="ui-toast.html">Toast</a>
-                        </li>
-                        <li>
-                            <a href="ui-tooltips.html">Tooltips</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href=""><i class="mdi mdi-code-tags"></i>Plugins<i class="mdi mdi-chevron-left has-sub-menu"></i></a>
-                    <ul class="sub-menu" style="display: none;">
-                        <li>
-                            <a href="#">Image Crop</a>
-                        </li>
-                        <li>
-                            <a href="#">Image Zoom</a>
-                        </li>
-                        <li>
-                            <a href="#">Select2</a>
-                        </li>
-                        <li>
-                            <a href="#">Plupload</a>
-                        </li>
-                        <li>
-                            <a href="#">Toastr</a>
-                        </li>
-                        <li>
-                            <a href="#">Range Sliders</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-chart-bar"></i>Charts</a>
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-login-variant"></i>Forms</a>
-                </li>
-                <li class="sidebar-title">
-                    Other
-                </li>
-                <li>
-                    <a href=""><i class="mdi mdi-star-outline"></i>Pages<i class="mdi mdi-chevron-left has-sub-menu"></i></a>
-                    <ul class="sub-menu" style="display: none;">
-                        <li>
-                            <a href="#">404</a>
-                        </li>
-                        <li>
-                            <a href="#">500</a>
-                        </li>
-                        <li>
-                            <a href="#">Sign In</a>
-                        </li>
-                        <li>
-                            <a href="#">Sign Up</a>
-                        </li>
-                        <li>
-                            <a href="#">Lock Screen</a>
-                        </li>
-                        <li>
-                            <a href="#">Coming Soon</a>
-                        </li>
-                        <li>
-                            <a href="#">Invoice</a>
-                        </li>
-                        <li>
-                            <a href="#">Pricing Tables</a>
-                        </li>
-                        <li>
-                            <a href="#">Help Center</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-bookmark-outline"></i>Documentation</a>
-                </li>
-                <li>
-                    <a href="#"><i class="mdi mdi-clock-outline"></i>Change Log</a>
-                </li>
+      <div class="lime-sidebar-inner slimscroll">
+        <ul class="accordion-menu">
+          <li class="sidebar-title">Apps</li>
+          <li>
+            <a href="#" class="active"
+              ><i class="mdi mdi-view-dashboard"></i>Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="mdi mdi-account-outline"></i>Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="mdi mdi-inbox"></i>Mailbox</a>
+          </li>
+          <li>
+            <a href="#"><i class="mdi mdi-check-all"></i>Todo</a>
+          </li>
+          <li>
+            <a href="#"><i class="mdi mdi-cloud-outline"></i>File Manager</a>
+          </li>
+          <li class="sidebar-title">UI Elements</li>
+          <li>
+            <a href="#"
+              ><i class="mdi mdi-format-text-variant"></i>Styles<i
+                class="mdi mdi-chevron-left has-sub-menu"
+              ></i
+            ></a>
+            <ul class="sub-menu" style="display: none">
+              <li>
+                <a href="#">Typography</a>
+              </li>
+              <li>
+                <a href="#">Code</a>
+              </li>
+              <li>
+                <a href="#">Tables</a>
+              </li>
+              <li>
+                <a href="#">Icons</a>
+              </li>
             </ul>
-        </div>
+          </li>
+          <li>
+            <a href=""
+              ><i class="mdi mdi-apps"></i>Components<i
+                class="mdi mdi-chevron-left has-sub-menu"
+              ></i
+            ></a>
+            <ul class="sub-menu" style="display: none">
+              <li>
+                <a href="ui-alerts.html">Alerts</a>
+              </li>
+              <li>
+                <a href="ui-badge.html">Badge</a>
+              </li>
+              <li>
+                <a href="ui-breadcrumb.html">Breadcrumb</a>
+              </li>
+              <li>
+                <a href="ui-buttons.html">Buttons</a>
+              </li>
+              <li>
+                <a href="ui-button-group.html">Button Group</a>
+              </li>
+              <li>
+                <a href="ui-card.html">Card</a>
+              </li>
+              <li>
+                <a href="ui-collapse.html">Collapse</a>
+              </li>
+              <li>
+                <a href="ui-dropdowns.html">Dropdowns</a>
+              </li>
+              <li>
+                <a href="ui-list-group.html">List Group</a>
+              </li>
+              <li>
+                <a href="ui-media-object.html">Media Object</a>
+              </li>
+              <li>
+                <a href="ui-modal.html">Modal</a>
+              </li>
+              <li>
+                <a href="ui-navs.html">Navs</a>
+              </li>
+              <li>
+                <a href="ui-pagination.html">Pagination</a>
+              </li>
+              <li>
+                <a href="ui-popovers.html">Popovers</a>
+              </li>
+              <li>
+                <a href="ui-progress.html">Progress</a>
+              </li>
+              <li>
+                <a href="ui-spinners.html">Spinners</a>
+              </li>
+              <li>
+                <a href="ui-toast.html">Toast</a>
+              </li>
+              <li>
+                <a href="ui-tooltips.html">Tooltips</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href=""
+              ><i class="mdi mdi-code-tags"></i>Plugins<i
+                class="mdi mdi-chevron-left has-sub-menu"
+              ></i
+            ></a>
+            <ul class="sub-menu" style="display: none">
+              <li>
+                <a href="#">Image Crop</a>
+              </li>
+              <li>
+                <a href="#">Image Zoom</a>
+              </li>
+              <li>
+                <a href="#">Select2</a>
+              </li>
+              <li>
+                <a href="#">Plupload</a>
+              </li>
+              <li>
+                <a href="#">Toastr</a>
+              </li>
+              <li>
+                <a href="#">Range Sliders</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="mdi mdi-chart-bar"></i>Charts</a>
+          </li>
+          <li>
+            <a href="#"><i class="mdi mdi-login-variant"></i>Forms</a>
+          </li>
+          <li class="sidebar-title">Other</li>
+          <li>
+            <a href=""
+              ><i class="mdi mdi-star-outline"></i>Pages<i
+                class="mdi mdi-chevron-left has-sub-menu"
+              ></i
+            ></a>
+            <ul class="sub-menu" style="display: none">
+              <li>
+                <a href="#">404</a>
+              </li>
+              <li>
+                <a href="#">500</a>
+              </li>
+              <li>
+                <a href="#">Sign In</a>
+              </li>
+              <li>
+                <a href="#">Sign Up</a>
+              </li>
+              <li>
+                <a href="#">Lock Screen</a>
+              </li>
+              <li>
+                <a href="#">Coming Soon</a>
+              </li>
+              <li>
+                <a href="#">Invoice</a>
+              </li>
+              <li>
+                <a href="#">Pricing Tables</a>
+              </li>
+              <li>
+                <a href="#">Help Center</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="mdi mdi-bookmark-outline"></i>Documentation</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="mdi mdi-clock-outline"></i>Change Log</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Main Content -->
 
-    <div class="container main-content">
+    <div class="container main-content" id="page-dashboard">
+      <!-- Breadcrumbs -->
 
-        <!-- Breadcrumbs -->
+      <section class="breadcrumbs">
+        <span>Campaigns / JetClean</span>
+      </section>
 
-        <section class="breadcrumbs">
-            <span>Campaigns / JetClean</span>
-        </section>
+      <!-- Scores (Net Promoter Score & Weekly Score) -->
 
-        <!-- Scores (Net Promoter Score & Weekly Score) -->
-
-        <section class="scores">
-            <div class="row row-eq-height">
-                <div class="col-12 col-lg-7 net-promoter-score">
-                    <div class="box-card">
-                        <div class="header">
-                            <h1 class="title">Net Promoter Score</h1>
-                            <div class="datepicker" id="date-range-picker">
-                                <i class="mdi mdi-calendar-blank-outline icon text-blue"></i>
-                                <span class="date-range text-blue">Jan 01 - Jan 07</span>
-                            </div> 
-                        </div>   
-
-                        <div class="row">
-                            <div class="col-12 col-lg-6  gauge-container">
-                                <div id="gauge"></div>
-                                <span class="total-respondents-count text-gray text-center">236 respondents in total </span>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="list">
-                                    <div class="item">
-                                        <div class="item-heading">
-                                            <div class="left">
-                                                <span class="name">Promoters</span>
-                                                <span class="respondents-count">161 respondents</span>
-                                            </div>
-                                            <div class="right">
-                                                <span class="percentage">68,2%</span>
-                                                <i class="mdi mdi-arrow-up icon text-green"></i>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="progress">
-                                            <div class="progress-bar bg-green" style="width: 68.2%" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="item">
-                                        <div class="item-heading">
-                                            <div class="left">
-                                                <span class="name">Passives</span>
-                                                <span class="respondents-count">42 respondents</span>
-                                            </div>
-                                            <div class="right">
-                                                <span class="percentage">17,8%</span>
-                                                <i class="mdi mdi-arrow-down icon text-gray"></i>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="progress">
-                                            <div class="progress-bar bg-orange" style="width: 40%" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="item">
-                                        <div class="item-heading">
-                                            <div class="left">
-                                                <span class="name">Detractors</span>
-                                                <span class="respondents-count">33 respondents</span>
-                                            </div>
-                                            <div class="right">
-                                                <span class="percentage">14%</span>
-                                                <i class="mdi mdi-arrow-up icon text-red"></i>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="progress">
-                                            <div class="progress-bar bg-red" style="width: 25%" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5 weekly-score">
-                    <div class="box-card">
-                        <div class="header">
-                            <h1 class="title">Weekly score</h1>
-                            <button class="btn weekly-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="selected-item">Weekly</span>
-                                <i class="fas fa-angle-down icon-toggle-arrow icon" aria-hidden="true"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right weekly-score-dropdown" aria-labelledby="user-dropdown">
-                                <a class="dropdown-item" href="#"> Weekly </a> 
-                                <a class="dropdown-item" href="#"> Monthly </a> 
-                                <a class="dropdown-item" href="#"> Yearly </a> 
-                            </div>
-                        </div>   
-                        <div class="score-count-container">
-                            <h1 class="score-count">55</h1>
-                            <i class="mdi mdi-arrow-up icon text-green"></i>
-                        </div>
-                        <canvas id="weekly-score-chart" class="chartjs-render-monitor"></canvas>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feedback -->
-
-        <section class="feedback">
+      <section class="scores">
+        <div class="row row-eq-height">
+          <div class="col-12 col-lg-7 net-promoter-score">
             <div class="box-card">
-                <div class="header">
-                    <h1 class="title">Feedback</h1>
-                </div>   
-
-                <div class="list">
-                    <!-- Item 1 -->
-                    <div class="item">
-                        <div class="count-container">
-                            <span class="count bg-green">10</span>
-                        </div>
-                        <div class="text-container">
-                            <h1 class="title">God service, søde medarbejder, fuldt tilfreds </h1>
-                            <span class="email">Raza.asem@gmail.com</span>
-                            <span class="date">06/10/2019</span>
-                        </div>
-                        <div class="dropdown-container">
-                            <button class="btn feedback-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-ellipsis-h icon"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-card-search-outline"></i> View </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon  mdi mdi-file-edit-outline"></i> Edit </a> 
-                                <a class="dropdown-item" href="#"> <span class="float-right"></span> <i class="dropdown-icon mdi mdi-trash-can-outline"></i> Delete </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-export-variant"></i> Export </a> 
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div class="item">
-                        <div class="count-container">
-                            <span class="count bg-green">10</span>
-                        </div>
-                        <div class="text-container">
-                            <h1 class="title">Oplyse om faktiske pris ved levering eller efterfølgende på mail</h1>
-                            <span class="email">Raza.asem@gmail.com</span>
-                            <span class="date">06/10/2019</span>
-                        </div>
-                        <div class="dropdown-container">
-                            <button class="btn feedback-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-ellipsis-h icon"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-card-search-outline"></i> View </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon  mdi mdi-file-edit-outline"></i> Edit </a> 
-                                <a class="dropdown-item" href="#"> <span class="float-right"></span> <i class="dropdown-icon mdi mdi-trash-can-outline"></i> Delete </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-export-variant"></i> Export </a> 
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="item">
-                        <div class="count-container">
-                            <span class="count bg-orange">8</span>
-                        </div>
-                        <div class="text-container border-orange">
-                            <h1 class="title">Det er super med jeres app og at man kan skrive i jeres chat og få hjælp kort tid efter, så er man i trygge hænder :-)</h1>
-                            <span class="email">Raza.asem@gmail.com</span>
-                            <span class="date">06/10/2019</span>
-                        </div>
-                        <div class="dropdown-container">
-                            <button class="btn feedback-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-ellipsis-h icon"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-card-search-outline"></i> View </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon  mdi mdi-file-edit-outline"></i> Edit </a> 
-                                <a class="dropdown-item" href="#"> <span class="float-right"></span> <i class="dropdown-icon mdi mdi-trash-can-outline"></i> Delete </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-export-variant"></i> Export </a> 
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div class="item">
-                        <div class="count-container">
-                            <span class="count bg-green">10</span>
-                        </div>
-                        <div class="text-container">
-                            <h1 class="title">Pisse god service</h1>
-                            <span class="email">Raza.asem@gmail.com</span>
-                            <span class="date">06/10/2019</span>
-                        </div>
-                        <div class="dropdown-container">
-                            <button class="btn feedback-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-ellipsis-h icon"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-card-search-outline"></i> View </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon  mdi mdi-file-edit-outline"></i> Edit </a> 
-                                <a class="dropdown-item" href="#"> <span class="float-right"></span> <i class="dropdown-icon mdi mdi-trash-can-outline"></i> Delete </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-export-variant"></i> Export </a> 
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-
-                    <!-- Item 5 -->
-                    <div class="item">
-                        <div class="count-container">
-                            <span class="count bg-red">0</span>
-                        </div>
-                        <div class="text-container border-red">
-                            <h1 class="title">Jeg skrev i min bestilling at i skulle sige til jeres renserier, at de ikke skal ryge i nærheden af tøjet og nu stinker mit nyrensede tøj igen af cigaretrøg. Jeg vil derfor ikke benytte jeres service længere. Det er sku for ulækkert</h1>
-                            <span class="email">Raza.asem@gmail.com</span>
-                            <span class="date">06/10/2019</span>
-                        </div>
-                        <div class="dropdown-container">
-                            <button class="btn feedback-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-ellipsis-h icon"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-card-search-outline"></i> View </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon  mdi mdi-file-edit-outline"></i> Edit </a> 
-                                <a class="dropdown-item" href="#"> <span class="float-right"></span> <i class="dropdown-icon mdi mdi-trash-can-outline"></i> Delete </a> 
-                                <a class="dropdown-item" href="#"> <i class="dropdown-icon mdi mdi-export-variant"></i> Export </a> 
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-
+              <div class="header">
+                <h1 class="title">Net Promoter Score</h1>
+                <div class="datepicker" id="date-range-picker">
+                  <i class="mdi mdi-calendar-blank-outline icon text-blue"></i>
+                  <span class="date-range text-blue">Jan 01 - Jan 07</span>
                 </div>
+              </div>
 
-                <div class="footer">
-                    <nav aria-label="list-pagination">
-                        <ul class="pagination pagination-sm">
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        </ul>
-                    </nav>
-                    <span class="responses">1 - 20 of 74 responses</span>
+              <div class="row">
+                <div class="col-12 col-lg-6 gauge-container">
+                  <div id="gauge"></div>
+                  <span class="total-respondents-count text-gray text-center"
+                    >236 respondents in total
+                  </span>
                 </div>
+                <div class="col-12 col-lg-6">
+                  <div class="list">
+                    <div class="item">
+                      <div class="item-heading">
+                        <div class="left">
+                          <span class="name">Promoters</span>
+                          <span class="respondents-count">161 respondents</span>
+                        </div>
+                        <div class="right">
+                          <span class="percentage">68,2%</span>
+                          <i class="mdi mdi-arrow-up icon text-green"></i>
+                        </div>
+                      </div>
+
+                      <div class="progress">
+                        <div
+                          class="progress-bar bg-green"
+                          style="width: 68.2%"
+                          role="progressbar"
+                          aria-valuenow="68"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="item-heading">
+                        <div class="left">
+                          <span class="name">Passives</span>
+                          <span class="respondents-count">42 respondents</span>
+                        </div>
+                        <div class="right">
+                          <span class="percentage">17,8%</span>
+                          <i class="mdi mdi-arrow-down icon text-gray"></i>
+                        </div>
+                      </div>
+
+                      <div class="progress">
+                        <div
+                          class="progress-bar bg-orange"
+                          style="width: 40%"
+                          role="progressbar"
+                          aria-valuenow="68"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="item-heading">
+                        <div class="left">
+                          <span class="name">Detractors</span>
+                          <span class="respondents-count">33 respondents</span>
+                        </div>
+                        <div class="right">
+                          <span class="percentage">14%</span>
+                          <i class="mdi mdi-arrow-up icon text-red"></i>
+                        </div>
+                      </div>
+
+                      <div class="progress">
+                        <div
+                          class="progress-bar bg-red"
+                          style="width: 25%"
+                          role="progressbar"
+                          aria-valuenow="68"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-12 col-lg-5 weekly-score">
+            <div class="box-card">
+              <div class="header">
+                <h1 class="title">Weekly score</h1>
+                <button
+                  class="btn weekly-dropdown"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="selected-item">Weekly</span>
+                  <i
+                    class="fas fa-angle-down icon-toggle-arrow icon"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+                <div
+                  class="dropdown-menu dropdown-menu-right weekly-score-dropdown"
+                  aria-labelledby="user-dropdown"
+                >
+                  <a class="dropdown-item" href="#"> Weekly </a>
+                  <a class="dropdown-item" href="#"> Monthly </a>
+                  <a class="dropdown-item" href="#"> Yearly </a>
+                </div>
+              </div>
+              <div class="score-count-container">
+                <h1 class="score-count">55</h1>
+                <i class="mdi mdi-arrow-up icon text-green"></i>
+              </div>
+              <canvas
+                id="weekly-score-chart"
+                class="chartjs-render-monitor"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback -->
+
+      <section class="feedback">
+        <div class="box-card">
+          <div class="header">
+            <h1 class="title">Feedback</h1>
+          </div>
+
+          <div class="list">
+            <!-- Item 1 -->
+            <div class="item">
+              <div class="count-container">
+                <span class="count bg-green">10</span>
+              </div>
+              <div class="text-container">
+                <h1 class="title">
+                  God service, søde medarbejder, fuldt tilfreds
+                </h1>
+                <span class="email">Raza.asem@gmail.com</span>
+                <span class="date">06/10/2019</span>
+              </div>
+              <div class="dropdown-container">
+                <button
+                  class="btn feedback-dropdown"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="far fa-ellipsis-h icon"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-card-search-outline"></i>
+                    View
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-file-edit-outline"></i> Edit
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="float-right"></span>
+                    <i class="dropdown-icon mdi mdi-trash-can-outline"></i>
+                    Delete
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-export-variant"></i> Export
+                  </a>
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item">
+              <div class="count-container">
+                <span class="count bg-green">10</span>
+              </div>
+              <div class="text-container">
+                <h1 class="title">
+                  Oplyse om faktiske pris ved levering eller efterfølgende på
+                  mail
+                </h1>
+                <span class="email">Raza.asem@gmail.com</span>
+                <span class="date">06/10/2019</span>
+              </div>
+              <div class="dropdown-container">
+                <button
+                  class="btn feedback-dropdown"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="far fa-ellipsis-h icon"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-card-search-outline"></i>
+                    View
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-file-edit-outline"></i> Edit
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="float-right"></span>
+                    <i class="dropdown-icon mdi mdi-trash-can-outline"></i>
+                    Delete
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-export-variant"></i> Export
+                  </a>
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item">
+              <div class="count-container">
+                <span class="count bg-orange">8</span>
+              </div>
+              <div class="text-container border-orange">
+                <h1 class="title">
+                  Det er super med jeres app og at man kan skrive i jeres chat
+                  og få hjælp kort tid efter, så er man i trygge hænder :-)
+                </h1>
+                <span class="email">Raza.asem@gmail.com</span>
+                <span class="date">06/10/2019</span>
+              </div>
+              <div class="dropdown-container">
+                <button
+                  class="btn feedback-dropdown"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="far fa-ellipsis-h icon"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-card-search-outline"></i>
+                    View
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-file-edit-outline"></i> Edit
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="float-right"></span>
+                    <i class="dropdown-icon mdi mdi-trash-can-outline"></i>
+                    Delete
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-export-variant"></i> Export
+                  </a>
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item">
+              <div class="count-container">
+                <span class="count bg-green">10</span>
+              </div>
+              <div class="text-container">
+                <h1 class="title">Pisse god service</h1>
+                <span class="email">Raza.asem@gmail.com</span>
+                <span class="date">06/10/2019</span>
+              </div>
+              <div class="dropdown-container">
+                <button
+                  class="btn feedback-dropdown"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="far fa-ellipsis-h icon"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-card-search-outline"></i>
+                    View
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-file-edit-outline"></i> Edit
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="float-right"></span>
+                    <i class="dropdown-icon mdi mdi-trash-can-outline"></i>
+                    Delete
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-export-variant"></i> Export
+                  </a>
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <!-- Item 5 -->
+            <div class="item">
+              <div class="count-container">
+                <span class="count bg-red">0</span>
+              </div>
+              <div class="text-container border-red">
+                <h1 class="title">
+                  Jeg skrev i min bestilling at i skulle sige til jeres
+                  renserier, at de ikke skal ryge i nærheden af tøjet og nu
+                  stinker mit nyrensede tøj igen af cigaretrøg. Jeg vil derfor
+                  ikke benytte jeres service længere. Det er sku for ulækkert
+                </h1>
+                <span class="email">Raza.asem@gmail.com</span>
+                <span class="date">06/10/2019</span>
+              </div>
+              <div class="dropdown-container">
+                <button
+                  class="btn feedback-dropdown"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="far fa-ellipsis-h icon"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-card-search-outline"></i>
+                    View
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-file-edit-outline"></i> Edit
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="float-right"></span>
+                    <i class="dropdown-icon mdi mdi-trash-can-outline"></i>
+                    Delete
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon mdi mdi-export-variant"></i> Export
+                  </a>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+
+          <div class="footer">
+            <nav aria-label="list-pagination">
+              <ul class="pagination pagination-sm">
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+              </ul>
+            </nav>
+            <span class="responses">1 - 20 of 74 responses</span>
+          </div>
+        </div>
+      </section>
     </div>
-	
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    
-	<!-- Fontawesome kit -->
-    <script src="https://kit.fontawesome.com/8c9c5e8e6e.js" crossorigin="anonymous"></script>
-    
-	<!-- Bootstrap -->
+
+    <!-- Fontawesome kit -->
+    <script
+      src="https://kit.fontawesome.com/8c9c5e8e6e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    
-	<!-- AOS (Animation on Scroll) -->
+
+    <!-- AOS (Animation on Scroll) -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <!-- Justgage (Gauge library) -->
@@ -519,8 +706,7 @@
     <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-	<!-- Custom JS -->
+    <!-- Custom JS -->
     <script src="main.js"></script>
-    
-	</body>
+  </body>
 </html>

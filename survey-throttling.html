@@ -72,8 +72,7 @@
                 </a>
                 <div class="dropdown-divider mt-0"></div>
                 <a class="dropdown-item" href="#">
-                  <i class="dropdown-icon mdi mdi-compass-outline"></i> Need
-                  help?
+                  <i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?
                 </a>
                 <a class="dropdown-item" href="#    ">
                   <i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out
@@ -92,9 +91,7 @@
         <ul class="accordion-menu">
           <li class="sidebar-title">Apps</li>
           <li>
-            <a href="#" class="active"
-              ><i class="mdi mdi-view-dashboard"></i>Dashboard</a
-            >
+            <a href="#" class="active"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
           </li>
           <li>
             <a href="#"><i class="mdi mdi-account-outline"></i>Profile</a>
@@ -264,9 +261,7 @@
             </ul>
           </li>
           <li>
-            <a href="#"
-              ><i class="mdi mdi-bookmark-outline"></i>Documentation</a
-            >
+            <a href="#"><i class="mdi mdi-bookmark-outline"></i>Documentation</a>
           </li>
           <li>
             <a href="#"><i class="mdi mdi-clock-outline"></i>Change Log</a>
@@ -277,43 +272,56 @@
 
     <!-- Main Content -->
 
-    <div class="container main-content">
-      <div class="mt-5" id="page-connect">
-        <img src="./images/dinero-logo.png" class="logo" alt="logo" />
-        <h2 class="title title-m">Integrer med Dinero</h2>
-        <span class="subtitle l">
-          Med integrationen sendes sporgeskemaet automatisk tre dage efter
-          kunden modtager faktura fra dig.
-        </span>
+    <div class="main-content">
+      <div class="main-content-header">
+        <div class="container">
+          <p class="title-m header-title">Work Flows</p>
 
-        <div class="form-wrapper">
-          <div class="input-fields">
-            <div class="row">
-              <div class="col-12 col-lg-6">
-                <label class="field-label" for="virk">Virksomhed-ID</label>
-                <input class="rr-input" id="virk" required />
-                <span class="note"
-                  >Hjælp til at finde din virksomheds-ID??</span
-                >
+          <ul class="nav justify-content-between">
+            <li class="nav-item">
+              <a class="m nav-link active" href="survey-throttling.html">Survey Throttling</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="open-ended-question">Open-ended question</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="#">Follow up Email</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mt-5" id="page-survey-throttling">
+        <div class="main-box">
+          <div class="top-content">
+            <p class="l font-weight-bold">Adjust the throttle periode</p>
+            <p class="m">
+              This setting determines how often a single contact can be surveyed in a given period
+              of time for all campaigns
+            </p>
+
+            <div class="input-fields">
+              <div class="item">
+                <input class="rr-input" id="times-in" />
+                <span class="s font-weight-bold ml-3">times in</span>
               </div>
-
-              <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-                <label class="field-label" for="api">Dinero API nøgle</label>
-                <input class="rr-input" id="api" required />
-                <span class="note">Hjælp til at finde din API nøgle?</span>
+              <div class="item ml-0 ml-sm-4 mt-3 mt-0">
+                <input class="rr-input" id="days" />
+                <span class="s font-weight-bold ml-3">days</span>
               </div>
             </div>
+
+            <p class="s mt-3 mb-0">
+              Eg: If you enter 1 times in 30 days, surveys across the platform will be sent to
+              contacts only 1 time in 30days.
+            </p>
           </div>
 
           <div class="controls">
-            <button
-              class="btn rr-btn transparent outline disabled min-width-100 mr-3"
-            >
-              Cancel
-            </button>
-            <button class="btn rr-btn bold outline blue min-width-150">
-              Connect
-            </button>
+            <button class="btn rr-btn bold blue min-width-150">Update</button>
           </div>
         </div>
       </div>
@@ -323,10 +331,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <!-- Fontawesome kit -->
-    <script
-      src="https://kit.fontawesome.com/8c9c5e8e6e.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/8c9c5e8e6e.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>

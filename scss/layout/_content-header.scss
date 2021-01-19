@@ -1,0 +1,54 @@
+.main-content-header {
+  background-color: white;
+  padding-top: 25px;
+
+  .container {
+    max-width: $main-content-max-width;
+
+    .header-title {
+      @include media-breakpoint-down(xs) {
+        text-align: center;
+      }
+    }
+
+    .nav {
+      @include media-breakpoint-down(xs) {
+        flex-direction: column;
+      }
+
+      .nav-link {
+        position: relative;
+        padding-bottom: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        color: #a2a9be;
+
+        @include media-breakpoint-down(xs) {
+          text-align: center;
+        }
+
+        &.active {
+          color: $color-dark-blue;
+          font-weight: bold;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            border-top: 2px solid $color-blue;
+            z-index: 1;
+
+            @include media-breakpoint-down(xs) {
+              width: 120px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

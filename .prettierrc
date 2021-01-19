@@ -1,0 +1,29 @@
+{
+  "bracketSpacing": true,
+  "printWidth": 100,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ["*.css", "*.scss", ".prettierrc"],
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": ["*.tsx", "*.js", "*.jsx"],
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": ["services/*"],
+      "options": {
+        "printWidth": 1000
+      }
+    }
+  ]
+}

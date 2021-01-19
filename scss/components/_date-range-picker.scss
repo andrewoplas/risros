@@ -1,0 +1,14 @@
+.daterangepicker {
+  font-family: 'Roboto', sans-serif !important;
+  .ranges {
+    li {
+      font-size: 14px;
+      color: $color-dark-gray;
+
+      &.active {
+        background-color: $color-blue !important;
+        color: #fff;
+      }
+    }
+  }
+}

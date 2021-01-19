@@ -1,0 +1,49 @@
+#page-survey-throttling {
+  max-width: $main-content-max-width;
+
+  .main-box {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+
+    .top-content {
+      padding: 30px 30px 50px;
+
+      .input-fields {
+        @include flex(stretch, center);
+
+        .item {
+          @include flex(stretch, center);
+
+          input {
+            width: 100px;
+            padding-top: 12px;
+            padding-bottom: 11px;
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+
+        @include media-breakpoint-down(xs) {
+          display: block;
+
+          .item {
+            input {
+              flex: 1;
+            }
+
+            span {
+              width: 80px;
+            }
+          }
+        }
+      }
+    }
+
+    .controls {
+      @include flex(flex-end, center);
+      padding: 10px 10px;
+      background-color: #f4f5fd;
+    }
+  }
+}
