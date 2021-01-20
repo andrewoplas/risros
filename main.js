@@ -169,6 +169,10 @@ function initSidebar() {
     }
   });
 
+  $('.lime-sidebar').click(function (event) {
+    event.stopPropagation();
+  });
+
   $('#toggle-sidebar').on('click', function () {
     $('body').toggleClass('sidebar-show');
     $('#toggle-sidebar').toggleClass('fa-bars', !$('body').hasClass('sidebar-show'));
@@ -248,9 +252,7 @@ function initSlimScroll() {
   });
 }
 
-$(document).ready(function () {
-  'use strict';
-
+function initialize() {
   // Gauge
   initGauge('gauge');
 
@@ -263,9 +265,13 @@ $(document).ready(function () {
   // Daterangepicker
   initDateRangePicker();
 
-  // Sidebar
-  initSidebar();
-
   // Slimscroll
   initSlimScroll();
+}
+
+$(document).ready(function () {
+  'use strict';
+
+  // Sidebar
+  initSidebar();
 });

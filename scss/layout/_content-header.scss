@@ -1,11 +1,12 @@
 .main-content-header {
   background-color: white;
-  padding-top: 25px;
+  padding-top: 15px;
 
   .container {
     max-width: $main-content-max-width;
 
     .header-title {
+      margin-bottom: 10px;
       @include media-breakpoint-down(xs) {
         text-align: center;
       }
@@ -46,6 +47,36 @@
               margin-left: auto;
               margin-right: auto;
             }
+          }
+        }
+      }
+    }
+  }
+
+  &.subheader {
+    padding-top: 0;
+    border-top: 1px solid #e9ebfe;
+
+    .nav {
+      justify-content: space-evenly;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .nav-link {
+        position: relative;
+        padding: 0;
+        color: #a2a9be;
+
+        @include media-breakpoint-down(xs) {
+          text-align: center;
+        }
+
+        &.active {
+          color: $color-dark-blue;
+          font-weight: bold;
+
+          &::after {
+            content: none;
           }
         }
       }

@@ -1,0 +1,69 @@
+@mixin checkbox-before($content, $margin-top) {
+  content: $content;
+  margin-top: $margin-top;
+  height: 100%;
+  font-family: 'Font Awesome 5 Pro';
+  color: white;
+  border-radius: 4px;
+  @include flex(center, center);
+}
+
+.Checkbox2 {
+  &[disabled],
+  &.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  label {
+    @include flex(flex-start, center);
+    max-width: 200px;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+
+    &::-moz-selection {
+      color: none;
+      background: none;
+    }
+
+    &::selection {
+      color: none;
+      background: none;
+    }
+
+    &::-moz-selection {
+      color: none;
+      background: none;
+    }
+
+    input {
+      display: none;
+    }
+
+    span {
+      letter-spacing: 0;
+      height: 18px;
+      width: 18px;
+      display: inline-block;
+      position: relative;
+      flex-shrink: 0;
+      background-color: transparent;
+      border: 1px solid #b5b8c5;
+      border-radius: 4px;
+    }
+
+    [type='checkbox']:checked + span {
+      background-color: #6993ff !important;
+    }
+
+    [type='checkbox']:checked + span:before {
+      @include checkbox-before('\f00c', 1px);
+    }
+
+    [type='checkbox'].minus:checked + span:before {
+      @include checkbox-before('\f068', 1px);
+    }
+  }
+}

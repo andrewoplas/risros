@@ -1,0 +1,50 @@
+#page-settings-my-profile {
+  max-width: $main-content-max-width;
+
+  .main-box {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+
+    .top-content {
+      padding: 30px 30px 80px;
+
+      .input-fields {
+        .item {
+          input {
+            width: 100%;
+            padding-top: 12px;
+            padding-bottom: 11px;
+            @include font(18px, normal);
+
+            @include media-breakpoint-down(xs) {
+              @include font(14px, normal);
+            }
+          }
+
+          .upload-photo {
+            width: 50px;
+          }
+
+          .btn-edit {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            color: $color-blue;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .controls {
+      @include flex(space-between, center);
+      padding: 10px 10px 10px 30px;
+      background-color: #f4f5fd;
+
+      .newsletter-checkbox {
+        @include flex(stretch, center);
+      }
+    }
+  }
+}

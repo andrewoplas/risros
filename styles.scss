@@ -214,6 +214,7 @@ button {
 
 // Components
 @import './scss/components/checkbox';
+@import './scss/components/checkbox-2';
 @import './scss/components/date-range-picker';
 @import './scss/components/switch';
 
@@ -221,6 +222,8 @@ button {
 @import './scss/pages/page-connect';
 @import './scss/pages/page-dashboard';
 @import './scss/pages/page-integrations';
+@import './scss/pages/page-settings-my-profile';
+@import './scss/pages/page-settings-billing-address';
 @import './scss/pages/page-surveys';
 @import './scss/pages/page-survey-throttling';
 @import './scss/pages/page-survey-open-ended-question';

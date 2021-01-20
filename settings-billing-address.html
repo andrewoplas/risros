@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Risros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-flex align-items-center">
+            <i id="toggle-sidebar" class="far fa-bars icon-fa-bars"></i>
+            <h1 class="title">RISROS</h1>
+          </div>
+          <div class="col-6 col-6 d-flex justify-content-end">
+            <div class="dropdown">
+              <button
+                class="btn"
+                type="button"
+                id="user-dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="user-initials">DA</span>
+                <span class="user-name">Devid</span>
+                <i class="fas fa-angle-down icon-toggle-arrow"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                <div class="heading text-center">
+                  <h5 class="text-dark mb-0">Devid Antoni</h5>
+                  <small class="text-muted">Administrator</small>
+                </div>
+                <div class="dropdown-divider m-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-account-outline"></i> Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-settings"></i> Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="float-right"></span>
+                  <i class="dropdown-icon mdi mdi-message-outline"></i> Inbox
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-comment-check-outline"></i>
+                  Message
+                </a>
+                <div class="dropdown-divider mt-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?
+                </a>
+                <a class="dropdown-item" href="#    ">
+                  <i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+      <div class="sidebar-inner slimscroll">
+        <div class="links">
+          <a href="#">My Surveys</a>
+          <a href="#">Team</a>
+          <a href="#">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+
+        <div class="invitation">
+          <span class="m d-block font-weight-bold">The more the merrier...</span>
+
+          <div class="collaborators">
+            <img src="images/main-user.png" class="main-user" />
+            <span class="plus">+</span>
+            <div class="other-users">
+              <img src="images/user-1.png" />
+              <img src="images/user-2.png" />
+              <img src="images/user-3.png" />
+            </div>
+          </div>
+
+          <span class="s d-block">Invite colleagues & collaborate</span>
+
+          <button class="btn rr-btn outline dark-purple medium d-block w-100 mt-4">
+            Invite Colleagues
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+      <div class="main-content-header">
+        <div class="container">
+          <p class="title-m header-title">Settings</p>
+
+          <ul class="nav justify-content-between">
+            <li class="nav-item">
+              <a class="m nav-link" href="settings-my-profile.html">My Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link active" href="settings-plan.html">Plan</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="settings-billing-address.html">Billing</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="#">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="#">Security</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content-header subheader">
+        <div class="container">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="s nav-link active" href="settings-billing-address.html">Billing Address</a>
+            </li>
+            <li class="nav-item">
+              <a class="s nav-link" href="settings-billing-history.html">Billing History</a>
+            </li>
+            <li class="nav-item">
+              <a class="s nav-link" href="settings-billing-credit-card.html">Credit Card</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mt-5" id="page-settings-billing-address">
+        <div class="main-box">
+          <div class="top-content">
+            <p class="l font-weight-bold">Billing Address</p>
+
+            <div class="input-fields mt-5">
+              <div class="item">
+                <span class="s font-weight-bold">Company</span>
+                <input class="rr-input mt-2" placeholder="Company" />
+              </div>
+              <div class="item mt-4">
+                <span class="s font-weight-bold">VAT</span>
+                <input class="rr-input mt-2" placeholder="VAT" />
+              </div>
+              <div class="item mt-4">
+                <span class="s font-weight-bold">Adress</span>
+                <input class="rr-input mt-2" placeholder="Adress" />
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="item mt-4">
+                    <span class="s font-weight-bold">Zip</span>
+                    <input class="rr-input mt-2" placeholder="Zip" />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="item mt-4">
+                    <span class="s font-weight-bold">City</span>
+                    <input class="rr-input mt-2" placeholder="City" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="btn rr-btn bold blue min-width-150">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/8c9c5e8e6e.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.upload-file').on('change', function (e) {
+          const file = event.srcElement.files[0];
+
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            $('.upload-photo').attr('src', e.target.result);
+          };
+          reader.readAsDataURL(file);
+        });
+
+        $('.btn-edit').click(function (e) {
+          $('.upload-file').click();
+        });
+      });
+    </script>
+  </body>
+</html>

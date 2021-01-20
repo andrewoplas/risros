@@ -80,6 +80,10 @@
       margin-bottom: 10px;
       @include flex(stretch, center);
 
+      .main-user {
+        width: 38px;
+      }
+
       .plus {
         @include font(25px, 400);
         margin-left: 10px;
@@ -87,6 +91,11 @@
       }
 
       .other-users {
+        img {
+          width: 35px;
+          height: 35px;
+        }
+
         img:not(:last-child) {
           margin-right: -10px;
         }

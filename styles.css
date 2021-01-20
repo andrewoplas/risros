@@ -484,6 +484,9 @@ button:focus, button:active {
   justify-content: stretch;
   flex-direction: row;
 }
+.sidebar .sidebar-inner .collaborators .main-user {
+  width: 38px;
+}
 .sidebar .sidebar-inner .collaborators .plus {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -492,16 +495,23 @@ button:focus, button:active {
   margin-left: 10px;
   margin-right: 10px;
 }
+.sidebar .sidebar-inner .collaborators .other-users img {
+  width: 35px;
+  height: 35px;
+}
 .sidebar .sidebar-inner .collaborators .other-users img:not(:last-child) {
   margin-right: -10px;
 }
 
 .main-content-header {
   background-color: white;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .main-content-header .container {
   max-width: 900px;
+}
+.main-content-header .container .header-title {
+  margin-bottom: 10px;
 }
 @media (max-width: 575.98px) {
   .main-content-header .container .header-title {
@@ -545,6 +555,32 @@ button:focus, button:active {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.main-content-header.subheader {
+  padding-top: 0;
+  border-top: 1px solid #e9ebfe;
+}
+.main-content-header.subheader .nav {
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main-content-header.subheader .nav .nav-link {
+  position: relative;
+  padding: 0;
+  color: #a2a9be;
+}
+@media (max-width: 575.98px) {
+  .main-content-header.subheader .nav .nav-link {
+    text-align: center;
+  }
+}
+.main-content-header.subheader .nav .nav-link.active {
+  color: #192a59;
+  font-weight: bold;
+}
+.main-content-header.subheader .nav .nav-link.active::after {
+  content: none;
 }
 
 .Checkbox[disabled], .Checkbox.disabled {
@@ -603,6 +639,75 @@ button:focus, button:active {
   flex-direction: row;
 }
 .Checkbox label [type=checkbox].minus:checked + span:before {
+  content: "";
+  margin-top: 1px;
+  height: 100%;
+  font-family: "Font Awesome 5 Pro";
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.Checkbox2[disabled], .Checkbox2.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.Checkbox2 label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  max-width: 200px;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.Checkbox2 label::-moz-selection {
+  color: none;
+  background: none;
+}
+.Checkbox2 label::selection {
+  color: none;
+  background: none;
+}
+.Checkbox2 label::-moz-selection {
+  color: none;
+  background: none;
+}
+.Checkbox2 label input {
+  display: none;
+}
+.Checkbox2 label span {
+  letter-spacing: 0;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: 1px solid #b5b8c5;
+  border-radius: 4px;
+}
+.Checkbox2 label [type=checkbox]:checked + span {
+  background-color: #6993ff !important;
+}
+.Checkbox2 label [type=checkbox]:checked + span:before {
+  content: "";
+  margin-top: 1px;
+  height: 100%;
+  font-family: "Font Awesome 5 Pro";
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.Checkbox2 label [type=checkbox].minus:checked + span:before {
   content: "";
   margin-top: 1px;
   height: 100%;
@@ -1299,6 +1404,96 @@ button:focus, button:active {
   #page-integrations .controls .btn-continue {
     margin-bottom: 10px;
   }
+}
+
+#page-settings-my-profile {
+  max-width: 900px;
+}
+#page-settings-my-profile .main-box {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+#page-settings-my-profile .main-box .top-content {
+  padding: 30px 30px 80px;
+}
+#page-settings-my-profile .main-box .top-content .input-fields .item input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(100% + 5px);
+}
+@media (max-width: 575.98px) {
+  #page-settings-my-profile .main-box .top-content .input-fields .item input {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(100% + 5px);
+  }
+}
+#page-settings-my-profile .main-box .top-content .input-fields .item .upload-photo {
+  width: 50px;
+}
+#page-settings-my-profile .main-box .top-content .input-fields .item .btn-edit {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: #2557e0;
+  text-decoration: underline;
+}
+#page-settings-my-profile .main-box .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 10px 10px 30px;
+  background-color: #f4f5fd;
+}
+#page-settings-my-profile .main-box .controls .newsletter-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+}
+
+#page-settings-billing-address {
+  max-width: 430px;
+}
+#page-settings-billing-address .main-box {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+#page-settings-billing-address .main-box .top-content {
+  padding: 30px 30px 50px;
+}
+#page-settings-billing-address .main-box .top-content .input-fields .item input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(100% + 5px);
+}
+@media (max-width: 575.98px) {
+  #page-settings-billing-address .main-box .top-content .input-fields .item input {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(100% + 5px);
+  }
+}
+#page-settings-billing-address .main-box .controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 10px 10px;
+  background-color: #f4f5fd;
 }
 
 #page-surveys .btn-add-new-survey {
