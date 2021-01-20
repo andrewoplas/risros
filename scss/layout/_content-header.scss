@@ -59,12 +59,14 @@
 
     .nav {
       justify-content: space-evenly;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 7px;
+      padding-bottom: 7px;
 
       .nav-link {
         position: relative;
         padding: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
         color: #a2a9be;
 
         @include media-breakpoint-down(xs) {

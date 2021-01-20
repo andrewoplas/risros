@@ -1,0 +1,55 @@
+#page-settings-billing-credit-card {
+  max-width: 660px;
+
+  .main-box {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+
+    .top-content {
+      padding: 30px 30px 70px;
+
+      .credit-cards {
+        .item {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          @include flex(stretch, center);
+          border-top: 1px solid #e9ebfe;
+
+          &:last-child {
+            border-bottom: 1px solid #e9ebfe;
+          }
+
+          @include breakpoint-down(420px) {
+            flex-wrap: wrap;
+
+            button {
+              flex-basis: 100%;
+            }
+          }
+
+          img {
+            align-self: center;
+            width: 57px;
+            margin-right: 30px;
+          }
+
+          .details {
+            flex: 1;
+          }
+
+          button {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+
+    .controls {
+      @include flex(flex-end, center);
+      padding: 10px 10px;
+      background-color: #f4f5fd;
+    }
+  }
+}

@@ -102,9 +102,8 @@ body {
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease,
     box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
 
-  &:hover {
-    background-color: #ecf0f1;
-    filter: brightness(90%);
+  &:not(.outline):hover {
+    filter: brightness(120%);
     transition: 300ms filter;
   }
 
@@ -117,6 +116,10 @@ body {
 
   &.outline {
     background-color: transparent;
+
+    &:hover {
+      background-color: #eee;
+    }
 
     &.disabled {
       pointer-events: none;
@@ -231,6 +234,7 @@ button {
 @import './scss/pages/page-settings-my-profile';
 @import './scss/pages/page-settings-billing-address';
 @import './scss/pages/page-settings-billing-history';
+@import './scss/pages/page-settings-billing-credit-card';
 @import './scss/pages/page-surveys';
 @import './scss/pages/page-survey-throttling';
 @import './scss/pages/page-survey-open-ended-question';
