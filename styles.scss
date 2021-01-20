@@ -215,8 +215,12 @@ body {
 }
 
 .rr-link {
-  color: #2557e0;
+  color: $color-blue;
   text-decoration: underline;
+
+  &.red {
+    color: $color-red;
+  }
 }
 
 .rr-box {
@@ -254,6 +258,7 @@ button {
 @import './scss/pages/page-settings-billing-address';
 @import './scss/pages/page-settings-billing-history';
 @import './scss/pages/page-settings-billing-credit-card';
+@import './scss/pages/page-settings-plan';
 @import './scss/pages/page-surveys';
 @import './scss/pages/page-survey-throttling';
 @import './scss/pages/page-survey-open-ended-question';

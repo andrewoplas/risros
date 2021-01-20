@@ -1,0 +1,90 @@
+#page-settings-plan {
+  max-width: $main-content-max-width;
+
+  .rr-box {
+    padding: 30px;
+  }
+
+  .section-plan {
+    .plan {
+      padding: 15px 10px;
+      border: 1px solid #e9ebff;
+      border-radius: 10px;
+
+      &.active {
+        border: 2px solid $color-blue;
+      }
+
+      .recommended {
+        color: $color-green;
+        font-weight: bold;
+      }
+
+      .title {
+        color: $color-blue;
+      }
+
+      .features {
+        .item {
+          padding: 20px 10px;
+          border-bottom: 1px solid #f6f6fe;
+
+          .feature-unsupported,
+          .feature-supported {
+            margin: 0;
+            margin-bottom: -4px;
+            display: block;
+            text-align: center;
+            font-size: 25px;
+            color: #eaeaea;
+            line-height: 100%;
+          }
+
+          .feature-supported {
+            color: $color-green;
+          }
+
+          .feature-label {
+            display: none;
+
+            @include breakpoint-down(815px) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .feature-labels {
+      margin-top: 380px;
+
+      .item {
+        padding: 19px 10px;
+      }
+    }
+
+    .feature-labels-column {
+      @include breakpoint-down(815px) {
+        display: none;
+      }
+    }
+  }
+
+  .section-usage {
+    .usage-progress {
+      .progress-details {
+        @include flex(space-between, center);
+      }
+
+      .progress {
+        height: 10px;
+        border-radius: 10px;
+
+        .progress-bar {
+          border-radius: 10px;
+          background-color: $color-blue;
+        }
+      }
+    }
+  }
+}

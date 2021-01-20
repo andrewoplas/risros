@@ -21,15 +21,8 @@
     text-align: center;
   }
 
-  .form-wrapper {
-    margin-top: 35px;
-    background-color: white;
-    border: 1px solid #eaeaea;
-    border-radius: 5px;
-
-    .input-fields {
-      padding: 45px 25px 40px;
-    }
+  .top-content {
+    padding: 45px 25px 40px;
 
     input {
       width: 100%;
@@ -42,11 +35,11 @@
       display: block;
       text-decoration: underline;
     }
+  }
 
-    .controls {
-      @include flex(flex-end, center);
-      padding: 10px 10px;
-      background-color: #f4f5fd;
-    }
+  .controls {
+    @include flex(flex-end, center);
+    padding: 10px 10px;
+    background-color: #f4f5fd;
   }
 }

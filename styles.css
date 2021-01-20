@@ -84,22 +84,30 @@
   }
 }
 
-.field-label {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 0px;
-  color: #3f4b62;
-}
-
 .xs {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  letter-spacing: 0px;
   color: #63686f;
+}
+@media (max-width: 991.98px) {
+  .xs {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575.98px) {
+  .xs {
+    font-size: 10px;
+  }
+}
+
+.field-label {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #3f4b62;
 }
 
 * {
@@ -276,6 +284,9 @@ body .border-orange {
 .rr-link {
   color: #2557e0;
   text-decoration: underline;
+}
+.rr-link.red {
+  color: #f73e26;
 }
 
 .rr-box {
@@ -884,26 +895,20 @@ button:focus, button:active {
   display: block;
   text-align: center;
 }
-#page-connect .form-wrapper {
-  margin-top: 35px;
-  background-color: white;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-}
-#page-connect .form-wrapper .input-fields {
+#page-connect .top-content {
   padding: 45px 25px 40px;
 }
-#page-connect .form-wrapper input {
+#page-connect .top-content input {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#page-connect .form-wrapper .note {
+#page-connect .top-content .note {
   margin-top: 10px;
   display: block;
   text-decoration: underline;
 }
-#page-connect .form-wrapper .controls {
+#page-connect .controls {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1351,10 +1356,10 @@ button:focus, button:active {
   text-align: center;
   max-width: 662px;
 }
-#page-import .rr-box .top-content {
+#page-import .top-content {
   padding: 30px 30px 50px;
 }
-#page-import .rr-box .controls {
+#page-import .controls {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1485,15 +1490,10 @@ button:focus, button:active {
 #page-settings-my-profile {
   max-width: 900px;
 }
-#page-settings-my-profile .main-box {
-  background-color: white;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-}
-#page-settings-my-profile .main-box .top-content {
+#page-settings-my-profile .top-content {
   padding: 30px 30px 60px;
 }
-#page-settings-my-profile .main-box .top-content .input-fields .item input {
+#page-settings-my-profile .top-content .input-fields .item input {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 11px;
@@ -1503,24 +1503,24 @@ button:focus, button:active {
   line-height: calc(100% + 5px);
 }
 @media (max-width: 575.98px) {
-  #page-settings-my-profile .main-box .top-content .input-fields .item input {
+  #page-settings-my-profile .top-content .input-fields .item input {
     font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: calc(100% + 5px);
   }
 }
-#page-settings-my-profile .main-box .top-content .input-fields .item .upload-photo {
+#page-settings-my-profile .top-content .input-fields .item .upload-photo {
   width: 50px;
 }
-#page-settings-my-profile .main-box .top-content .input-fields .item .btn-edit {
+#page-settings-my-profile .top-content .input-fields .item .btn-edit {
   padding: 0;
   border: 0;
   background-color: transparent;
   color: #2557e0;
   text-decoration: underline;
 }
-#page-settings-my-profile .main-box .controls {
+#page-settings-my-profile .controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1528,7 +1528,7 @@ button:focus, button:active {
   padding: 10px 10px 10px 30px;
   background-color: #f4f5fd;
 }
-#page-settings-my-profile .main-box .controls .newsletter-checkbox {
+#page-settings-my-profile .controls .newsletter-checkbox {
   display: flex;
   align-items: center;
   justify-content: stretch;
@@ -1538,15 +1538,10 @@ button:focus, button:active {
 #page-settings-billing-address {
   max-width: 430px;
 }
-#page-settings-billing-address .main-box {
-  background-color: white;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-}
-#page-settings-billing-address .main-box .top-content {
+#page-settings-billing-address .top-content {
   padding: 30px 30px 50px;
 }
-#page-settings-billing-address .main-box .top-content .input-fields .item input {
+#page-settings-billing-address .top-content .input-fields .item input {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 11px;
@@ -1556,14 +1551,14 @@ button:focus, button:active {
   line-height: calc(100% + 5px);
 }
 @media (max-width: 575.98px) {
-  #page-settings-billing-address .main-box .top-content .input-fields .item input {
+  #page-settings-billing-address .top-content .input-fields .item input {
     font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: calc(100% + 5px);
   }
 }
-#page-settings-billing-address .main-box .controls {
+#page-settings-billing-address .controls {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1575,27 +1570,17 @@ button:focus, button:active {
 #page-settings-billing-history {
   max-width: 900px;
 }
-#page-settings-billing-history .main-box {
-  background-color: white;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-}
-#page-settings-billing-history .main-box .top-content {
+#page-settings-billing-history .top-content {
   padding: 30px 30px 70px;
 }
 
 #page-settings-billing-credit-card {
   max-width: 660px;
 }
-#page-settings-billing-credit-card .main-box {
-  background-color: white;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-}
-#page-settings-billing-credit-card .main-box .top-content {
+#page-settings-billing-credit-card .top-content {
   padding: 30px 30px 70px;
 }
-#page-settings-billing-credit-card .main-box .top-content .credit-cards .item {
+#page-settings-billing-credit-card .top-content .credit-cards .item {
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
@@ -1604,36 +1589,108 @@ button:focus, button:active {
   flex-direction: row;
   border-top: 1px solid #e9ebfe;
 }
-#page-settings-billing-credit-card .main-box .top-content .credit-cards .item:last-child {
+#page-settings-billing-credit-card .top-content .credit-cards .item:last-child {
   border-bottom: 1px solid #e9ebfe;
 }
 @media only screen and (max-width: 420px) {
-  #page-settings-billing-credit-card .main-box .top-content .credit-cards .item {
+  #page-settings-billing-credit-card .top-content .credit-cards .item {
     flex-wrap: wrap;
   }
-  #page-settings-billing-credit-card .main-box .top-content .credit-cards .item button {
+  #page-settings-billing-credit-card .top-content .credit-cards .item button {
     flex-basis: 100%;
   }
 }
-#page-settings-billing-credit-card .main-box .top-content .credit-cards .item img {
+#page-settings-billing-credit-card .top-content .credit-cards .item img {
   align-self: center;
   width: 57px;
   margin-right: 30px;
 }
-#page-settings-billing-credit-card .main-box .top-content .credit-cards .item .details {
+#page-settings-billing-credit-card .top-content .credit-cards .item .details {
   flex: 1;
 }
-#page-settings-billing-credit-card .main-box .top-content .credit-cards .item button {
+#page-settings-billing-credit-card .top-content .credit-cards .item button {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-#page-settings-billing-credit-card .main-box .controls {
+#page-settings-billing-credit-card .controls {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
   padding: 10px 10px;
   background-color: #f4f5fd;
+}
+
+#page-settings-plan {
+  max-width: 900px;
+}
+#page-settings-plan .rr-box {
+  padding: 30px;
+}
+#page-settings-plan .section-plan .plan {
+  padding: 15px 10px;
+  border: 1px solid #e9ebff;
+  border-radius: 10px;
+}
+#page-settings-plan .section-plan .plan.active {
+  border: 2px solid #2557e0;
+}
+#page-settings-plan .section-plan .plan .recommended {
+  color: #00bea5;
+  font-weight: bold;
+}
+#page-settings-plan .section-plan .plan .title {
+  color: #2557e0;
+}
+#page-settings-plan .section-plan .plan .features .item {
+  padding: 20px 10px;
+  border-bottom: 1px solid #f6f6fe;
+}
+#page-settings-plan .section-plan .plan .features .item .feature-unsupported,
+#page-settings-plan .section-plan .plan .features .item .feature-supported {
+  margin: 0;
+  margin-bottom: -4px;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: #eaeaea;
+  line-height: 100%;
+}
+#page-settings-plan .section-plan .plan .features .item .feature-supported {
+  color: #00bea5;
+}
+#page-settings-plan .section-plan .plan .features .item .feature-label {
+  display: none;
+}
+@media only screen and (max-width: 815px) {
+  #page-settings-plan .section-plan .plan .features .item .feature-label {
+    display: block;
+  }
+}
+#page-settings-plan .section-plan .feature-labels {
+  margin-top: 380px;
+}
+#page-settings-plan .section-plan .feature-labels .item {
+  padding: 19px 10px;
+}
+@media only screen and (max-width: 815px) {
+  #page-settings-plan .section-plan .feature-labels-column {
+    display: none;
+  }
+}
+#page-settings-plan .section-usage .usage-progress .progress-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#page-settings-plan .section-usage .usage-progress .progress {
+  height: 10px;
+  border-radius: 10px;
+}
+#page-settings-plan .section-usage .usage-progress .progress .progress-bar {
+  border-radius: 10px;
+  background-color: #2557e0;
 }
 
 #page-surveys .btn-add-new-survey {
@@ -1860,27 +1917,22 @@ button:focus, button:active {
 #page-survey-throttling {
   max-width: 900px;
 }
-#page-survey-throttling .main-box {
-  background-color: white;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-}
-#page-survey-throttling .main-box .top-content {
+#page-survey-throttling .top-content {
   padding: 30px 30px 50px;
 }
-#page-survey-throttling .main-box .top-content .input-fields {
+#page-survey-throttling .top-content .input-fields {
   display: flex;
   align-items: center;
   justify-content: stretch;
   flex-direction: row;
 }
-#page-survey-throttling .main-box .top-content .input-fields .item {
+#page-survey-throttling .top-content .input-fields .item {
   display: flex;
   align-items: center;
   justify-content: stretch;
   flex-direction: row;
 }
-#page-survey-throttling .main-box .top-content .input-fields .item input {
+#page-survey-throttling .top-content .input-fields .item input {
   width: 100px;
   padding-top: 12px;
   padding-bottom: 11px;
@@ -1888,17 +1940,17 @@ button:focus, button:active {
   text-align: center;
 }
 @media (max-width: 575.98px) {
-  #page-survey-throttling .main-box .top-content .input-fields {
+  #page-survey-throttling .top-content .input-fields {
     display: block;
   }
-  #page-survey-throttling .main-box .top-content .input-fields .item input {
+  #page-survey-throttling .top-content .input-fields .item input {
     flex: 1;
   }
-  #page-survey-throttling .main-box .top-content .input-fields .item span {
+  #page-survey-throttling .top-content .input-fields .item span {
     width: 80px;
   }
 }
-#page-survey-throttling .main-box .controls {
+#page-survey-throttling .controls {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1910,15 +1962,10 @@ button:focus, button:active {
 #page-survey-open-ended-question {
   max-width: 900px;
 }
-#page-survey-open-ended-question .main-box {
-  background-color: white;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-}
-#page-survey-open-ended-question .main-box .top-content {
+#page-survey-open-ended-question .top-content {
   padding: 30px 30px 80px;
 }
-#page-survey-open-ended-question .main-box .top-content .input-fields .item input {
+#page-survey-open-ended-question .top-content .input-fields .item input {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 11px;
@@ -1928,14 +1975,14 @@ button:focus, button:active {
   line-height: calc(100% + 5px);
 }
 @media (max-width: 575.98px) {
-  #page-survey-open-ended-question .main-box .top-content .input-fields .item input {
+  #page-survey-open-ended-question .top-content .input-fields .item input {
     font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: calc(100% + 5px);
   }
 }
-#page-survey-open-ended-question .main-box .controls {
+#page-survey-open-ended-question .controls {
   display: flex;
   align-items: center;
   justify-content: flex-end;

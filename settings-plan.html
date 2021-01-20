@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Risros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-flex align-items-center">
+            <i id="toggle-sidebar" class="far fa-bars icon-fa-bars"></i>
+            <h1 class="title">RISROS</h1>
+          </div>
+          <div class="col-6 col-6 d-flex justify-content-end">
+            <div class="dropdown">
+              <button
+                class="btn"
+                type="button"
+                id="user-dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="user-initials">DA</span>
+                <span class="user-name">Devid</span>
+                <i class="fas fa-angle-down icon-toggle-arrow"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                <div class="heading text-center">
+                  <h5 class="text-dark mb-0">Devid Antoni</h5>
+                  <small class="text-muted">Administrator</small>
+                </div>
+                <div class="dropdown-divider m-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-account-outline"></i> Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-settings"></i> Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="float-right"></span>
+                  <i class="dropdown-icon mdi mdi-message-outline"></i> Inbox
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-comment-check-outline"></i>
+                  Message
+                </a>
+                <div class="dropdown-divider mt-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?
+                </a>
+                <a class="dropdown-item" href="#    ">
+                  <i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+      <div class="sidebar-inner slimscroll">
+        <div class="links">
+          <a href="#">My Surveys</a>
+          <a href="#">Team</a>
+          <a href="#">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+
+        <div class="invitation">
+          <span class="m d-block font-weight-bold">The more the merrier...</span>
+
+          <div class="collaborators">
+            <img src="images/main-user.png" class="main-user" />
+            <span class="plus">+</span>
+            <div class="other-users">
+              <img src="images/user-1.png" />
+              <img src="images/user-2.png" />
+              <img src="images/user-3.png" />
+            </div>
+          </div>
+
+          <span class="s d-block">Invite colleagues & collaborate</span>
+
+          <button class="btn rr-btn outline dark-purple medium d-block w-100 mt-4">
+            Invite Colleagues
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+      <div class="main-content-header">
+        <div class="container">
+          <p class="title-m header-title">Settings</p>
+
+          <ul class="nav justify-content-between">
+            <li class="nav-item">
+              <a class="m nav-link" href="settings-my-profile.html">My Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link active" href="settings-plan.html">Plan</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="settings-billing-address.html">Billing</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="#">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="m nav-link" href="#">Security</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mt-5" id="page-settings-plan">
+        <div class="rr-box">
+          <div class="section-plan">
+            <p class="l font-weight-bold">Plan</p>
+            <div class="row">
+              <div class="col feature-labels-column">
+                <div class="feature-labels">
+                  <div class="item">
+                    <span class="s text-right d-block">API Support</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-right d-block">Work flows</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-right d-block">Export data</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-right d-block">Survey throttling</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-right d-block">Segment Specific Questions</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-right d-block">Priority Support</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm">
+                <div class="plan">
+                  <p class="s text-center">Current Plan</p>
+                  <p class="title title-m text-center">Startup</p>
+
+                  <div class="features">
+                    <div class="item">
+                      <span class="s">Up to 100 Responses /mo</span>
+                    </div>
+                    <div class="item">
+                      <span class="s">1 Active Campaign</span>
+                    </div>
+                    <div class="item">
+                      <span class="s">1 Year Data Retention</span>
+                    </div>
+                    <div class="item">
+                      <span class="s">1 User Included</span>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">API Support</span>
+                      <i class="feature-unsupported fas fa-times"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">Work flows</span>
+                      <i class="feature-unsupported fas fa-times"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">Export data</span>
+                      <i class="feature-unsupported fas fa-times"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">Survey throttling</span>
+                      <i class="feature-unsupported fas fa-times"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1"
+                        >Segment Specific Questions</span
+                      >
+                      <i class="feature-unsupported fas fa-times"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">Priority Support</span>
+                      <i class="feature-unsupported fas fa-times"></i>
+                    </div>
+                  </div>
+
+                  <button class="btn rr-btn bold disabled d-block mt-3 w-100">Current</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm mt-5 mt-sm-0">
+                <div class="plan active">
+                  <p class="s text-center recommended">Recommended for you</p>
+                  <p class="title title-m text-center">Pro</p>
+
+                  <div class="features">
+                    <div class="item">
+                      <span class="s">Up to 2.500 Responses /mo</span>
+                    </div>
+                    <div class="item">
+                      <span class="s">5 Active Campaign</span>
+                    </div>
+                    <div class="item">
+                      <span class="s">5 Year Data Retention</span>
+                    </div>
+                    <div class="item">
+                      <span class="s">5 User Included</span>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">API Support</span>
+                      <i class="feature-supported fas fa-check-circle"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">Work flows</span>
+                      <i class="feature-supported fas fa-check-circle"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">Export data</span>
+                      <i class="feature-supported fas fa-check-circle"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">Survey throttling</span>
+                      <i class="feature-supported fas fa-check-circle"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1"
+                        >Segment Specific Questions</span
+                      >
+                      <i class="feature-supported fas fa-check-circle"></i>
+                    </div>
+                    <div class="item">
+                      <span class="feature-label s text-center mb-1">Priority Support</span>
+                      <i class="feature-supported fas fa-check-circle"></i>
+                    </div>
+                  </div>
+
+                  <button class="btn rr-btn bold blue d-block mt-3 w-100">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-usage mt-4">
+            <p class="l font-weight-bold">Usage</p>
+            <div class="usage-progress">
+              <div class="progress-details">
+                <span class="xs">Responses from 21/11-2010 to 21/12-2020</span>
+                <span class="xs">78 of 100</span>
+              </div>
+              <div class="progress mt-2">
+                <div class="progress-bar w-75" role="progressbar"></div>
+              </div>
+            </div>
+            <div class="text-right mt-2">
+              <a href="#" class="m rr-link">Upgrade Plan</a>
+            </div>
+          </div>
+
+          <div class="section-current-plan mt-4">
+            <p class="l font-weight-bold mb-2">Current Plan</p>
+
+            <div class="row">
+              <div class="col-4 col-sm-5 col-md-4 m">Plan:</div>
+              <div class="col-8 col-sm-7 col-md-8 m">Startup Yearly 2.998 kr.</div>
+            </div>
+            <div class="row">
+              <div class="col-4 col-sm-5 col-md-4 m">Status:</div>
+              <div class="col-8 col-sm-7 col-md-8 m">Active</div>
+            </div>
+            <div class="row">
+              <div class="col-4 col-sm-5 col-md-4 m">Next Payment:</div>
+              <div class="col-8 col-sm-7 col-md-8 m">22/10/2021</div>
+            </div>
+            <div class="row">
+              <div class="col-4 col-sm-5 col-md-4 m">Creditcard:</div>
+              <div class="col-8 col-sm-7 col-md-8 m">4331********3232</div>
+            </div>
+
+            <a href="#" class="m rr-link red mt-2 d-block">Cancel Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/8c9c5e8e6e.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

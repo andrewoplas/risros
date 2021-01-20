@@ -160,7 +160,7 @@
       </div>
 
       <div class="container mt-5" id="page-settings-billing-history">
-        <div class="main-box">
+        <div class="rr-box">
           <div class="top-content">
             <p class="l font-weight-bold">Billing History</p>
 
@@ -210,23 +210,5 @@
 
     <!-- Custom JS -->
     <script src="main.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $('.upload-file').on('change', function (e) {
-          const file = event.srcElement.files[0];
-
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            $('.upload-photo').attr('src', e.target.result);
-          };
-          reader.readAsDataURL(file);
-        });
-
-        $('.btn-edit').click(function (e) {
-          $('.upload-file').click();
-        });
-      });
-    </script>
   </body>
 </html>

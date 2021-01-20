@@ -17,15 +17,13 @@
     max-width: 662px;
   }
 
-  .rr-box {
-    .top-content {
-      padding: 30px 30px 50px;
-    }
+  .top-content {
+    padding: 30px 30px 50px;
+  }
 
-    .controls {
-      @include flex(flex-end, center);
-      padding: 10px 10px;
-      background-color: #f4f5fd;
-    }
+  .controls {
+    @include flex(flex-end, center);
+    padding: 10px 10px;
+    background-color: #f4f5fd;
   }
 }
