@@ -125,31 +125,44 @@ body {
     }
 
     &.dark {
+      border-color: $color-dark-gray;
       color: $color-dark-gray;
+    }
+
+    &.dark-purple {
+      border-color: $color-dark-purple;
+      color: $color-dark-purple;
     }
 
     &.blue {
       color: $color-blue;
+      color: $color-blue;
     }
   }
 
-  &.transparent {
-    background-color: transparent !important;
-    border-color: transparent !important;
-  }
+  &:not(.outline) {
+    &.transparent {
+      background-color: transparent !important;
+      border-color: transparent !important;
+    }
 
-  &.dark {
-    color: white;
-    background-color: $color-dark-gray;
-  }
+    &.dark {
+      color: white;
+      background-color: $color-dark-gray;
+    }
 
-  &.blue {
-    color: white;
-    background-color: $color-blue;
+    &.blue {
+      color: white;
+      background-color: $color-blue;
+    }
   }
 
   &.bold {
     font-weight: bold;
+  }
+
+  &.medium {
+    font-weight: 500;
   }
 
   &.min-width-170 {
