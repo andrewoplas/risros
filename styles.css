@@ -269,6 +269,11 @@ body .border-orange {
   font-weight: 500;
 }
 
+.rr-link {
+  color: #2557e0;
+  text-decoration: underline;
+}
+
 button:focus, button:active {
   outline: none !important;
   box-shadow: none;
@@ -815,6 +820,31 @@ button:focus, button:active {
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
+}
+
+.rr-table {
+  margin-bottom: 0;
+}
+.rr-table thead th {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #e9ebfe;
+  border: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(100% + 5px);
+  color: #192a59;
+}
+.rr-table tbody td,
+.rr-table tbody th {
+  border: 0;
+  border-bottom: 1px solid #e9ebfe;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(100% + 5px);
+  color: #33475b;
 }
 
 #page-connect {
@@ -1415,7 +1445,7 @@ button:focus, button:active {
   border-radius: 5px;
 }
 #page-settings-my-profile .main-box .top-content {
-  padding: 30px 30px 80px;
+  padding: 30px 30px 60px;
 }
 #page-settings-my-profile .main-box .top-content .input-fields .item input {
   width: 100%;
@@ -1494,6 +1524,18 @@ button:focus, button:active {
   flex-direction: row;
   padding: 10px 10px;
   background-color: #f4f5fd;
+}
+
+#page-settings-billing-history {
+  max-width: 900px;
+}
+#page-settings-billing-history .main-box {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+#page-settings-billing-history .main-box .top-content {
+  padding: 30px 30px 70px;
 }
 
 #page-surveys .btn-add-new-survey {
