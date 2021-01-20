@@ -67,11 +67,32 @@
     }
 
     .links {
+      @include flex(flex-start, flex-start, column);
+
       a {
         margin-bottom: 20px;
-        display: block;
         color: $color-dark-blue;
+        text-decoration: none;
+        position: relative;
         @include font(22px, bold);
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 2px;
+          top: 100%;
+          left: 0;
+          background: $color-blue;
+          transition: transform 0.5s;
+          transform: scaleX(0);
+          transform-origin: right;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
       }
     }
 

@@ -119,36 +119,12 @@
 
     <!-- Main Content -->
 
-    <div class="container main-content">
-      <button
-        class="btn rr-btn blue d-block mx-auto mt-5"
-        data-toggle="modal"
-        data-target="#overlay-survey"
-      >
-        Open Test Survey Popup
-      </button>
+    <div class="main-content">
+      <div class="container mt-5" id="page-survey-template">
+        <div class="row">
+          <div class="col-12 col-md-3"></div>
 
-      <div class="modal fade" tabindex="-1" role="dialog" id="overlay-survey">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fal fa-times"></i>
-              </button>
-
-              <h3 class="title-m title">Send Test Survey</h3>
-
-              <form>
-                <label class="rr-label" for="email-address">Enter an email address</label>
-                <div class="horizontal">
-                  <input class="rr-input" id="email-address" required />
-                  <button class="btn rr-btn outline blue btn-test">Send</button>
-                </div>
-
-                <span class="note">Enter one or more email addresses separated by comma (,).</span>
-              </form>
-            </div>
-          </div>
+          <div class="col-12 col-md-9"></div>
         </div>
       </div>
     </div>
@@ -161,13 +137,6 @@
 
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS (Animation on Scroll) -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <!-- Daterangepicker (Datepicker library) -->
-    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
     <!-- Custom JS -->
     <script src="main.js"></script>

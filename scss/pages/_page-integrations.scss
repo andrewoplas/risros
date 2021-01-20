@@ -101,6 +101,7 @@
     .btn-back {
       padding-left: 40px;
       padding-right: 40px;
+      color: $color-blue;
       @include flex(center, center);
 
       .icon {

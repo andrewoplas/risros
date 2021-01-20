@@ -418,6 +418,8 @@
             </div>
           </div>
         </div>
+
+        <a href="javascript:void(0)" class="rr-link float-right btn-back-top">Back to top</a>
       </div>
     </div>
 
@@ -448,10 +450,12 @@
         $('.btn-next').cli;
 
         $('.btn-next').click(function (e) {
-          $('.step-2')
-            .removeClass('d-none')
-            .get(0)
-            .scrollIntoView({ block: 'end', behavior: 'smooth' });
+          $('.step-1').addClass('d-none');
+          $('.step-2').removeClass('d-none');
+        });
+
+        $('.btn-back-top').click(function (e) {
+          $('html, body').animate({ scrollTop: 0 }, 1000);
         });
       });
     </script>

@@ -189,7 +189,13 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: #36373c;
-  outline: 0 !important;
+  outline-color: #b5b8c5;
+
+  &:focus {
+    transition: 500ms;
+    outline-width: 2px;
+    outline-color: $color-blue;
+  }
 
   &::-webkit-input-placeholder {
     color: #b5b8c5;
@@ -216,6 +222,11 @@ body {
 
   &.red {
     color: $color-red;
+  }
+
+  &:hover {
+    transition: 300ms;
+    opacity: 0.8;
   }
 }
 
@@ -246,17 +257,17 @@ button {
 @import './scss/components/table';
 
 // Pages
-@import './scss/pages/page-connect';
-@import './scss/pages/page-dashboard';
-@import './scss/pages/page-import';
-@import './scss/pages/page-integrations';
-@import './scss/pages/page-settings-my-profile';
-@import './scss/pages/page-settings-billing-address';
-@import './scss/pages/page-settings-billing-history';
-@import './scss/pages/page-settings-billing-credit-card';
-@import './scss/pages/page-settings-plan';
-@import './scss/pages/page-surveys';
-@import './scss/pages/page-survey-throttling';
-@import './scss/pages/page-survey-open-ended-question';
-@import './scss/pages/page-subscription';
-@import './scss/pages/overlay-survey';
+@import './scss/pages/overlay-survey.scss';
+@import './scss/pages/page-connect.scss';
+@import './scss/pages/page-dashboard.scss';
+@import './scss/pages/page-import.scss';
+@import './scss/pages/page-integrations.scss';
+@import './scss/pages/page-settings-billing-address.scss';
+@import './scss/pages/page-settings-billing-credit-card.scss';
+@import './scss/pages/page-settings-billing-history.scss';
+@import './scss/pages/page-settings-my-profile.scss';
+@import './scss/pages/page-settings-plan.scss';
+@import './scss/pages/page-subscription.scss';
+@import './scss/pages/page-survey-open-ended-question.scss';
+@import './scss/pages/page-survey-throttling.scss';
+@import './scss/pages/page-surveys.scss';

@@ -50,17 +50,6 @@
         max-width: 430px;
         padding: 20px 30px 10px;
 
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateX(calc(100% + 20px));
-
-        @include breakpoint-down(1335px) {
-          position: relative;
-          margin-top: 30px;
-          transform: none;
-        }
-
         .choices {
           @include flex(stretch, stretch);
 
@@ -176,13 +165,9 @@
 
       .features {
         .item {
-          height: 95px;
+          height: 75px;
           padding: 0 15px;
           @include flex(center, center, column);
-
-          @include media-breakpoint-down(sm) {
-            height: 70px;
-          }
 
           &:not(:last-child) {
             border-bottom: 1px solid #f6f6fe;
@@ -222,12 +207,8 @@
       margin-top: 472px;
 
       .item {
-        height: 95px;
+        height: 75px;
         @include flex(flex-end, center);
-
-        @include media-breakpoint-down(sm) {
-          height: 70px;
-        }
       }
     }
 
