@@ -82,13 +82,9 @@ body {
   }
 }
 
-/*
-* BREADCRUMBS SECTION
-*/
-
-/*
-* START OF NEW PROJECT - 12/06/2020
-*/
+.main-content {
+  padding-bottom: 100px;
+}
 
 .rr-btn {
   padding: 12px 20px;
@@ -262,5 +258,5 @@ button {
 @import './scss/pages/page-surveys';
 @import './scss/pages/page-survey-throttling';
 @import './scss/pages/page-survey-open-ended-question';
-@import './scss/pages/table';
+@import './scss/pages/page-subscription';
 @import './scss/pages/overlay-survey';

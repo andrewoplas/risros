@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Risros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-flex align-items-center">
+            <i id="toggle-sidebar" class="far fa-bars icon-fa-bars"></i>
+            <h1 class="title">RISROS</h1>
+          </div>
+          <div class="col-6 col-6 d-flex justify-content-end">
+            <div class="dropdown">
+              <button
+                class="btn"
+                type="button"
+                id="user-dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="user-initials">DA</span>
+                <span class="user-name">Devid</span>
+                <i class="fas fa-angle-down icon-toggle-arrow"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                <div class="heading text-center">
+                  <h5 class="text-dark mb-0">Devid Antoni</h5>
+                  <small class="text-muted">Administrator</small>
+                </div>
+                <div class="dropdown-divider m-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-account-outline"></i> Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-settings"></i> Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="float-right"></span>
+                  <i class="dropdown-icon mdi mdi-message-outline"></i> Inbox
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-comment-check-outline"></i>
+                  Message
+                </a>
+                <div class="dropdown-divider mt-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?
+                </a>
+                <a class="dropdown-item" href="#    ">
+                  <i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+      <div class="sidebar-inner slimscroll">
+        <div class="links">
+          <a href="#">My Surveys</a>
+          <a href="#">Team</a>
+          <a href="#">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+
+        <div class="invitation">
+          <span class="m d-block font-weight-bold">The more the merrier...</span>
+
+          <div class="collaborators">
+            <img src="images/main-user.png" class="main-user" />
+            <span class="plus">+</span>
+            <div class="other-users">
+              <img src="images/user-1.png" />
+              <img src="images/user-2.png" />
+              <img src="images/user-3.png" />
+            </div>
+          </div>
+
+          <span class="s d-block">Invite colleagues & collaborate</span>
+
+          <button class="btn rr-btn outline dark-purple medium d-block w-100 mt-4">
+            Invite Colleagues
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+      <div class="container mt-5" id="page-subscription">
+        <div class="section-form">
+          <h2 class="title title-m">Vælg et abonnement</h2>
+          <span class="subtitle l">
+            Din gratis prøveperiode er udløbet. Du kan forsætte rejsen mod flere tilfredse kunder og
+            bedre bundlinie lige her.
+          </span>
+
+          <div class="steps mt-5">
+            <div class="rr-box step-1">
+              <span class="xs step-counter">Trin 1 / 2</span>
+              <p class="l font-weight-bold">Faktureringsoplysninger</p>
+
+              <div class="input-fields mt-4">
+                <div class="item">
+                  <span class="s font-weight-bold">Company</span>
+                  <input class="rr-input mt-2" placeholder="Company" />
+                </div>
+                <div class="item mt-4">
+                  <span class="s font-weight-bold">VAT</span>
+                  <input class="rr-input mt-2" placeholder="VAT" />
+                </div>
+                <div class="item mt-4">
+                  <span class="s font-weight-bold">Adress</span>
+                  <input class="rr-input mt-2" placeholder="Adress" />
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <div class="item mt-4">
+                      <span class="s font-weight-bold">Zip</span>
+                      <input class="rr-input mt-2" placeholder="Zip" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="item mt-4">
+                      <span class="s font-weight-bold">City</span>
+                      <input class="rr-input mt-2" placeholder="City" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn rr-btn blue bold mt-4 w-100 d-block btn-next">Næste</button>
+            </div>
+
+            <div class="rr-box step-2 d-none">
+              <span class="xs step-counter">Trin 2 / 2</span>
+              <p class="l font-weight-bold">Vælg et abonnement</p>
+
+              <div class="input-fields mt-4">
+                <div class="item">
+                  <span class="s">Betalingsperiode</span>
+                  <div class="choices payment-period mt-2">
+                    <div class="item mr-2">
+                      <div class="icon">
+                        <div class="icon-fill"></div>
+                      </div>
+                      <span class="s">Måndeligt</span>
+                    </div>
+                    <div class="item active">
+                      <div class="icon">
+                        <div class="icon-fill"></div>
+                      </div>
+                      <span class="s">Årligt - spar 600 kr.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item mt-4">
+                  <span class="s">Abonnement (sammenlign)</span>
+                  <div class="choices subscription mt-2">
+                    <div class="item mr-2">
+                      <span class="s">Startup</span>
+                      <span class="s d-flex">249 kr. <span class="small-md-label">md.</span></span>
+                    </div>
+                    <div class="item active">
+                      <span class="s">Pro</span>
+                      <span class="s d-flex">349 kr. <span class="small-md-label">md.</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3 px-3">
+                <hr />
+
+                <div class="product px-2">
+                  <span class="s">Pro x 12 måneder:</span>
+                  <span class="s discount">4.788 kr.</span>
+                  <span class="s">4.188 kr.</span>
+                </div>
+
+                <hr />
+
+                <div class="row mt-3">
+                  <div class="col-6">
+                    <span class="s">Moms</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="s text-right d-block">1.047 kr.</span>
+                  </div>
+                </div>
+
+                <div class="row mt-1">
+                  <div class="col-6">
+                    <span class="s font-weight-bold">Samlet pris pr. år</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="s font-weight-bold text-right d-block">5.235 kr.</span>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn rr-btn blue bold mt-4 w-100 d-block">Godkend og betal</button>
+
+              <p class="xs mt-3">
+                <span class="font-weight-bold">Godt at vide</span>: Vi benytter en sikker
+                betalingsløsning med en SSL-krypteret betalingsgateway. Fornyelse sker automatisk og
+                kan slettes helt op til dagen før udløb.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-plan">
+          <h2 class="title title-m">Sammenlign abonnementer</h2>
+
+          <div class="row mt-5 pt-0 pt-md-5">
+            <div class="col col-md-3 feature-labels-column">
+              <div class="feature-labels">
+                <div class="item">
+                  <span class="s text-right d-block">Automated Recurring Surveys</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">Use your Logo and Brand Colors</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">Integrate with your ERP</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">Create Multilingual Surveys</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">API Support</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">Work flows</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">Export data</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">Survey throttling</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">Priority Support</span>
+                </div>
+                <div class="item">
+                  <span class="s text-right d-block">Segment Specific Questions</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+              <div class="plan">
+                <p class="title title-m text-center">Startup</p>
+
+                <div class="features">
+                  <div class="item">
+                    <span class="s text-center d-block">Up to 100 Responses /mo</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-center d-block">1 Active Campaign</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-center d-block">1 Year Data Retention</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-center d-block">1 User Included</span>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1"
+                      >Automated Recurring Surveys</span
+                    >
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1"
+                      >Use your Logo and Brand Colors</span
+                    >
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Integrate with your ERP</span>
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1"
+                      >Create Multilingual Surveys</span
+                    >
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">API Support</span>
+                    <i class="feature-unsupported fas fa-times"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Work flows</span>
+                    <i class="feature-unsupported fas fa-times"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Export data</span>
+                    <i class="feature-unsupported fas fa-times"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Survey throttling</span>
+                    <i class="feature-unsupported fas fa-times"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Priority Support</span>
+                    <i class="feature-unsupported fas fa-times"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Segment Specific Questions</span>
+                    <i class="feature-unsupported fas fa-times"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-5 mt-4 mt-sm-5 mt-md-0">
+              <div class="plan active">
+                <p class="s text-center recommended">Recommended for you</p>
+                <p class="title title-m text-center">Pro</p>
+
+                <div class="features">
+                  <div class="item">
+                    <span class="s text-center d-block">Up to 2.500 Responses /mo</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-center d-block">5 Active Campaign</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-center d-block">5 Year Data Retention</span>
+                  </div>
+                  <div class="item">
+                    <span class="s text-center d-block">5 User Included</span>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1"
+                      >Automated Recurring Surveys</span
+                    >
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1"
+                      >Use your Logo and Brand Colors</span
+                    >
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Integrate with your ERP</span>
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1"
+                      >Create Multilingual Surveys</span
+                    >
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">API Support</span>
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Work flows</span>
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Export data</span>
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Survey throttling</span>
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Priority Support</span>
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                  <div class="item">
+                    <span class="feature-label s text-center mb-1">Segment Specific Questions</span>
+                    <i class="feature-supported fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/8c9c5e8e6e.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.payment-period .item').click(function (e) {
+          $('.payment-period .item').removeClass('active');
+          $(this).addClass('active');
+        });
+
+        $('.subscription .item').click(function (e) {
+          $('.subscription .item').removeClass('active');
+          $(this).addClass('active');
+        });
+
+        $('.btn-next').cli;
+
+        $('.btn-next').click(function (e) {
+          $('.step-2')
+            .removeClass('d-none')
+            .get(0)
+            .scrollIntoView({ block: 'end', behavior: 'smooth' });
+        });
+      });
+    </script>
+  </body>
+</html>
