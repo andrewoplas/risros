@@ -2162,6 +2162,89 @@ button:focus, button:active {
   background-color: #f4f5fd;
 }
 
+#page-survey-template .lime-sidebar {
+  width: 100%;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li {
+  display: block;
+  overflow: hidden;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li.open > a {
+  color: #1b1d5d !important;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li.open > a > i.has-sub-menu {
+  transform: rotate(-90deg);
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li.active-page > a {
+  color: #037afb;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li ul.sub-menu {
+  margin-left: 8px;
+  border-left: 2px solid #f1f1f1;
+  display: none;
+  position: relative;
+  overflow: hidden;
+  padding: 8px 0px 8px 18px;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li ul.sub-menu li {
+  display: block;
+  overflow: hidden;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li ul.sub-menu li a {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 6px 0;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li ul.sub-menu li a.active {
+  color: #1b1d5d;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li a {
+  display: block;
+  margin: 9px 0px;
+  font-weight: bold;
+  color: #33475b;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li a:hover {
+  color: #1b1d5d !important;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li a:hover i {
+  color: inherit !important;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li a.active {
+  color: #037afb !important;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li a.active i {
+  color: inherit !important;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li a i {
+  color: #33475b !important;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+#page-survey-template .lime-sidebar .lime-sidebar-inner ul li a i.has-sub-menu {
+  vertical-align: middle;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 #page-surveys .btn-add-new-survey {
   display: block;
   margin-left: auto;

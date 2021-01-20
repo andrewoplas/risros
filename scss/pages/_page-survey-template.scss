@@ -1,0 +1,102 @@
+#page-survey-template {
+  .lime-sidebar {
+    width: 100%;
+
+    .lime-sidebar-inner {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: block;
+          overflow: hidden;
+
+          &.open > a {
+            color: rgba(27, 29, 93, 1) !important;
+
+            & > i.has-sub-menu {
+              transform: rotate(-90deg);
+            }
+          }
+
+          &.active-page > a {
+            color: #037afb;
+          }
+
+          ul.sub-menu {
+            margin-left: 8px;
+            border-left: 2px solid #f1f1f1;
+            display: none;
+            position: relative;
+            overflow: hidden;
+            padding: 8px 0px 8px 18px;
+
+            li {
+              display: block;
+              overflow: hidden;
+
+              a {
+                font-weight: normal;
+                font-size: 16px;
+                margin: 6px 0;
+
+                &.active {
+                  color: rgba(27, 29, 93, 1);
+                }
+              }
+            }
+          }
+
+          a {
+            display: block;
+            margin: 9px 0px;
+            font-weight: bold;
+            color: #33475b;
+            font-size: 20px;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+              color: rgba(27, 29, 93, 1) !important;
+
+              i {
+                color: inherit !important;
+              }
+            }
+
+            &.active {
+              color: #037afb !important;
+
+              i {
+                color: inherit !important;
+              }
+            }
+
+            i {
+              color: #33475b !important;
+              font-size: 25px;
+              line-height: 1;
+              letter-spacing: normal;
+              text-transform: none;
+              display: inline-block;
+              white-space: nowrap;
+              word-wrap: normal;
+              direction: ltr;
+              -webkit-font-feature-settings: 'liga';
+              -webkit-font-smoothing: antialiased;
+
+              &.has-sub-menu {
+                vertical-align: middle;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
