@@ -574,43 +574,119 @@ button:focus, button:active {
     text-align: center;
   }
 }
-@media (max-width: 575.98px) {
-  .main-content-header .container .nav {
-    flex-direction: column;
-  }
+.main-content-header .container .nav-settings {
+  padding: 0;
+  margin-bottom: 0;
 }
-.main-content-header .container .nav .nav-link {
-  position: relative;
-  padding-bottom: 15px;
-  padding-left: 0;
-  padding-right: 0;
-  color: #a2a9be;
+.main-content-header .container .nav-settings hr {
+  height: 0.25rem;
+  width: 20%;
+  margin: 0;
+  background: #2557e0;
+  border: none;
+  transition: 0.3s ease-in-out;
 }
-@media (max-width: 575.98px) {
-  .main-content-header .container .nav .nav-link {
-    text-align: center;
-  }
+.main-content-header .container .nav-settings li {
+  display: inline;
+  text-align: center;
 }
-.main-content-header .container .nav .nav-link.active {
+.main-content-header .container .nav-settings li.active a {
   color: #192a59;
   font-weight: bold;
 }
-.main-content-header .container .nav .nav-link.active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  border-top: 2px solid #2557e0;
-  z-index: 1;
+.main-content-header .container .nav-settings li a {
+  width: 19.5%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #a2a9be;
 }
-@media (max-width: 575.98px) {
-  .main-content-header .container .nav .nav-link.active::after {
-    width: 120px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.main-content-header .container .nav-settings li.active.one ~ hr {
+  margin-left: 0;
+}
+.main-content-header .container .nav-settings li.active.two ~ hr {
+  margin-left: 20%;
+}
+.main-content-header .container .nav-settings li.active.three ~ hr {
+  margin-left: 40%;
+}
+.main-content-header .container .nav-settings li.active.four ~ hr {
+  margin-left: 60%;
+}
+.main-content-header .container .nav-settings li.active.five ~ hr {
+  margin-left: 80%;
+}
+.main-content-header .container .nav-settings li:hover.one ~ hr {
+  margin-left: 0;
+}
+.main-content-header .container .nav-settings li:hover.two ~ hr {
+  margin-left: 20%;
+}
+.main-content-header .container .nav-settings li:hover.three ~ hr {
+  margin-left: 40%;
+}
+.main-content-header .container .nav-settings li:hover.four ~ hr {
+  margin-left: 60%;
+}
+.main-content-header .container .nav-settings li:hover.five ~ hr {
+  margin-left: 80%;
+}
+.main-content-header .container .nav-workflow {
+  padding: 0;
+  margin-bottom: 0;
+}
+.main-content-header .container .nav-workflow hr {
+  height: 0.25rem;
+  width: 24.5%;
+  margin: 0;
+  background: #2557e0;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.main-content-header .container .nav-workflow li {
+  display: inline;
+  text-align: center;
+}
+.main-content-header .container .nav-workflow li.active a {
+  color: #192a59;
+  font-weight: bold;
+}
+.main-content-header .container .nav-workflow li a {
+  width: 24.5%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #a2a9be;
+}
+.main-content-header .container .nav-workflow li.active.one ~ hr {
+  margin-left: 0;
+}
+.main-content-header .container .nav-workflow li.active.two ~ hr {
+  margin-left: 25%;
+}
+.main-content-header .container .nav-workflow li.active.three ~ hr {
+  margin-left: 50%;
+}
+.main-content-header .container .nav-workflow li.active.four ~ hr {
+  margin-left: 75%;
+}
+.main-content-header .container .nav-workflow li:hover.one ~ hr {
+  margin-left: 0;
+}
+.main-content-header .container .nav-workflow li:hover.two ~ hr {
+  margin-left: 25%;
+}
+.main-content-header .container .nav-workflow li:hover.three ~ hr {
+  margin-left: 50%;
+}
+.main-content-header .container .nav-workflow li:hover.four ~ hr {
+  margin-left: 75%;
 }
 .main-content-header.subheader {
   padding-top: 0;

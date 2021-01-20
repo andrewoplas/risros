@@ -12,41 +12,141 @@
       }
     }
 
-    .nav {
-      @include media-breakpoint-down(xs) {
-        flex-direction: column;
+    .nav-settings {
+      padding: 0;
+      margin-bottom: 0;
+
+      hr {
+        height: 0.25rem;
+        width: 20%;
+        margin: 0;
+        background: $color-blue;
+        border: none;
+        transition: 0.3s ease-in-out;
       }
 
-      .nav-link {
-        position: relative;
-        padding-bottom: 15px;
-        padding-left: 0;
-        padding-right: 0;
-        color: #a2a9be;
+      li {
+        display: inline;
+        text-align: center;
 
-        @include media-breakpoint-down(xs) {
+        &.active {
+          a {
+            color: $color-dark-blue;
+            font-weight: bold;
+          }
+        }
+
+        a {
+          width: 19.5%;
+          margin: 0;
+          padding: 0;
+          padding-bottom: 15px;
+          display: inline-block;
+          text-decoration: none;
           text-align: center;
+          color: #a2a9be;
         }
 
         &.active {
-          color: $color-dark-blue;
-          font-weight: bold;
+          &.one ~ hr {
+            margin-left: 0;
+          }
+          &.two ~ hr {
+            margin-left: 20%;
+          }
+          &.three ~ hr {
+            margin-left: 40%;
+          }
+          &.four ~ hr {
+            margin-left: 60%;
+          }
+          &.five ~ hr {
+            margin-left: 80%;
+          }
+        }
 
-          &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            border-top: 2px solid $color-blue;
-            z-index: 1;
+        &:hover {
+          &.one ~ hr {
+            margin-left: 0;
+          }
+          &.two ~ hr {
+            margin-left: 20%;
+          }
+          &.three ~ hr {
+            margin-left: 40%;
+          }
+          &.four ~ hr {
+            margin-left: 60%;
+          }
+          &.five ~ hr {
+            margin-left: 80%;
+          }
+        }
+      }
+    }
 
-            @include media-breakpoint-down(xs) {
-              width: 120px;
-              margin-left: auto;
-              margin-right: auto;
-            }
+    .nav-workflow {
+      padding: 0;
+      margin-bottom: 0;
+
+      hr {
+        height: 0.25rem;
+        width: 24.5%;
+        margin: 0;
+        background: $color-blue;
+        border: none;
+        transition: 0.3s ease-in-out;
+      }
+
+      li {
+        display: inline;
+        text-align: center;
+
+        &.active {
+          a {
+            color: $color-dark-blue;
+            font-weight: bold;
+          }
+        }
+
+        a {
+          width: 24.5%;
+          margin: 0;
+          padding: 0;
+          padding-bottom: 15px;
+          display: inline-block;
+          text-decoration: none;
+          text-align: center;
+          color: #a2a9be;
+        }
+
+        &.active {
+          &.one ~ hr {
+            margin-left: 0;
+          }
+          &.two ~ hr {
+            margin-left: 25%;
+          }
+          &.three ~ hr {
+            margin-left: 50%;
+          }
+          &.four ~ hr {
+            margin-left: 75%;
+          }
+        }
+
+        &:hover {
+          &.one ~ hr {
+            margin-left: 0;
+          }
+          &.two ~ hr {
+            margin-left: 25%;
+          }
+          &.three ~ hr {
+            margin-left: 50%;
+          }
+          &.four ~ hr {
+            margin-left: 75%;
           }
         }
       }
