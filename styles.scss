@@ -194,6 +194,18 @@ body {
   font-weight: 300;
   color: #36373c;
   outline: 0 !important;
+
+  &::-webkit-input-placeholder {
+    color: #b5b8c5;
+  }
+
+  &:-ms-input-placeholder {
+    color: #b5b8c5;
+  }
+
+  &::placeholder {
+    color: #b5b8c5;
+  }
 }
 
 .rr-label {
@@ -205,6 +217,12 @@ body {
 .rr-link {
   color: #2557e0;
   text-decoration: underline;
+}
+
+.rr-box {
+  background-color: white;
+  border: 1px solid #e9ebfe;
+  border-radius: 5px;
 }
 
 button {
@@ -230,6 +248,7 @@ button {
 // Pages
 @import './scss/pages/page-connect';
 @import './scss/pages/page-dashboard';
+@import './scss/pages/page-import';
 @import './scss/pages/page-integrations';
 @import './scss/pages/page-settings-my-profile';
 @import './scss/pages/page-settings-billing-address';

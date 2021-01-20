@@ -2,12 +2,13 @@
   margin-bottom: 0;
 
   thead th {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #e9ebfe;
     border: 0;
     @include font(14px, bold);
     color: $color-dark-blue;
+    text-transform: uppercase;
   }
 
   tbody td,
@@ -16,5 +17,10 @@
     border-bottom: 1px solid #e9ebfe;
     @include font(16px, 400);
     color: #33475b;
+  }
+
+  tbody td {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }

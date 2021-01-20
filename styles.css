@@ -257,6 +257,15 @@ body .border-orange {
   color: #36373c;
   outline: 0 !important;
 }
+.rr-input::-webkit-input-placeholder {
+  color: #b5b8c5;
+}
+.rr-input:-ms-input-placeholder {
+  color: #b5b8c5;
+}
+.rr-input::placeholder {
+  color: #b5b8c5;
+}
 
 .rr-label {
   color: #3f4b62;
@@ -267,6 +276,12 @@ body .border-orange {
 .rr-link {
   color: #2557e0;
   text-decoration: underline;
+}
+
+.rr-box {
+  background-color: white;
+  border: 1px solid #e9ebfe;
+  border-radius: 5px;
 }
 
 button:focus, button:active {
@@ -823,8 +838,8 @@ button:focus, button:active {
   margin-bottom: 0;
 }
 .rr-table thead th {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #e9ebfe;
   border: 0;
   font-family: Roboto, sans-serif;
@@ -832,6 +847,7 @@ button:focus, button:active {
   font-size: 14px;
   line-height: calc(100% + 5px);
   color: #192a59;
+  text-transform: uppercase;
 }
 .rr-table tbody td,
 .rr-table tbody th {
@@ -842,6 +858,10 @@ button:focus, button:active {
   font-size: 16px;
   line-height: calc(100% + 5px);
   color: #33475b;
+}
+.rr-table tbody td {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #page-connect {
@@ -1312,6 +1332,35 @@ button:focus, button:active {
     display: block;
     text-align: center;
   }
+}
+
+#page-import {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#page-import .title {
+  margin-top: 15px;
+  text-align: center;
+}
+#page-import .subtitle {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  max-width: 662px;
+}
+#page-import .rr-box .top-content {
+  padding: 30px 30px 50px;
+}
+#page-import .rr-box .controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 10px 10px;
+  background-color: #f4f5fd;
 }
 
 #page-integrations {
