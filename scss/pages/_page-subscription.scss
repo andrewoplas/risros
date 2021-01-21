@@ -189,7 +189,8 @@
     }
 
     .feature-labels {
-      margin-top: 472px;
+      @include flex(flex-end, stretch, column);
+      height: 100%;
 
       .item {
         height: 75px;

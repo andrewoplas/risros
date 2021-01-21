@@ -2053,7 +2053,11 @@ button:focus, button:active {
   }
 }
 #page-subscription .section-plan .feature-labels {
-  margin-top: 472px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 100%;
 }
 #page-subscription .section-plan .feature-labels .item {
   height: 75px;
