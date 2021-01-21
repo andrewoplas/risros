@@ -101,8 +101,14 @@
       margin-bottom: 10px;
       @include flex(stretch, center);
 
-      .main-user {
+      .user-initials {
         width: 38px;
+        height: 38px;
+        @include flex(center, center);
+        @include font(16px, bold);
+        color: white;
+        border-radius: 50%;
+        background-color: $color-green;
       }
 
       .plus {

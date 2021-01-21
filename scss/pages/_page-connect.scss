@@ -24,16 +24,11 @@
   .top-content {
     padding: 45px 25px 40px;
 
-    input {
-      width: 100%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
     .note {
       margin-top: 10px;
       display: block;
       text-decoration: underline;
+      font-size: 14px;
       color: $color-dark-blue;
     }
   }

@@ -90,7 +90,7 @@ body {
   padding: 12px 20px;
   border: 1px solid $color-blue;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   color: $color-blue;
   transition: 300ms filter;
@@ -182,19 +182,18 @@ body {
 }
 
 .rr-input {
-  padding: 5px 15px;
+  padding: 8px 15px;
   border: 1px solid #b5b8c5;
   background-color: white;
   border-radius: 2px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   color: #36373c;
-  outline-color: #b5b8c5;
+  outline: none !important;
 
   &:focus {
     transition: 500ms;
-    outline-width: 2px;
-    outline-color: $color-blue;
+    border-color: $color-blue;
   }
 
   &::-webkit-input-placeholder {

@@ -26,7 +26,8 @@
 
       .features {
         .item {
-          padding: 20px 10px;
+          @include flex(center, center, column);
+          height: 65px;
           border-bottom: 1px solid #f6f6fe;
 
           .feature-unsupported,
@@ -56,10 +57,11 @@
     }
 
     .feature-labels {
-      margin-top: 380px;
+      margin-top: 370px;
 
       .item {
-        padding: 19px 10px;
+        @include flex(center, flex-end, column);
+        height: 65px;
       }
     }
 

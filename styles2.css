@@ -59,6 +59,11 @@
     font-size: 14px;
   }
 }
+@media (max-width: 575.98px) {
+  .m {
+    font-size: 14px;
+  }
+}
 
 .s {
   font-family: Roboto, sans-serif;
@@ -68,6 +73,16 @@
   letter-spacing: 0px;
   color: #33475b;
 }
+@media (max-width: 991.98px) {
+  .s {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575.98px) {
+  .s {
+    font-size: 12px;
+  }
+}
 
 .xs {
   font-family: Roboto, sans-serif;
@@ -75,6 +90,16 @@
   font-weight: normal;
   font-size: 10px;
   color: #63686f;
+}
+@media (max-width: 991.98px) {
+  .xs {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .xs {
+    font-size: 10px;
+  }
 }
 
 .field-label {
@@ -229,18 +254,19 @@ body .border-orange {
 }
 
 .rr-input {
-  padding: 8px 15px;
+  padding: 5px 15px;
   border: 1px solid #b5b8c5;
   background-color: white;
   border-radius: 2px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   color: #36373c;
-  outline: none !important;
+  outline-color: #b5b8c5;
 }
 .rr-input:focus {
   transition: 500ms;
-  border-color: #2557e0;
+  outline-width: 2px;
+  outline-color: #2557e0;
 }
 .rr-input::-webkit-input-placeholder {
   color: #b5b8c5;
@@ -558,20 +584,8 @@ button:focus, button:active {
   justify-content: stretch;
   flex-direction: row;
 }
-.sidebar .sidebar-inner .collaborators .user-initials {
+.sidebar .sidebar-inner .collaborators .main-user {
   width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  font-family: Roboto, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: calc(100% + 5px);
-  color: white;
-  border-radius: 50%;
-  background-color: #00bea5;
 }
 .sidebar .sidebar-inner .collaborators .plus {
   font-family: Roboto, sans-serif;
@@ -1002,12 +1016,12 @@ button:focus, button:active {
   border-bottom: 1px solid #e9ebfe;
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: calc(100% + 5px);
   color: #33475b;
 }
 .rr-table tbody td {
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 15px;
 }
 
@@ -1059,7 +1073,7 @@ button:focus, button:active {
   margin-right: 8px;
   border: 1px solid #08226a;
   border-radius: 2px;
-  font-size: 20px;
+  font-size: 25px;
 }
 @media (max-width: 575.98px) {
   #overlay-survey .modal-content .modal-body form .horizontal #email-address {
@@ -1108,12 +1122,17 @@ button:focus, button:active {
 #page-connect .top-content {
   padding: 45px 25px 40px;
 }
+#page-connect .top-content input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 #page-connect .top-content .note {
   margin-top: 10px;
   display: block;
   text-decoration: underline;
-  font-size: 14px;
   color: #192a59;
+    font-size: 14px;
 }
 #page-connect .controls {
   display: flex;
@@ -1701,6 +1720,23 @@ button:focus, button:active {
 #page-settings-billing-address .top-content {
   padding: 30px 30px 50px;
 }
+#page-settings-billing-address .top-content .input-fields .item input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(100% + 5px);
+}
+@media (max-width: 575.98px) {
+  #page-settings-billing-address .top-content .input-fields .item input {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(100% + 5px);
+  }
+}
 #page-settings-billing-address .controls {
   display: flex;
   align-items: center;
@@ -1770,6 +1806,23 @@ button:focus, button:active {
 #page-settings-my-profile .top-content {
   padding: 30px 30px 60px;
 }
+#page-settings-my-profile .top-content .input-fields .item input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(100% + 5px);
+}
+@media (max-width: 575.98px) {
+  #page-settings-my-profile .top-content .input-fields .item input {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(100% + 5px);
+  }
+}
 #page-settings-my-profile .top-content .input-fields .item .upload-photo {
   width: 50px;
 }
@@ -1817,11 +1870,7 @@ button:focus, button:active {
   color: #2557e0;
 }
 #page-settings-plan .section-plan .plan .features .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 65px;
+  padding: 20px 10px;
   border-bottom: 1px solid #f6f6fe;
 }
 #page-settings-plan .section-plan .plan .features .item .feature-unsupported,
@@ -1846,14 +1895,10 @@ button:focus, button:active {
   }
 }
 #page-settings-plan .section-plan .feature-labels {
-  margin-top: 370px;
+  margin-top: 380px;
 }
 #page-settings-plan .section-plan .feature-labels .item {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-  height: 65px;
+  padding: 19px 10px;
 }
 @media only screen and (max-width: 815px) {
   #page-settings-plan .section-plan .feature-labels-column {
@@ -1901,6 +1946,23 @@ button:focus, button:active {
 }
 #page-subscription .section-form .steps .step-1 {
   padding: 20px 30px 30px;
+}
+#page-subscription .section-form .steps .step-1 .input-fields .item input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(100% + 5px);
+}
+@media (max-width: 575.98px) {
+  #page-subscription .section-form .steps .step-1 .input-fields .item input {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(100% + 5px);
+  }
 }
 #page-subscription .section-form .steps .step-2 {
   max-width: 430px;
@@ -2074,6 +2136,23 @@ button:focus, button:active {
 #page-survey-open-ended-question .top-content {
   padding: 30px 30px 80px;
 }
+#page-survey-open-ended-question .top-content .input-fields .item input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(100% + 5px);
+}
+@media (max-width: 575.98px) {
+  #page-survey-open-ended-question .top-content .input-fields .item input {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(100% + 5px);
+  }
+}
 #page-survey-open-ended-question .controls {
   display: flex;
   align-items: center;
@@ -2103,6 +2182,9 @@ button:focus, button:active {
 }
 #page-survey-throttling .top-content .input-fields .item input {
   width: 100px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-size: 14px;
   text-align: center;
 }
 @media (max-width: 575.98px) {
