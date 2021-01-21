@@ -1,6 +1,6 @@
-@import "../abstract/breakpoint";
-@import "../abstract/mixins";
-@import "../abstract/variables";
+@import '../abstract/breakpoint';
+@import '../abstract/mixins';
+@import '../abstract/variables';
 
 /*
 * TABLE
@@ -17,7 +17,7 @@
   button,
   li,
   a {
-    font-family: "Poppins" !important;
+    font-family: 'Poppins' !important;
   }
 
   .info-card {
@@ -107,9 +107,8 @@
       background-color: #e1e9ff;
       border-color: transparent;
       font-weight: 500 !important;
-      transition: color 0.15s ease, background-color 0.15s ease,
-        border-color 0.15s ease, box-shadow 0.15s ease,
-        -webkit-box-shadow 0.15s ease;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease,
+        box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
       outline: 0 !important;
 
       &:hover {
@@ -125,16 +124,15 @@
         font-size: 15px;
         color: #6993ff;
         margin-right: 8px;
-        transition: color 0.15s ease, background-color 0.15s ease,
-          border-color 0.15s ease, box-shadow 0.15s ease,
-          -webkit-box-shadow 0.15s ease;
+        transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease,
+          box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
       }
     }
 
     .dropdown-toggle.btn:after {
-      content: "\f107";
+      content: '\f107';
       margin-left: 0.5rem;
-      font-family: "Font Awesome 5 Pro";
+      font-family: 'Font Awesome 5 Pro';
       font-style: normal;
       font-weight: 300;
       font-variant: normal;
@@ -143,9 +141,8 @@
       text-rendering: optimizeLegibility;
       text-transform: none;
 
-      transition: color 0.15s ease, background-color 0.15s ease,
-        border-color 0.15s ease, box-shadow 0.15s ease,
-        -webkit-box-shadow 0.15s ease;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease,
+        box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
       text-align: center;
       display: inline;
       border: 0;
@@ -206,9 +203,8 @@
       font-size: 15px;
       color: white;
       margin-right: 8px;
-      transition: color 0.15s ease, background-color 0.15s ease,
-        border-color 0.15s ease, box-shadow 0.15s ease,
-        -webkit-box-shadow 0.15s ease;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease,
+        box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
     }
   }
 
@@ -222,7 +218,7 @@
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 0.1rem;
-        font-family: "Poppins";
+        font-family: 'Poppins';
         border-bottom: 1px solid #ebedf3;
         padding: 9px 12px;
 
@@ -269,7 +265,7 @@
         &.sorting_asc_disabled:before,
         &.sorting_desc_disabled:before {
           right: 0 !important;
-          content: "" !important;
+          content: '' !important;
         }
 
         &.sorting:after,
@@ -278,11 +274,11 @@
         &.sorting_asc_disabled:after,
         &.sorting_desc_disabled:after {
           right: 0 !important;
-          content: "" !important;
+          content: '' !important;
         }
 
         &.sorting:after {
-          content: "";
+          content: '';
         }
       }
     }
@@ -293,7 +289,7 @@
         font-size: 12px;
         font-weight: 300;
         padding: 15px 12px;
-        font-family: "Poppins";
+        font-family: 'Poppins';
         border-top-color: #ebedf3;
 
         &:first-child {
@@ -316,7 +312,7 @@
     }
 
     .paginate_button {
-      font-family: "Poppins";
+      font-family: 'Poppins';
       font-size: 11px;
       color: #7e8299 !important;
       margin-left: 5px;
@@ -328,9 +324,8 @@
       @include flex(center, center);
       border: 0 !important;
 
-      transition: color 0.15s ease, background-color 0.15s ease,
-        border-color 0.15s ease, box-shadow 0.15s ease,
-        -webkit-box-shadow 0.15s ease;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease,
+        box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
 
       &:hover {
         background: #6993ff !important;

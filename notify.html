@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Risros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- PNotify -->
+    <link href="library/pnotify/PNotify.css" rel="stylesheet" type="text/css" />
+
+    <!-- Main CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-flex align-items-center">
+            <i id="toggle-sidebar" class="far fa-bars icon-fa-bars"></i>
+            <h1 class="title">RISROS</h1>
+          </div>
+          <div class="col-6 col-6 d-flex justify-content-end">
+            <div class="dropdown">
+              <button
+                class="btn"
+                type="button"
+                id="user-dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="user-initials">DA</span>
+                <span class="user-name">Devid</span>
+                <i class="fas fa-angle-down icon-toggle-arrow"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                <div class="heading text-center">
+                  <h5 class="text-dark mb-0">Devid Antoni</h5>
+                  <small class="text-muted">Administrator</small>
+                </div>
+                <div class="dropdown-divider m-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-account-outline"></i> Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-settings"></i> Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="float-right"></span>
+                  <i class="dropdown-icon mdi mdi-message-outline"></i> Inbox
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-comment-check-outline"></i>
+                  Message
+                </a>
+                <div class="dropdown-divider mt-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?
+                </a>
+                <a class="dropdown-item" href="#    ">
+                  <i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+      <div class="sidebar-inner slimscroll">
+        <div class="links">
+          <a href="#">My Surveys</a>
+          <a href="#">Team</a>
+          <a href="#">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+
+        <div class="invitation">
+          <span class="m d-block font-weight-bold">The more the merrier...</span>
+
+          <div class="collaborators">
+            <img src="images/main-user.png" class="main-user" />
+            <span class="plus">+</span>
+            <div class="other-users">
+              <img src="images/user-1.png" />
+              <img src="images/user-2.png" />
+              <img src="images/user-3.png" />
+            </div>
+          </div>
+
+          <span class="s d-block">Invite colleagues & collaborate</span>
+
+          <button class="btn rr-btn outline dark-purple medium d-block w-100 mt-4">
+            Invite Colleagues
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+      <div class="container mt-5" id="page-survey-template">
+        <div class="d-flex align-items-center justify-content-center">
+          <button class="btn rr-btn blue btn-info">Info</button>
+          <button class="btn rr-btn blue btn-error mx-2">Error</button>
+          <button class="btn rr-btn blue btn-success">Success</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/8c9c5e8e6e.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- PNotify -->
+    <script type="text/javascript" src="library/pnotify/PNotify.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+
+    <script type="text/javascript">
+      function notify(type, text) {
+        PNotify.defaultStack.close();
+
+        let notifyType = null;
+        let icon = null;
+
+        switch (type) {
+          case 'info':
+            icon = 'fas fa-info-circle';
+            break;
+          case 'error':
+            icon = 'fas fa-exclamation-triangle';
+            break;
+          case 'success':
+            icon = 'fas fa-check';
+            break;
+        }
+
+        setTimeout(() => {
+          PNotify.alert({
+            addClass: 'rr-notification',
+            type,
+            text,
+            styling: 'rr',
+            icon: `icon-${type} ${icon}`,
+            icons: {
+              prefix: PNotify.defaults.icons,
+              closer: 'fas fa-times',
+            },
+            closerHover: false,
+            delay: 5000,
+          });
+        }, 250);
+      }
+
+      $('.btn-info').click(function () {
+        notify('info', 'This is an info message.');
+      });
+
+      $('.btn-error').click(function () {
+        notify('error', 'This is an error message.');
+      });
+
+      $('.btn-success').click(function () {
+        notify('success', 'This is a success message.');
+      });
+    </script>
+  </body>
+</html>

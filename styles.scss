@@ -236,6 +236,66 @@ body {
   border-radius: 5px;
 }
 
+.rr-notification {
+  $color-error: #e9211e;
+  $color-error-light: #fee1df;
+  $color-info: #ed9300;
+  $color-info-light: #fdefdf;
+  $color-success: #20d383;
+  $color-success-light: #e4f9ed;
+
+  .pnotify-container {
+    padding: 1em 1.3em;
+    background-image: none;
+    border-radius: 4px;
+
+    &.rr-info {
+      background-color: $color-info-light;
+      border-left: 2px solid $color-info;
+
+      .icon-info {
+        color: $color-info;
+      }
+    }
+
+    &.rr-error {
+      background-color: $color-error-light;
+      border-left: 2px solid $color-error;
+
+      .icon-error {
+        color: $color-error;
+      }
+    }
+
+    &.rr-success {
+      background-color: $color-success-light;
+      border-left: 2px solid $color-success;
+
+      .icon-success {
+        color: $color-success;
+      }
+    }
+
+    .rr-icon {
+      height: 24px;
+      @include flex(center, center);
+    }
+  }
+
+  .rr-closer {
+    color: #80848b;
+  }
+
+  .rr-content {
+    margin-left: 30px !important;
+
+    .pnotify-pre-line {
+      font-size: 15px;
+      color: #1b1c1d;
+    }
+  }
+}
+
 button {
   &:focus,
   &:active {

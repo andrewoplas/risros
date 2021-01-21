@@ -302,6 +302,50 @@ body .border-orange {
   border-radius: 5px;
 }
 
+.rr-notification .pnotify-container {
+  padding: 1em 1.3em;
+  background-image: none;
+  border-radius: 4px;
+}
+.rr-notification .pnotify-container.rr-info {
+  background-color: #fdefdf;
+  border-left: 2px solid #ed9300;
+}
+.rr-notification .pnotify-container.rr-info .icon-info {
+  color: #ed9300;
+}
+.rr-notification .pnotify-container.rr-error {
+  background-color: #fee1df;
+  border-left: 2px solid #e9211e;
+}
+.rr-notification .pnotify-container.rr-error .icon-error {
+  color: #e9211e;
+}
+.rr-notification .pnotify-container.rr-success {
+  background-color: #e4f9ed;
+  border-left: 2px solid #20d383;
+}
+.rr-notification .pnotify-container.rr-success .icon-success {
+  color: #20d383;
+}
+.rr-notification .pnotify-container .rr-icon {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.rr-notification .rr-closer {
+  color: #80848b;
+}
+.rr-notification .rr-content {
+  margin-left: 30px !important;
+}
+.rr-notification .rr-content .pnotify-pre-line {
+  font-size: 15px;
+  color: #1b1c1d;
+}
+
 button:focus, button:active {
   outline: none !important;
   box-shadow: none;

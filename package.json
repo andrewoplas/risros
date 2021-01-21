@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@pnotify/core": "^5.2.0",
     "prettier": "^2.2.1",
     "sass": "^1.30.0"
   }

@@ -2,7 +2,7 @@
   content: $content;
   margin-top: $margin-top;
   height: 100%;
-  font-family: "Font Awesome 5 Pro";
+  font-family: 'Font Awesome 5 Pro';
   color: white;
   border-radius: 4px;
   @include flex(center, center);
@@ -53,16 +53,16 @@
       border-radius: 4px;
     }
 
-    [type="checkbox"]:checked + span {
+    [type='checkbox']:checked + span {
       background-color: #6993ff !important;
     }
 
-    [type="checkbox"]:checked + span:before {
-      @include checkbox-before("\f00c", 1px);
+    [type='checkbox']:checked + span:before {
+      @include checkbox-before('\f00c', 1px);
     }
 
-    [type="checkbox"].minus:checked + span:before {
-      @include checkbox-before("\f068", 1px);
+    [type='checkbox'].minus:checked + span:before {
+      @include checkbox-before('\f068', 1px);
     }
   }
 }
