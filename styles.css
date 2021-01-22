@@ -320,6 +320,10 @@ body .border-orange {
   color: #1b1c1d;
 }
 
+.text-gray {
+  color: #b5b8c5;
+}
+
 button:focus, button:active {
   outline: none !important;
   box-shadow: none;
@@ -1652,22 +1656,6 @@ button:focus, button:active {
   font-weight: 400;
   position: relative;
 }
-#page-integrations .controls .btn-save-and-continue {
-  padding-left: 60px;
-  padding-right: 60px;
-  background-color: #2557e0;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-#page-integrations .controls .btn-save-and-continue .icon {
-  position: absolute;
-  right: 20px;
-  color: white;
-  margin-top: 2px;
-}
 #page-integrations .controls .btn-back {
   padding-left: 40px;
   padding-right: 40px;
@@ -2151,12 +2139,12 @@ button:focus, button:active {
   color: #037afb;
 }
 #page-survey-template .lime-sidebar .lime-sidebar-inner ul li ul.sub-menu {
-  margin-left: 8px;
+  margin-left: 12px;
   border-left: 2px solid #f1f1f1;
   display: none;
   position: relative;
   overflow: hidden;
-  padding: 8px 0px 8px 18px;
+  padding: 8px 0px 8px 25px;
 }
 #page-survey-template .lime-sidebar .lime-sidebar-inner ul li ul.sub-menu li {
   display: block;
@@ -2210,6 +2198,75 @@ button:focus, button:active {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+#page-survey-template .rr-box {
+  border: 2px solid #94b2ff;
+}
+#page-survey-template .rr-box .email-header .item {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-direction: row;
+  border-bottom: 1px solid #94b2ff;
+}
+#page-survey-template .rr-box .email-header .item .label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 15%;
+}
+@media (max-width: 575.98px) {
+  #page-survey-template .rr-box .email-header .item .label {
+    width: 65px;
+  }
+}
+#page-survey-template .rr-box .email-header .item input {
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  flex: 1;
+  border: 0;
+  font-weight: normal;
+  font-size: 16px !important;
+  color: #192a59;
+}
+#page-survey-template .rr-box .email-body .email-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#page-survey-template .rr-box .email-body .email-container-alt {
+  background-color: #f7f8fc;
+}
+#page-survey-template .rr-box .email-body .number-choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#page-survey-template .rr-box .email-body .number-choices .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 50px;
+  width: 50px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 50%;
+  border: 2px solid black;
+  font-size: 16px;
+  color: black;
+}
+@media (max-width: 575.98px) {
+  #page-survey-template .rr-box .email-body .number-choices .item {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+  }
 }
 
 #page-surveys .btn-add-new-survey {

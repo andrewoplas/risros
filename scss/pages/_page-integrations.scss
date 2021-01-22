@@ -83,21 +83,6 @@
       position: relative;
     }
 
-    .btn-save-and-continue {
-      padding-left: 60px;
-      padding-right: 60px;
-      background-color: $color-blue;
-      color: white;
-      @include flex(center, center);
-
-      .icon {
-        position: absolute;
-        right: 20px;
-        color: white;
-        margin-top: 2px;
-      }
-    }
-
     .btn-back {
       padding-left: 40px;
       padding-right: 40px;

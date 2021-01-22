@@ -295,6 +295,10 @@ body {
   }
 }
 
+.text-gray {
+  color: $color-gray;
+}
+
 button {
   &:focus,
   &:active {

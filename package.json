@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pscss": "prettier --write './scss/**/*.scss'",
     "phtml": "prettier --write '*.html'",
+    "p": "npm run pscss & npm run phtml",
     "scss": "sass --watch --no-source-map ./styles.scss:./styles.css"
   },
   "keywords": [],
