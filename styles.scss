@@ -41,8 +41,8 @@ body {
     color: $color-red;
   }
 
-  .text-orange {
-    color: $color-orange;
+  .text-yellow {
+    color: $color-yellow;
   }
 
   .text-gray {
@@ -61,12 +61,12 @@ body {
     background-color: $color-red;
   }
 
-  body .bg-gray {
+  .bg-gray {
     background-color: #a2a9be;
   }
 
-  .bg-orange {
-    background-color: $color-orange;
+  .bg-yellow {
+    background-color: $color-yellow;
   }
 
   .border-blue {
@@ -81,8 +81,8 @@ body {
     border-color: $color-red !important;
   }
 
-  .border-orange {
-    border-color: $color-orange !important;
+  .border-yellow {
+    border-color: $color-yellow !important;
   }
 }
 
@@ -185,11 +185,11 @@ body {
 }
 
 .rr-input {
-  padding: 10px 10px;
+  padding: 12px 10px;
   border: 1px solid #b5b8c5;
   background-color: white;
   border-radius: 2px;
-  font-size: 16px;
+  font-size: 14px;
   color: #36373c;
   outline: none !important;
 
@@ -295,6 +295,16 @@ body {
       color: #1b1c1d;
     }
   }
+}
+
+.rr-badge {
+  height: 30px;
+  width: 30px;
+  @include flex(center, center);
+  @include font(16px, bold);
+  color: $color-blue;
+  background-color: #e9ebfe;
+  border-radius: 50%;
 }
 
 .text-gray {

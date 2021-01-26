@@ -30,7 +30,7 @@
         <div class="row">
           <div class="col-6 d-flex align-items-center">
             <i id="toggle-sidebar" class="far fa-bars icon-fa-bars"></i>
-            <h1 class="title">RISROS</h1>
+            <a href="/"><h1 class="title">RISROS</h1></a>
           </div>
           <div class="col-6 col-6 d-flex justify-content-end">
             <div class="dropdown">
@@ -173,6 +173,34 @@
                   </div>
                 </div>
               </div>
+              <div class="row mt-4">
+                <div class="col-12 col-sm-4">
+                  <div class="item">
+                    <span class="field-label">Phone number</span>
+
+                    <div class="phone-number-container mt-2">
+                      <div class="dropdown flag-dropdown">
+                        <button class="btn-dropdown" data-toggle="dropdown">
+                          <img src="images/flag-denmark.png" />
+                          <i class="fas fa-angle-down"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="javascript:void(0)">
+                            <img src="images/flag-denmark.png" />
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0)">
+                            <img src="images/flag-norway.png" />
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0)">
+                            <img src="images/flag-sweden.png" />
+                          </a>
+                        </div>
+                      </div>
+                      <input class="rr-input w-100" value="+ 45 29 20 20 20 " />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -220,6 +248,11 @@
 
         $('.btn-edit').click(function (e) {
           $('.upload-file').click();
+        });
+
+        $('.flag-dropdown .dropdown-item').click(function () {
+          const imgSrc = $(this).find('img').attr('src');
+          $('.flag-dropdown .btn-dropdown img').attr('src', imgSrc);
         });
       });
     </script>

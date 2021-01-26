@@ -17,6 +17,66 @@
           color: $color-blue;
           text-decoration: underline;
         }
+
+        .phone-number-container {
+          @include flex(stretch, center);
+          padding: 9px 10px;
+          border: 1px solid #b5b8c5;
+          background-color: white;
+          border-radius: 2px;
+
+          input {
+            padding: 0 0 0 15px;
+            border: 0;
+          }
+
+          .flag-dropdown {
+            flex-shrink: 0;
+
+            &.show {
+              .btn-dropdown i {
+                transform: rotate(-180deg);
+                margin-top: -3px;
+                transition: 300ms;
+              }
+            }
+
+            .btn-dropdown {
+              @include flex(center, center);
+              padding-left: 7px;
+              background-color: transparent;
+              border: 0;
+              outline: 0;
+
+              i {
+                color: $color-dark-blue;
+                margin-left: 10px;
+                transition: 300ms transform;
+              }
+
+              img {
+                width: 25px;
+              }
+            }
+
+            .dropdown-menu {
+              border-radius: 2px;
+              min-width: 60px;
+              padding: 0;
+              margin: 0;
+              border: 1px solid #eee;
+            }
+
+            .dropdown-item {
+              padding: 5px 10px;
+              @include flex(center, center);
+
+              img {
+                width: 25px;
+              }
+            }
+          }
+        }
       }
     }
   }

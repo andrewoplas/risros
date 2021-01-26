@@ -70,18 +70,6 @@
           @include font(17px, $fw-bold);
         }
 
-        &.red {
-          background-color: #f73e26;
-        }
-
-        &.green {
-          background-color: #00bea5;
-        }
-
-        &.yellow {
-          background-color: #f7b626;
-        }
-
         @include media-breakpoint-down(xs) {
           width: 40px;
           height: 40px;

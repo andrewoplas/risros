@@ -74,6 +74,7 @@
         color: $color-dark-blue;
         text-decoration: none;
         position: relative;
+        @include flex(flex-start, center);
         @include font(22px, bold);
 
         &::after {
