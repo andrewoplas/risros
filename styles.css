@@ -5,7 +5,7 @@
   font-weight: bold;
   font-size: 50px;
   letter-spacing: 0px;
-  color: #393C4E;
+  color: #393c4e;
 }
 
 .title-m {
@@ -14,9 +14,8 @@
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 0px;
-  color: #393C4E;
+  color: #393c4e;
 }
-
 @media (max-width: 991.98px) {
   .title-m {
     font-size: 22px;
@@ -34,7 +33,7 @@
   font-weight: normal;
   font-size: 18px;
   letter-spacing: 0px;
-  color: #393C4E;
+  color: #393c4e;
 }
 @media (max-width: 991.98px) {
   .l {
@@ -53,7 +52,7 @@
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0px;
-  color: #393C4E;
+  color: #393c4e;
 }
 @media (max-width: 991.98px) {
   .m {
@@ -67,7 +66,12 @@
   font-weight: normal;
   font-size: 12px;
   letter-spacing: 0px;
-  color: #393C4E;
+  color: #393c4e;
+}
+@media (max-width: 575.98px) {
+  .s {
+    font-size: 11px;
+  }
 }
 
 .xs {
@@ -87,7 +91,7 @@
 
 * {
   font-family: "Roboto", sans-serif;
-  color: #33475B;
+  color: #33475b;
 }
 
 body {
@@ -134,8 +138,7 @@ body .bg-green {
 body .bg-red {
   background-color: #f73e26;
 }
-
-body .bg-gray {
+body body .bg-gray {
   background-color: #a2a9be;
 }
 body .bg-orange {
@@ -215,7 +218,6 @@ body .border-orange {
 .rr-btn.bold {
   font-weight: bold;
 }
-
 .rr-btn.medium {
   font-weight: 500;
 }
@@ -232,7 +234,6 @@ body .border-orange {
   min-width: 100px;
 }
 
-
 .rr-input {
   padding: 10px 10px;
   border: 1px solid #b5b8c5;
@@ -243,9 +244,8 @@ body .border-orange {
   outline: none !important;
 }
 .rr-input:focus {
-  transition: 200ms;
+  transition: 500ms;
   border: 2px solid #2557e0;
-
 }
 .rr-input::-webkit-input-placeholder {
   color: #b5b8c5;
@@ -386,8 +386,8 @@ button:focus, button:active {
   justify-content: center;
   height: 40px;
   width: 40px;
-  background-color: #00BEA5;
-  border: 1px solid #00BEA5;
+  background-color: #00bea5;
+  border: 1px solid #00bea5;
   border-radius: 50%;
   color: #ffffff;
   font-size: 14px;
@@ -535,7 +535,7 @@ button:focus, button:active {
 }
 .sidebar .sidebar-inner .links a {
   margin-bottom: 20px;
-  color: #393C4E;
+  color: #393c4e;
   text-decoration: none;
   position: relative;
   font-family: Roboto, sans-serif;
@@ -630,7 +630,7 @@ button:focus, button:active {
   text-align: center;
 }
 .main-content-header .container .nav-settings li.active a {
-  color: #393C4E;
+  color: #393c4e;
   font-weight: bold;
 }
 .main-content-header .container .nav-settings li a {
@@ -690,7 +690,7 @@ button:focus, button:active {
   text-align: center;
 }
 .main-content-header .container .nav-workflow li.active a {
-  color: #393C4E;
+  color: #393c4e;
   font-weight: bold;
 }
 .main-content-header .container .nav-workflow li a {
@@ -749,7 +749,7 @@ button:focus, button:active {
   }
 }
 .main-content-header.subheader .nav .nav-link.active {
-  color: #393C4E;
+  color: #393c4e;
   font-weight: bold;
 }
 .main-content-header.subheader .nav .nav-link.active::after {
@@ -866,9 +866,7 @@ button:focus, button:active {
   border-radius: 4px;
 }
 .Checkbox2 label [type=checkbox]:checked + span {
-  background-color: #00BEA5 !important;
-      border: 1px solid #00BEA5;
-
+  background-color: #00bea5 !important;
 }
 .Checkbox2 label [type=checkbox]:checked + span:before {
   content: "";
@@ -1004,7 +1002,7 @@ button:focus, button:active {
   font-weight: bold;
   font-size: 12px;
   line-height: calc(100% + 5px);
-  color: #393C4E;
+  color: #393c4e;
   text-transform: uppercase;
 }
 .rr-table tbody td,
@@ -1015,7 +1013,7 @@ button:focus, button:active {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(100% + 5px);
-  color: #393C4E;
+  color: #393c4e;
 }
 .rr-table tbody td {
   padding-top: 15px;
@@ -1043,7 +1041,7 @@ button:focus, button:active {
   color: #2557e0;
 }
 #overlay-survey .modal-content .modal-body .title {
-  color: #393C4E;
+  color: #393c4e;
 }
 #overlay-survey .modal-content .modal-body form {
   margin-top: 30px;
@@ -1051,7 +1049,7 @@ button:focus, button:active {
 #overlay-survey .modal-content .modal-body form .rr-label {
   font-size: 18px !important;
   font-weight: 400 !important;
-  color: #393C4E;
+  color: #393c4e;
 }
 #overlay-survey .modal-content .modal-body form .horizontal {
   display: flex;
@@ -1124,7 +1122,7 @@ button:focus, button:active {
   display: block;
   text-decoration: underline;
   font-size: 14px;
-  color: #393C4E;
+  color: #393c4e;
 }
 #page-connect .controls {
   display: flex;
@@ -1526,17 +1524,19 @@ button:focus, button:active {
 }
 #page-dashboard .feedback .footer .pagination .page-item.active a {
   font-weight: 500;
-  color: #33475B;
+  color: #393c4e;
   background-color: #d3ebff;
 }
 #page-dashboard .feedback .footer .pagination .page-item a {
   padding: 4px 13px;
+  color: #757e83;
   font-size: 14px;
+  border-color: #2557e0 !important;
 }
 #page-dashboard .feedback .footer .responses {
   display: block;
   font-size: 14px;
-  color: #33475B;
+  color: #393c4e;
   font-weight: 500;
   line-height: 20px;
 }
@@ -1591,7 +1591,7 @@ button:focus, button:active {
 }
 #page-integrations .title {
   margin-top: 30px;
-  color: #393C4E;
+  color: #393c4e;
 }
 #page-integrations .integrations-list {
   margin-top: 50px;
@@ -1625,13 +1625,13 @@ button:focus, button:active {
   margin-bottom: 0;
   font-size: 17px;
   font-weight: bold;
-  color: #393C4E;
+  color: #393c4e;
 }
 #page-integrations .integrations-list .item .content .description {
   margin-bottom: 0;
   font-size: 15px;
   font-weight: 300;
-  color: #393C4E;
+  color: #393c4e;
 }
 #page-integrations .integrations-list .item .onoffswitch {
   flex-shrink: 0;
@@ -2167,7 +2167,7 @@ button:focus, button:active {
   display: block;
   margin: 9px 0px;
   font-weight: bold;
-  color: #393C4E;
+  color: #393c4e;
   font-size: 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -2185,7 +2185,7 @@ button:focus, button:active {
   color: inherit !important;
 }
 #page-survey-template .lime-sidebar .lime-sidebar-inner ul li a i {
-  color: #393C4E !important;
+  color: #393c4e !important;
   font-size: 25px;
   line-height: 1;
   letter-spacing: normal;
@@ -2194,7 +2194,7 @@ button:focus, button:active {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
 #page-survey-template .lime-sidebar .lime-sidebar-inner ul li a i.has-sub-menu {
@@ -2234,7 +2234,7 @@ button:focus, button:active {
   border: 0;
   font-weight: normal;
   font-size: 16px !important;
-  color: #393C4E;
+  color: #393c4e;
 }
 #page-survey-template .rr-box .email-body .email-container {
   max-width: 500px;
@@ -2382,7 +2382,7 @@ button:focus, button:active {
   font-weight: 700;
   font-size: 17px;
   line-height: calc(100% + 5px);
-  color: #393C4E;
+  color: #393c4e;
   text-decoration: none;
 }
 @media (max-width: 575.98px) {
