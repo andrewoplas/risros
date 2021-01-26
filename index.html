@@ -7,10 +7,6 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
@@ -56,13 +52,13 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span class="user-initials">DA</span>
-                <span class="user-name">Devid</span>
-                <i class="fas fa-angle-down icon-toggle-arrow"></i>
+                <span class="user-initials">MU</span>
+                <span class="user-name">Ullah</span>
+                <i class="fal fa-angle-down icon-toggle-arrow"></i>
               </button>
               <div class="dropdown-menu" aria-labelledby="user-dropdown">
                 <div class="heading text-center">
-                  <h5 class="text-dark mb-0">Devid Antoni</h5>
+                  <h5 class="text-dark mb-0">Muhamad Ullah</h5>
                   <small class="text-muted">Administrator</small>
                 </div>
                 <div class="dropdown-divider m-0"></div>
@@ -130,12 +126,6 @@
     <!-- Main Content -->
 
     <div class="container main-content" id="page-dashboard">
-      <!-- Breadcrumbs -->
-
-      <section class="breadcrumbs">
-        <span>Campaigns / JetClean</span>
-      </section>
-
       <!-- Scores (Net Promoter Score & Weekly Score) -->
 
       <section class="scores">
@@ -143,9 +133,10 @@
           <div class="col-12 col-lg-7 net-promoter-score">
             <div class="box-card">
               <div class="header">
-                <h1 class="title">Net Promoter Score</h1>
+                <h2 class="title-m title">Net Promoter Score</h2>
+
                 <div class="datepicker" id="date-range-picker">
-                  <i class="mdi mdi-calendar-blank-outline icon text-blue"></i>
+                  <i class="fal fa-calendar-alt text-blue"></i>
                   <span class="date-range text-blue">Jan 01 - Jan 07</span>
                 </div>
               </div>
@@ -273,7 +264,7 @@
       <section class="feedback">
         <div class="box-card">
           <div class="header">
-            <h1 class="title">Feedback</h1>
+            <h2 class="title-m title">Feedback</h2>
           </div>
 
           <div class="list">
@@ -298,21 +289,9 @@
                   <i class="far fa-ellipsis-h icon"></i>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon mdi mdi-card-search-outline"></i>
-                    View
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon mdi mdi-file-edit-outline"></i> Edit
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="float-right"></span>
-                    <i class="dropdown-icon mdi mdi-trash-can-outline"></i>
-                    Delete
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon mdi mdi-export-variant"></i> Export
-                  </a>
+                  <a class="dropdown-item" href="#"> <i class="far fa-edit"> </i> Edit</a>
+                  <a class="dropdown-item" href="#"> <i class="far fa-trash"> </i> Delete</a>
+                  <a class="dropdown-item" href="#"> <i class="far fa-envelope-open"> </i> Reply</a>
                 </div>
               </div>
               <hr />
@@ -341,21 +320,9 @@
                   <i class="far fa-ellipsis-h icon"></i>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon mdi mdi-card-search-outline"></i>
-                    View
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon mdi mdi-file-edit-outline"></i> Edit
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="float-right"></span>
-                    <i class="dropdown-icon mdi mdi-trash-can-outline"></i>
-                    Delete
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon mdi mdi-export-variant"></i> Export
-                  </a>
+                  <a class="dropdown-item" href="#"> <i class="far fa-edit"> </i> Edit</a>
+                  <a class="dropdown-item" href="#"> <i class="far fa-trash"> </i> Delete</a>
+                  <a class="dropdown-item" href="#"> <i class="far fa-envelope-open"> </i> Reply</a>
                 </div>
               </div>
               <hr />
@@ -493,6 +460,7 @@
           </div>
 
           <div class="footer">
+            <span class="responses">1 - 20 of 74 responses</span>
             <nav aria-label="list-pagination">
               <ul class="pagination pagination-sm">
                 <li class="page-item active">
@@ -503,7 +471,6 @@
                 <li class="page-item"><a class="page-link" href="#">4</a></li>
               </ul>
             </nav>
-            <span class="responses">1 - 20 of 74 responses</span>
           </div>
         </div>
       </section>

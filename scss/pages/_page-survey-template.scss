@@ -52,7 +52,7 @@
             display: block;
             margin: 9px 0px;
             font-weight: bold;
-            color: #33475b;
+            color: $color-dark-blue;
             font-size: 20px;
             text-decoration: none;
             transition: all 0.2s ease-in-out;
@@ -74,7 +74,7 @@
             }
 
             i {
-              color: #33475b !important;
+              color: $color-dark-blue !important;
               font-size: 25px;
               line-height: 1;
               letter-spacing: normal;
@@ -83,7 +83,7 @@
               white-space: nowrap;
               word-wrap: normal;
               direction: ltr;
-              -webkit-font-feature-settings: 'liga';
+              font-feature-settings: 'liga';
               -webkit-font-smoothing: antialiased;
 
               &.has-sub-menu {

@@ -5,25 +5,26 @@
   font-weight: bold;
   font-size: 50px;
   letter-spacing: 0px;
-  color: #192a59;
+  color: #393C4E;
 }
 
 .title-m {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 0px;
-  color: #192a59;
+  color: #393C4E;
 }
+
 @media (max-width: 991.98px) {
   .title-m {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media (max-width: 575.98px) {
   .title-m {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -31,18 +32,18 @@
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0px;
-  color: #33475b;
+  color: #393C4E;
 }
 @media (max-width: 991.98px) {
   .l {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media (max-width: 575.98px) {
   .l {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -50,13 +51,13 @@
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0px;
-  color: #33475b;
+  color: #393C4E;
 }
 @media (max-width: 991.98px) {
   .m {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -66,7 +67,7 @@
   font-weight: normal;
   font-size: 12px;
   letter-spacing: 0px;
-  color: #33475b;
+  color: #393C4E;
 }
 
 .xs {
@@ -80,14 +81,13 @@
 .field-label {
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   color: #3f4b62;
 }
 
 * {
   font-family: "Roboto", sans-serif;
-  color: #3f4b62;
+  color: #33475B;
 }
 
 body {
@@ -134,6 +134,10 @@ body .bg-green {
 body .bg-red {
   background-color: #f73e26;
 }
+
+body .bg-gray {
+  background-color: #a2a9be;
+}
 body .bg-orange {
   background-color: #f7b626;
 }
@@ -155,7 +159,7 @@ body .border-orange {
 }
 
 .rr-btn {
-  padding: 12px 20px;
+  padding: 10px 20px;
   border: 1px solid #2557e0;
   border-radius: 4px;
   font-size: 14px;
@@ -178,7 +182,7 @@ body .border-orange {
   background-color: transparent;
 }
 .rr-btn.outline:hover {
-  background-color: #eee;
+  background-color: #e9ebfe;
 }
 .rr-btn.outline.disabled {
   pointer-events: none;
@@ -194,7 +198,6 @@ body .border-orange {
   color: #372459;
 }
 .rr-btn.outline.blue {
-  color: #2557e0;
   color: #2557e0;
 }
 .rr-btn:not(.outline).transparent {
@@ -212,8 +215,12 @@ body .border-orange {
 .rr-btn.bold {
   font-weight: bold;
 }
+
 .rr-btn.medium {
   font-weight: 500;
+}
+.rr-btn.min-width-200 {
+  min-width: 200px;
 }
 .rr-btn.min-width-170 {
   min-width: 170px;
@@ -224,23 +231,21 @@ body .border-orange {
 .rr-btn.min-width-100 {
   min-width: 100px;
 }
-.rr-btn.min-width-200 {
-  min-width: 200px;
-}
+
 
 .rr-input {
-  padding: 8px 15px;
+  padding: 10px 10px;
   border: 1px solid #b5b8c5;
   background-color: white;
   border-radius: 2px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
   color: #36373c;
   outline: none !important;
 }
 .rr-input:focus {
-  transition: 500ms;
-  border-color: #2557e0;
+  transition: 200ms;
+  border: 2px solid #2557e0;
+
 }
 .rr-input::-webkit-input-placeholder {
   color: #b5b8c5;
@@ -381,11 +386,11 @@ button:focus, button:active {
   justify-content: center;
   height: 40px;
   width: 40px;
-  background-color: #192a59;
-  border: 1px solid #192a59;
+  background-color: #00BEA5;
+  border: 1px solid #00BEA5;
   border-radius: 50%;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 20px;
 }
@@ -530,7 +535,7 @@ button:focus, button:active {
 }
 .sidebar .sidebar-inner .links a {
   margin-bottom: 20px;
-  color: #192a59;
+  color: #393C4E;
   text-decoration: none;
   position: relative;
   font-family: Roboto, sans-serif;
@@ -625,7 +630,7 @@ button:focus, button:active {
   text-align: center;
 }
 .main-content-header .container .nav-settings li.active a {
-  color: #192a59;
+  color: #393C4E;
   font-weight: bold;
 }
 .main-content-header .container .nav-settings li a {
@@ -685,7 +690,7 @@ button:focus, button:active {
   text-align: center;
 }
 .main-content-header .container .nav-workflow li.active a {
-  color: #192a59;
+  color: #393C4E;
   font-weight: bold;
 }
 .main-content-header .container .nav-workflow li a {
@@ -744,7 +749,7 @@ button:focus, button:active {
   }
 }
 .main-content-header.subheader .nav .nav-link.active {
-  color: #192a59;
+  color: #393C4E;
   font-weight: bold;
 }
 .main-content-header.subheader .nav .nav-link.active::after {
@@ -861,7 +866,9 @@ button:focus, button:active {
   border-radius: 4px;
 }
 .Checkbox2 label [type=checkbox]:checked + span {
-  background-color: #6993ff !important;
+  background-color: #00BEA5 !important;
+      border: 1px solid #00BEA5;
+
 }
 .Checkbox2 label [type=checkbox]:checked + span:before {
   content: "";
@@ -989,15 +996,15 @@ button:focus, button:active {
   margin-bottom: 0;
 }
 .rr-table thead th {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: #e9ebfe;
   border: 0;
   font-family: Roboto, sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   line-height: calc(100% + 5px);
-  color: #192a59;
+  color: #393C4E;
   text-transform: uppercase;
 }
 .rr-table tbody td,
@@ -1008,7 +1015,7 @@ button:focus, button:active {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(100% + 5px);
-  color: #33475b;
+  color: #393C4E;
 }
 .rr-table tbody td {
   padding-top: 15px;
@@ -1036,7 +1043,7 @@ button:focus, button:active {
   color: #2557e0;
 }
 #overlay-survey .modal-content .modal-body .title {
-  color: #192a59;
+  color: #393C4E;
 }
 #overlay-survey .modal-content .modal-body form {
   margin-top: 30px;
@@ -1044,7 +1051,7 @@ button:focus, button:active {
 #overlay-survey .modal-content .modal-body form .rr-label {
   font-size: 18px !important;
   font-weight: 400 !important;
-  color: #192a59;
+  color: #393C4E;
 }
 #overlay-survey .modal-content .modal-body form .horizontal {
   display: flex;
@@ -1117,7 +1124,7 @@ button:focus, button:active {
   display: block;
   text-decoration: underline;
   font-size: 14px;
-  color: #192a59;
+  color: #393C4E;
 }
 #page-connect .controls {
   display: flex;
@@ -1415,7 +1422,7 @@ button:focus, button:active {
 }
 #page-dashboard .feedback .list .item .text-container .title {
   max-width: 814px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 22px;
 }
@@ -1429,7 +1436,7 @@ button:focus, button:active {
   margin-top: 32px;
   display: block;
   color: #757e83;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 20px;
 }
 #page-dashboard .feedback .list .item .text-container .date {
@@ -1519,19 +1526,17 @@ button:focus, button:active {
 }
 #page-dashboard .feedback .footer .pagination .page-item.active a {
   font-weight: 500;
-  color: #2557e0;
+  color: #33475B;
   background-color: #d3ebff;
 }
 #page-dashboard .feedback .footer .pagination .page-item a {
   padding: 4px 13px;
-  color: #757e83;
-  font-size: 18px;
-  border-color: #2557e0 !important;
+  font-size: 14px;
 }
 #page-dashboard .feedback .footer .responses {
   display: block;
-  font-size: 18px;
-  color: #757e83;
+  font-size: 14px;
+  color: #33475B;
   font-weight: 500;
   line-height: 20px;
 }
@@ -1586,7 +1591,7 @@ button:focus, button:active {
 }
 #page-integrations .title {
   margin-top: 30px;
-  color: #192a59;
+  color: #393C4E;
 }
 #page-integrations .integrations-list {
   margin-top: 50px;
@@ -1620,13 +1625,13 @@ button:focus, button:active {
   margin-bottom: 0;
   font-size: 17px;
   font-weight: bold;
-  color: #33475b;
+  color: #393C4E;
 }
 #page-integrations .integrations-list .item .content .description {
   margin-bottom: 0;
   font-size: 15px;
   font-weight: 300;
-  color: #33475b;
+  color: #393C4E;
 }
 #page-integrations .integrations-list .item .onoffswitch {
   flex-shrink: 0;
@@ -1746,14 +1751,14 @@ button:focus, button:active {
 }
 
 #page-settings-billing-history {
-  max-width: 900px;
+  max-width: 660px;
 }
 #page-settings-billing-history .top-content {
   padding: 30px 30px 70px;
 }
 
 #page-settings-my-profile {
-  max-width: 900px;
+  max-width: 800px;
 }
 #page-settings-my-profile .top-content {
   padding: 30px 30px 60px;
@@ -2061,7 +2066,7 @@ button:focus, button:active {
 }
 
 #page-survey-open-ended-question {
-  max-width: 900px;
+  max-width: 700px;
 }
 #page-survey-open-ended-question .top-content {
   padding: 30px 30px 80px;
@@ -2076,7 +2081,7 @@ button:focus, button:active {
 }
 
 #page-survey-throttling {
-  max-width: 900px;
+  max-width: 700px;
 }
 #page-survey-throttling .top-content {
   padding: 30px 30px 50px;
@@ -2162,7 +2167,7 @@ button:focus, button:active {
   display: block;
   margin: 9px 0px;
   font-weight: bold;
-  color: #33475b;
+  color: #393C4E;
   font-size: 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -2180,7 +2185,7 @@ button:focus, button:active {
   color: inherit !important;
 }
 #page-survey-template .lime-sidebar .lime-sidebar-inner ul li a i {
-  color: #33475b !important;
+  color: #393C4E !important;
   font-size: 25px;
   line-height: 1;
   letter-spacing: normal;
@@ -2229,7 +2234,7 @@ button:focus, button:active {
   border: 0;
   font-weight: normal;
   font-size: 16px !important;
-  color: #192a59;
+  color: #393C4E;
 }
 #page-survey-template .rr-box .email-body .email-container {
   max-width: 500px;
@@ -2377,7 +2382,8 @@ button:focus, button:active {
   font-weight: 700;
   font-size: 17px;
   line-height: calc(100% + 5px);
-  color: #33475b;
+  color: #393C4E;
+  text-decoration: none;
 }
 @media (max-width: 575.98px) {
   #page-surveys .surveys .item .content .title {
@@ -2455,7 +2461,7 @@ button:focus, button:active {
   transform: rotate(180deg);
 }
 #page-surveys .surveys .item .dropdown .btn-actions {
-  padding: 12px 25px;
+  padding: 10px 25px;
   border: 1px solid #372459;
   border-radius: 4px;
   color: #25292d;

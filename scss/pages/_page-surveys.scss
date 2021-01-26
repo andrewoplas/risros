@@ -99,7 +99,8 @@
         .title {
           display: block;
           @include font(17px, $fw-bold);
-          color: #33475b;
+          color: $color-dark-blue;
+          text-decoration: none;
 
           @include media-breakpoint-down(xs) {
             font-size: 15px;
@@ -175,7 +176,7 @@
         }
 
         .btn-actions {
-          padding: 12px 25px;
+          padding: 10px 25px;
           border: 1px solid #372459;
           border-radius: 4px;
           color: #25292d;

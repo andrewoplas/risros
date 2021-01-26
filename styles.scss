@@ -61,6 +61,10 @@ body {
     background-color: $color-red;
   }
 
+  body .bg-gray {
+    background-color: #a2a9be;
+  }
+
   .bg-orange {
     background-color: $color-orange;
   }
@@ -87,7 +91,7 @@ body {
 }
 
 .rr-btn {
-  padding: 12px 20px;
+  padding: 10px 20px;
   border: 1px solid $color-blue;
   border-radius: 4px;
   font-size: 14px;
@@ -114,7 +118,7 @@ body {
     background-color: transparent;
 
     &:hover {
-      background-color: #eee;
+      background-color: #e9ebfe;
     }
 
     &.disabled {
@@ -134,7 +138,6 @@ body {
     }
 
     &.blue {
-      color: $color-blue;
       color: $color-blue;
     }
   }
@@ -164,6 +167,10 @@ body {
     font-weight: 500;
   }
 
+  &.min-width-200 {
+    min-width: 200px;
+  }
+
   &.min-width-170 {
     min-width: 170px;
   }
@@ -175,25 +182,20 @@ body {
   &.min-width-100 {
     min-width: 100px;
   }
-
-  &.min-width-200 {
-    min-width: 200px;
-  }
 }
 
 .rr-input {
-  padding: 8px 15px;
+  padding: 10px 10px;
   border: 1px solid #b5b8c5;
   background-color: white;
   border-radius: 2px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
   color: #36373c;
   outline: none !important;
 
   &:focus {
     transition: 500ms;
-    border-color: $color-blue;
+    border: 2px solid $color-blue;
   }
 
   &::-webkit-input-placeholder {

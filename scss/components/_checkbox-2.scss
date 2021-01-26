@@ -55,7 +55,7 @@
     }
 
     [type='checkbox']:checked + span {
-      background-color: #6993ff !important;
+      background-color: $color-green !important;
     }
 
     [type='checkbox']:checked + span:before {

@@ -289,7 +289,7 @@
 
           .title {
             max-width: 814px;
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 400;
             line-height: 22px;
 
@@ -303,7 +303,7 @@
             margin-top: 32px;
             display: block;
             color: $color-dark-gray;
-            font-size: 18px;
+            font-size: 14px;
             line-height: 20px;
           }
 
@@ -410,7 +410,7 @@
           &.active {
             a {
               font-weight: 500;
-              color: $color-blue;
+              color: $color-dark-blue;
               background-color: $color-pagination-active-background;
             }
           }
@@ -418,7 +418,7 @@
           a {
             padding: 4px 13px;
             color: $color-dark-gray;
-            font-size: 18px;
+            font-size: 14px;
             border-color: $color-blue !important;
           }
         }
@@ -426,8 +426,8 @@
 
       .responses {
         display: block;
-        font-size: 18px;
-        color: $color-dark-gray;
+        font-size: 14px;
+        color: $color-dark-blue;
         font-weight: 500;
         line-height: 20px;
       }

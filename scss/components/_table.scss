@@ -2,11 +2,11 @@
   margin-bottom: 0;
 
   thead th {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: #e9ebfe;
     border: 0;
-    @include font(14px, bold);
+    @include font(12px, bold);
     color: $color-dark-blue;
     text-transform: uppercase;
   }
@@ -16,7 +16,7 @@
     border: 0;
     border-bottom: 1px solid #e9ebfe;
     @include font(14px, 400);
-    color: #33475b;
+    color: $color-dark-blue;
   }
 
   tbody td {
