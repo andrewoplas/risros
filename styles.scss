@@ -307,8 +307,14 @@ body {
   border-radius: 50%;
 }
 
-.text-gray {
-  color: $color-gray;
+.user-initials {
+  width: 38px;
+  height: 38px;
+  @include flex(center, center);
+  @include font(16px, bold);
+  color: white;
+  border-radius: 50%;
+  background-color: $color-green;
 }
 
 button {
@@ -337,6 +343,7 @@ button {
 @import './scss/pages/page-dashboard';
 @import './scss/pages/page-import';
 @import './scss/pages/page-integrations';
+@import './scss/pages/page-team';
 @import './scss/pages/page-settings-billing-address';
 @import './scss/pages/page-settings-billing-credit-card';
 @import './scss/pages/page-settings-billing-history';

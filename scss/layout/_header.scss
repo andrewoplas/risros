@@ -77,11 +77,11 @@
     }
 
     .dropdown-menu {
-      left: 38px !important;
+      left: 18px !important;
       top: -14px !important;
       min-width: 12rem;
       height: auto;
-      padding: 2px 9px;
+      padding: 10px 0;
       border: 1px solid #eaedf1 !important;
 
       @media only screen and (max-width: 1500px) {
@@ -113,6 +113,10 @@
           color: #16181b !important;
         }
 
+        &.language-item {
+          padding: 0.5rem 1rem;
+        }
+
         .dropdown-icon {
           color: #9aa0ac;
           margin-right: 0.5rem;
@@ -120,6 +124,27 @@
           width: 1em;
           text-align: center;
           vertical-align: -1px;
+        }
+      }
+
+      .language-selection {
+        @include flex(stretch, center);
+
+        .item {
+          padding: 8px 10px;
+          background-color: white;
+          border-radius: 4px;
+          border: 1px solid #e9ebfe;
+          flex: 1;
+
+          &.active {
+            background-color: #e9ebfe;
+          }
+
+          img {
+            width: 18px;
+            height: 18px;
+          }
         }
       }
     }

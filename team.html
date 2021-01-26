@@ -116,107 +116,104 @@
     <!-- Main Content -->
 
     <div class="main-content">
-      <div class="main-content-header">
-        <div class="container">
-          <p class="title-m header-title">Settings</p>
+      <div class="container mt-5" id="page-team">
+        <div class="invite-members mt-5">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-8">
+              <h3 class="title-m">Team members</h3>
+              <span class="m d-block mt-2">Invite people to the project. </span>
 
-          <ul class="nav-settings mt-3">
-            <li class="one active">
-              <a class="m" href="settings-my-profile.html">My Profile</a>
-            </li>
-            <li class="two">
-              <a class="m" href="settings-plan.html">Plan</a>
-            </li>
-            <li class="three">
-              <a class="m" href="settings-billing-address.html">Billing</a>
-            </li>
-            <li class="four">
-              <a class="m" href="#">Notifications</a>
-            </li>
-            <li class="five">
-              <a class="m" href="#">Security</a>
-            </li>
-            <hr />
-          </ul>
-        </div>
-      </div>
-
-      <div class="container mt-5" id="page-settings-my-profile">
-        <div class="rr-box">
-          <div class="top-content">
-            <p class="l font-weight-bold">My Profile</p>
-
-            <div class="input-fields mt-4">
-              <div class="row">
-                <div class="col-12 col-sm-4">
-                  <div class="item">
-                    <span class="field-label">Name</span>
-                    <input class="rr-input mt-2 w-100" value="Michael Jordan" />
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-4 mt-4 mt-sm-0">
-                  <div class="item">
-                    <span class="field-label">Email</span>
-                    <input class="rr-input mt-2 w-100" value="superstar@nba.com" />
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-4 mt-4 mt-sm-0">
-                  <div class="item">
-                    <span class="field-label">Photo</span>
-                    <div class="mt-2 d-flex align-items-center">
-                      <img src="images/main-user.png" class="upload-photo d-block" />
-                      <button class="s ml-4 btn-edit">Edit</button>
-                      <input type="file" class="upload-file d-none" accept="image/*" />
-                    </div>
-                  </div>
-                </div>
+              <div class="invite-input-fields mt-3">
+                <input
+                  type="text"
+                  class="rr-input flex-1"
+                  placeholder="Enter one or more email adresses separated by commas (,)."
+                />
+                <button class="btn rr-btn blue min-width-150 ml-3">Send Invites</button>
               </div>
-              <div class="row mt-4">
-                <div class="col-12 col-sm-4">
-                  <div class="item">
-                    <span class="field-label">Phone number</span>
+            </div>
+            <div class="col-1 d-none d-lg-flex"></div>
+            <div class="col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
+              <div class="invitation">
+                <span class="l d-block font-weight-bold">The more the merrier...</span>
 
-                    <div class="phone-number-container mt-2">
-                      <div class="dropdown flag-dropdown">
-                        <button class="btn-dropdown" data-toggle="dropdown">
-                          <img src="images/flag-denmark.png" />
-                          <i class="fas fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="javascript:void(0)">
-                            <img src="images/flag-denmark.png" />
-                          </a>
-                          <a class="dropdown-item" href="javascript:void(0)">
-                            <img src="images/flag-norway.png" />
-                          </a>
-                          <a class="dropdown-item" href="javascript:void(0)">
-                            <img src="images/flag-sweden.png" />
-                          </a>
-                        </div>
-                      </div>
-                      <input class="rr-input w-100" value="+ 45 29 20 20 20 " />
-                    </div>
+                <div class="collaborators mt-3">
+                  <span class="user-initials">MJ</span>
+                  <span class="plus">+</span>
+                  <div class="other-users">
+                    <img src="images/user-1.png" />
+                    <img src="images/user-2.png" />
+                    <img src="images/user-3.png" />
                   </div>
+                </div>
+
+                <span class="m d-block mt-3">Invite colleagues & collaborate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="members mt-4">
+          <div class="item row">
+            <div class="col-12 col-sm-3">
+              <span class="user-details m font-weight-bold d-block">Peter Nielsen</span>
+              <span class="user-details m d-block">pn@jetclean.dk</span>
+            </div>
+            <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+              <div class="role-badge s bg-green text-white second-item">Owner</div>
+            </div>
+          </div>
+
+          <div class="item row">
+            <div class="col-12 col-sm-3">
+              <span class="user-details m font-weight-bold d-block">Michael Jordan</span>
+              <span class="user-details m d-block">michael.j@mba-star.com</span>
+            </div>
+            <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+              <div class="role-badge s bg-gray text-white">Viewer</div>
+            </div>
+            <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+              <span class="m pending-invitation">Pending invitation</span>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="dropdown">
+                <button class="btn-actions" data-toggle="dropdown">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item m" href="#">Make Admin</a>
+                  <a class="dropdown-item m" href="#">Resend</a>
+                  <a class="dropdown-item m" href="#">Revoke</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="controls">
-            <div class="newsletter-checkbox">
-              <div class="Checkbox2">
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </div>
-              <span class="s ml-2 pr-2">
-                I want to receive newsletters and special offer notices from RisRos
-              </span>
+          <div class="item row">
+            <div class="col-12 col-sm-3">
+              <span class="user-details m font-weight-bold d-block">LeBron James</span>
+              <span class="user-details m d-block">basketplayer@mba-star.com</span>
             </div>
-            <button class="btn rr-btn blue min-width-150">Update</button>
+            <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+              <div class="role-badge s bg-gray text-white">Viewer</div>
+            </div>
+            <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+              <span class="m pending-invitation">Pending invitation</span>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="dropdown">
+                <button class="btn-actions" data-toggle="dropdown">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item m" href="#">Make Admin</a>
+                  <a class="dropdown-item m" href="#">Resend</a>
+                  <a class="dropdown-item m" href="#">Revoke</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -233,28 +230,5 @@
 
     <!-- Custom JS -->
     <script src="main.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $('.upload-file').on('change', function (e) {
-          const file = event.srcElement.files[0];
-
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            $('.upload-photo').attr('src', e.target.result);
-          };
-          reader.readAsDataURL(file);
-        });
-
-        $('.btn-edit').click(function (e) {
-          $('.upload-file').click();
-        });
-
-        $('.flag-dropdown .dropdown-item').click(function () {
-          const imgSrc = $(this).find('img').attr('src');
-          $('.flag-dropdown .btn-dropdown img').attr('src', imgSrc);
-        });
-      });
-    </script>
   </body>
 </html>

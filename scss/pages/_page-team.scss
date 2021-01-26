@@ -1,0 +1,152 @@
+#page-team {
+  max-width: 1120px;
+
+  .invite-members {
+    padding: 30px 40px;
+    background-color: #e9ebfe;
+    border-radius: 5px;
+
+    @include media-breakpoint-down(xs) {
+      padding: 25px;
+    }
+
+    .invite-input-fields {
+      @include flex();
+      width: 100%;
+
+      .rr-input {
+        flex: 1;
+      }
+
+      @include media-breakpoint-down(sm) {
+        flex-wrap: wrap;
+
+        .rr-input {
+          flex-basis: 100%;
+        }
+
+        button {
+          margin-left: 0 !important;
+          margin-top: 10px;
+          flex-basis: 100%;
+        }
+      }
+    }
+
+    .invitation {
+      @include media-breakpoint-down(sm) {
+        & > span {
+          text-align: center;
+        }
+
+        .collaborators {
+          justify-content: center !important;
+        }
+      }
+
+      .collaborators {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        @include flex(stretch, center);
+
+        .plus {
+          @include font(25px, 400);
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        .other-users {
+          img {
+            width: 45px;
+            height: 45px;
+          }
+
+          img:not(:last-child) {
+            margin-right: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  .members {
+    padding: 0 60px;
+    border: 1px solid #e9ebfe;
+    border-radius: 4px;
+    background-color: white;
+
+    @include media-breakpoint-down(xs) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .item {
+      position: relative;
+      padding-top: 35px;
+      padding-bottom: 35px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e9ebfe;
+      }
+
+      & > div:not(:first-child) {
+        @include flex(center, center);
+      }
+
+      @include media-breakpoint-down(xs) {
+        .user-details {
+          text-align: center;
+        }
+      }
+
+      .role-badge {
+        @include flex(center, center);
+        width: 70px;
+        padding: 8px 16px;
+        border-radius: 3px;
+      }
+
+      .dropdown {
+        @include media-breakpoint-down(xs) {
+          .dropdown-menu {
+            width: 100%;
+
+            .dropdown-item {
+              text-align: center;
+            }
+          }
+        }
+
+        .btn-actions {
+          padding: 10px 25px;
+          border: 0;
+          background-color: transparent;
+          color: #25292d;
+          @include font(15px, $fw-medium);
+
+          &::after {
+            content: none;
+          }
+        }
+
+        .dropdown-menu {
+          min-width: auto;
+          margin-top: -10px;
+          padding: 5px 0;
+          border: 0;
+          border-radius: 6px;
+
+          box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
+
+          .dropdown-item {
+            padding: 10px 30px;
+
+            &:hover {
+              background-color: #ecf0f1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
