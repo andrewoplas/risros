@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Risros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <!-- top banner -->
+    <div class="rr-top-banner">
+      <span class="m d-block text-center">
+        You have 14 days left of your 14 free day trial. <a href="#">Upgrade now.</a>
+      </span>
+    </div>
+
+    <nav class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-flex align-items-center">
+            <i id="toggle-sidebar" class="far fa-bars icon-fa-bars"></i>
+            <a href="/"><h1 class="title">RISROS</h1></a>
+          </div>
+          <div class="col-6 col-6 d-flex justify-content-end">
+            <div class="dropdown">
+              <button class="btn" id="user-dropdown" data-toggle="dropdown">
+                <span class="user-initials">MU</span>
+                <span class="user-name">Ullah</span>
+                <i class="fal fa-angle-down icon-toggle-arrow"></i>
+              </button>
+              <div class="dropdown-menu">
+                <div class="heading text-center pb-2">
+                  <h4 class="title-m mb-0">Asem Raza</h4>
+                </div>
+
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-account-outline"></i> My Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-settings"></i> About RisRos
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="float-right"></span>
+                  <i class="dropdown-icon mdi mdi-message-outline"></i> Help & Support
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon mdi mdi-comment-check-outline"></i>
+                  Sign out
+                </a>
+                <div class="dropdown-divider"></div>
+
+                <div class="dropdown-item language-item">
+                  <span class="m d-block">Language</span>
+                  <div class="language-selection mt-2">
+                    <div class="item mr-1 active">
+                      <img src="images/flag-uk-circle.png" />
+                      <span class="ml-2">EN</span>
+                    </div>
+                    <div class="item ml-1">
+                      <img src="images/flag-denmark-circle.png" />
+                      <span class="ml-2">DA</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+      <div class="sidebar-inner slimscroll">
+        <div class="links">
+          <a href="#">My Surveys</a>
+          <a href="#">Team</a>
+          <a href="#">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+
+        <div class="invitation">
+          <span class="m d-block font-weight-bold">The more the merrier...</span>
+
+          <div class="collaborators">
+            <span class="user-initials">MJ</span>
+            <span class="plus">+</span>
+            <div class="other-users">
+              <img src="images/user-1.png" />
+              <img src="images/user-2.png" />
+              <img src="images/user-3.png" />
+            </div>
+          </div>
+
+          <span class="s d-block">Invite colleagues & collaborate</span>
+
+          <button class="btn rr-btn outline dark-purple medium d-block w-100 mt-4">
+            Invite Colleagues
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+      <div class="container mt-5" id="page-welcome">
+        <div class="rr-box">
+          <div class="top-content">
+            <p class="title title-m font-weight-bold m-0">Welcome to RisRos</p>
+
+            <div class="tasks mt-4">
+              <div class="item done">
+                <img src="images/icon-task-complete.svg" class="icon mr-4" />
+                <div class="details">
+                  <span class="l font-weight-bold d-block">1. Launch your first survey</span>
+                  <span class="m d-block">Go to the <a href="#">survey designer</a></span>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="images/icon-task-incomplete.svg" class="icon mr-4" />
+                <div class="details">
+                  <span class="l font-weight-bold d-block">2. Wait for your first response</span>
+                  <span class="m d-block"
+                    >When someone answers you will instantly see it in the
+                    <a href="#">dashboard</a></span
+                  >
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="images/icon-task-incomplete.svg" class="icon mr-4" />
+                <div class="details">
+                  <span class="l font-weight-bold d-block">3. Automate your work flows</span>
+                  <span class="m d-block"
+                    >Check out the <a href="#">work flows</a> section to get most of your
+                    respondents</span
+                  >
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="images/icon-task-incomplete.svg" class="icon mr-4" />
+                <div class="details">
+                  <span class="l font-weight-bold d-block">4. Select a package</span>
+                  <span class="m d-block">
+                    Select a package that suits the needs of your company. You se can
+                    <a href="#">see our plans here</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/8c9c5e8e6e.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

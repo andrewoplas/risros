@@ -136,9 +136,14 @@
           border-radius: 4px;
           border: 1px solid #e9ebfe;
           flex: 1;
+          cursor: pointer;
 
           &.active {
             background-color: #e9ebfe;
+          }
+
+          &:hover:not(.active) {
+            background-color: #eee;
           }
 
           img {
